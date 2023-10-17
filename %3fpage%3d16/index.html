@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fbe52127be","applicationID":"27820297","transactionName":"b1FaNUtUV0dWV0xYClYbbRNQGl1RUVVNXREWVUsR","queueTime":0,"applicationTime":270,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYOUVZbCRACU1lQBwMOUQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		
+
+        <!-- Important: include as high up as possible, but after sensitive tags such as X-UA-Compatible -->
+        <title>Resources - Collaborative Alliance for Nursing Outcomes</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/combined.css?_v=1.83.108.133&context=sp"/>
+        <link rel="stylesheet" type="text/css" href="https://ws.yourmembership.com/Ams/40034/custom.css?cacheID=133" />
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.58"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
+
+
+
+<body id="PageBody" onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}">
+	<div id="icontainer">
+		<div id="icontent">
+            <div id="LeaderContentArea">
+                <!--YMPSTITLE=TgBBAA==/YMPSTITLE-->
+            </div>
+			<div id="topbar">
+				<div id="inavigation"><div id="FrontendMainMenu" class="radmenu RadMenu_YMPublic ">
+	<!-- 4.3.2 --><script type="text/javascript" src="/global_inc/RadControls/Menu/Scripts/4_3_2/RadMenu.js"></script><span id="FrontendMainMenuStyleSheetHolder" style="display:none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css');</script><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Skins/YMPublic/styles.css');</script><ul class="horizontal rootGroup">
+		<li class="item first"><a href="https://www.secure-calnoc.org/globalPages/mainpage.aspx" id="FrontendMainMenu_m0" class="link"><span class="text">Hospital Login</span></a></li><li class="item"><a href="/?page=A1" id="FrontendMainMenu_m1" class="link"><span class="text">About</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A1" id="FrontendMainMenu_m1_m0" class="link"><span class="text">Overview</span></a></li><li class="item"><a href="/?page=7" id="FrontendMainMenu_m1_m1" class="link"><span class="text">Mission</span></a></li><li class="item"><a href="/?page=6" id="FrontendMainMenu_m1_m2" class="link"><span class="text">History</span></a></li><li class="item"><a href="/?page=3" id="FrontendMainMenu_m1_m3" class="link"><span class="text">Leadership</span></a></li><li class="item"><a href="/resource/resmgr/Files/MarketingBrochureCALNOC_Fina.pdf" target="_blank" id="FrontendMainMenu_m1_m4" class="link"><span class="text">CALNOC Brochure</span></a></li><li class="item"><a href="/?page=25" id="FrontendMainMenu_m1_m5" class="link"><span class="text">Board of Directors</span></a></li><li class="item"><a href="/?page=27" id="FrontendMainMenu_m1_m6" class="link"><span class="text">Careers</span></a></li><li class="item last"><a href="/?page=15" id="FrontendMainMenu_m1_m7" class="link"><span class="text">FAQ</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A2" id="FrontendMainMenu_m2" class="link"><span class="text">Offerings</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A2" id="FrontendMainMenu_m2_m0" class="link"><span class="text">The Calnoc Advantage</span></a></li><li class="item"><a href="/?page=8" id="FrontendMainMenu_m2_m1" class="link"><span class="text">CALNOC Registry</span></a></li><li class="item"><a href="/?page=9" id="FrontendMainMenu_m2_m2" class="link"><span class="text">Medication Administration Accuracy</span></a></li><li class="item"><a href="/?page=1" id="FrontendMainMenu_m2_m3" class="link"><span class="text">Consulting Services</span></a></li><li class="item last"><a href="/?page=17" id="FrontendMainMenu_m2_m4" class="link"><span class="text">Education Services</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=13" id="FrontendMainMenu_m3" class="link"><span class="text">Customers</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=13" id="FrontendMainMenu_m3_m0" class="link"><span class="text">Customers</span></a></li><li class="item"><a href="/?page=28" id="FrontendMainMenu_m3_m1" class="link"><span class="text">2013 Top Performers</span></a></li><li class="item last"><a href="/?page=19" id="FrontendMainMenu_m3_m2" class="link"><span class="text">Partnership for Patients</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A6" id="FrontendMainMenu_m4" class="link"><span class="text">Join</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A6" id="FrontendMainMenu_m4_m0" class="link"><span class="text">Join Us</span></a></li><li class="item"><a href="/?page=18" id="FrontendMainMenu_m4_m1" class="link"><span class="text">Who Should Join?</span></a></li><li class="item"><a href="/?page=5" id="FrontendMainMenu_m4_m2" class="link"><span class="text">Benefits of Participation</span></a></li><li class="item last"><a href="/?page=21" id="FrontendMainMenu_m4_m3" class="link"><span class="text">Apply</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A7" id="FrontendMainMenu_m5" class="link"><span class="text">News</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=20" id="FrontendMainMenu_m5_m0" class="link"><span class="text">Press Releases</span></a></li><li class="item"><a href="/?page=23" id="FrontendMainMenu_m5_m1" class="link"><span class="text">In the News</span></a></li><li class="item"><a href="/?page=24" id="FrontendMainMenu_m5_m2" class="link"><span class="text">Webinars</span></a></li><li class="item last"><a href="/events/event_list.asp" id="FrontendMainMenu_m5_m3" class="link"><span class="text">Community Calendar</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/page/4" id="FrontendMainMenu_m6" class="link"><span class="text">Conference</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="#" id="FrontendMainMenu_m6_m0" class="link"><span class="text">Dates & Location</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m1" class="link"><span class="text">Call For Abstracts</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m2" class="link"><span class="text">Agenda</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m3" class="link"><span class="text">Exhibitors</span></a></li><li class="item last"><a href="#" id="FrontendMainMenu_m6_m4" class="link"><span class="text">Register</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A9" id="FrontendMainMenu_m7" class="link"><span class="text">Research</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=10" id="FrontendMainMenu_m7_m0" class="link"><span class="text">Research Articles</span></a></li><li class="item"><a href="/?page=16" id="FrontendMainMenu_m7_m1" class="link"><span class="text">Resources</span></a></li><li class="item"><a href="/?page=A30" id="FrontendMainMenu_m7_m2" class="link"><span class="text">Cost of HAPU</span></a></li><li class="item"><a href="/resource/resmgr/Docs/CALNOC_Data_Use_and_Services.pdf" target="_blank" id="FrontendMainMenu_m7_m3" class="link"><span class="text">Requesting CALNOC Data</span></a></li><li class="item last"><a href="/?page=12" id="FrontendMainMenu_m7_m4" class="link"><span class="text">Helpful Links</span></a></li>
+			</ul>
+		</div></li><li class="item last"><a href="/?page=A12" id="FrontendMainMenu_m8" class="link"><span class="text">Contact</span></a></li>
+	</ul><input type="hidden" id="FrontendMainMenu_Hidden" name="FrontendMainMenu" /><script type="text/javascript">window["FrontendMainMenu"] = RadMenu.Create("FrontendMainMenu");window["FrontendMainMenu"].Initialize({"EnableAutoScroll":true,"Skin":"YMPublic","Enabled":true},{"FrontendMainMenu_m6_m0":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m1":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m2":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m3":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m4":{"NavigateAfterClick":false}});</script>
+</div><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css"/><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Skins/YMPublic/styles.css"/></div>
+				
+					<div id="isearch"><form id="QuickSearchForm" name="QuickSearchForm" action="/search/all.asp">
+		<div id="QuickSearchFormInner1" class="ui-widget">
+			<input id="QuickSearchForm_bst" name="bst" maxlength='50' value='Enter search criteria...'@"onfocus='QuickSearchForm_OnFocus();'/>
+		</div>
+		<div id='QuickSearchFormInner2'><a href='#' id='QuickSearchSubmit' onclick='return QuickSearchForm_DoSubmit();'>Search&nbsp;&raquo;</a></div>
+</form><script type="text/javascript">
+function QuickSearchForm_DoSubmit()
+{
+		var QuickSearchForm = document.QuickSearchForm;
+     if(QuickSearchForm)
+     {
+			ClearDefaultValue(QuickSearchForm.bst);
+         QuickSearchForm.submit();
+     }
+		return false;
+}
+$(document).ready(function ()
+{
+		$("#QuickSearchForm_bst").click(function()
+		{
+			if ($("#QuickSearchForm_bst").val() == "Enter search criteria...")
+				$("#QuickSearchForm_bst").val('');
+			});
+			$("#QuickSearchForm_bst").blur(function ()
+			{
+				if ($("#QuickSearchForm_bst").val() == '')
+					$("#QuickSearchForm_bst").val('Enter search criteria...');
+				});
+				$("#QuickSearchForm_bst").autocomplete({
+					minLength: 3,
+					delay: 1000,
+					source: function (request, response)
+					{
+						$.ajax({
+						url: url = '/general/CategorySearchReciever.aspx?SearchTerm=' + $("#QuickSearchForm_bst").val() + "&cb=" + getCurrentTime(),
+						dataType: "json",
+						data: {
+						featureClass: "P",
+						style: "full",
+						maxRows: 20,
+						name_startsWith: request.term
+					},
+					success: function (data)
+					{
+						response($.map(data.CatalogSearchSuggestions, function (item)
+						{
+							return item;
+						}));
+					}
+				});
+			},
+			focus: function (event, ui)
+			{
+				return false;
+			},
+			select: function (event, ui)
+			{				document.location.href = ui.item.url;
+				return false;
+			},
+			open: function ()
+			{
+				$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+			},
+			close: function ()
+			{
+				$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+			}
+         }).data("autocomplete")._renderItem = function (ul, item)
+         {
+				var linkText = "";
+             var index = parseInt(item.index);
+				if (item.category != "")
+				{
+					linkText = item.category + ": ";
+				}
+				linkText += item.desc;
+             if (index > 0)
+             {
+					return $("<li>").data("item.autocomplete", item).append("<a href=" + item.url + ">" + linkText + "</a>").appendTo(ul);
+             }
+				else
+             {
+                 return $("<li class=\"FirstAutoCompleteItem\">").data("item.autocomplete", item).append(linkText).appendTo(ul)
+             }
+         }
+	});
+</script></div>
+				
+			</div>
+
+			<div id="iheader"><!-- header -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto:400,500,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<div id="header">
+	<a href="/" id="logo"></a>
+</div>
+<style type="text/css">
+      #Head
+      {
+          background-image: url('/graphics/bg_top.gif');
+      }
+  </style></div>
+			
+			<div id="itoolbar_bg">
+				<div id="itoolbar"><a id="PrintPage" href="#" onclick="return false;" title="Print view will be available once the page has finished loading."><img src="/global_graphics/icons/print_bw.gif" border="0" height="16" width="16" style="margin:5px 5px 0 0;valign:bottom;" />Print Page</a><script type='text/javascript'>function PrintPageClickHandler(){this.handleEvent = createPrintPagePopup }PrintPage_OnClick = new PrintPageClickHandler(); addEventHandler_OnLoad(function(){ var element = document.getElementById("PrintPage"); if(element) { element.onclick = PrintPage_OnClick.handleEvent; element.title = "Print Page";} });</script> &nbsp; | &nbsp; <a href='/general/?type=CONTACT'>Contact Us</a></div>
+			</div>
+	
+		<div id="sp-content">
+			<div id="left">
+				<!--@@DG_PRINT_PAGE_BEGIN@@
+					IMPORTANT! DO NOT MOVE OR MODIFY -->
+				
+  <script type="text/javascript">var blnUseEngagement = false; </script> 
+  
+<script type="text/javascript" src="/global_inc/js/favorite.js"></script>
+
+
+<style type="text/css">
+	#tat_table {
+		z-index:99;
+	}
+	#FavoriteEditorTitle {
+		margin: 0;
+	}
+</style>
+<div class="yui-skin-sam">
+<div id="FavoriteOptsPanel" style="visibility:hidden;">
+	<div id="FavoriteOptsPanelBody" class="bd">
+		<div id="FormErrors" style="display:none">
+			<div class="infobox">
+				<ul id="FormErrorList" class="redalert"></ul>
+			</div><br>
+		</div>
+			<form id="FavoriteEditor" name="FavoriteEditor" onsubmit="return FavoriteEditor_Submit(this)" style="display:none; margin: 0 10px 0 10px;">
+			<input type="hidden" id="FavoriteID" name="FavoriteID" value="">
+			<input type="hidden" id="strFavoriteTypeID_FK" name="strFavoriteTypeID_FK" value="">
+			<input type="hidden" id="strFavoriteParameters" name="strFavoriteParameters" value="">
+			<input type="hidden" name="strCommand" value="">
+			<input type="hidden" id="blnFavoriteReload" value="">
+			<table border="0" cellspacing="12" cellpadding="0">
+				<tr>
+					<td align="center">
+            
+               <img src="/global_graphics/icons/star_32x32.gif" border="0" width="32" height="32">
+            
+              </td>
+					<td><h2 id="FavoriteEditorTitle">
+            
+               Edit This Favorite
+            
+              </h2></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" id="strTitle" name="strTitle" value="" size="40" maxlength="100" />
+					<INPUT TYPE="hidden" NAME="ERR_strTitle" VALUE="strTitle|Name|20|1||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td>
+						<input type="text" id="strCategory" name="strCategory" value="" size="40" autocomplete="off" maxlength="100" />
+						<INPUT TYPE="hidden" NAME="ERR_strCategory" VALUE="strCategory|Category|20|0||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Share:</td>
+					<td>
+						<input id="blnIsPrivate0" type="radio" value="0" name="blnIsPrivate"/><label for="blnIsPrivate0">Yes</label>
+						<input id="blnIsPrivate1" type="radio" value="1" name="blnIsPrivate"/><label for="blnIsPrivate1">No, Keep Private</label>
+						<INPUT TYPE="hidden" NAME="ERR_blnIsPrivate" VALUE="blnIsPrivate|Share -- Yes/No, Keep Private|20|1||0">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" style="padding-top:10px;">
+						<input type="submit" id="FavoriteEditor_btnSubmit" value="Submit" class="formbutton"
+							onclick="return FavoriteEditor_btnSubmit_OnClick(this);">
+						<input type="button" value="Cancel" class="formbutton" 
+							onclick="YAHOO.container.FavoriteOpts.hide();">
+						<input type="submit" id="FavoriteEditor_btnDelete" value="Delete" class="formbutton" style="display:none;"
+							onclick="return FavoriteEditor_btnDelete_OnClick(this);">
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="__ASPVIEWSTATE" value="c9acc5e146f293c1c4d7e95550671ec591fedeb4cd55b883da7b25c9e8a658e81f54e2df695b24c02471a986db032e9f9f1402b6ae7d7f11827bddf1e2418574c05f0cef03aee5411755a7bd3c54a9301f9f7785b3bfb5feeb64b3a79cfda044237dbad9935701dcc5d5dd9e4cc7935b59f53e55401e9788b04e11e008a4cdc47eaece">
+			</form>
+	</div>
+</div></div>
+
+
+
+<script type="text/javascript" src="/global_inc/js/hit_highlighter.js"></script>
+<script type="text/javascript">
+	function Window_OnLoad() {
+		highlightDtSearchTerms('CustomPageBody');
+		highlightDtSearchTerms('ResourceCollection');
+	}
+
+	addEventHandler_OnLoad(Window_OnLoad);
+</script>
+
+<style type="text/css">
+
+.ScoreControl
+{
+	display:block;
+	float:left;
+}
+</style>
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">
+Resources
+	</td>
+</tr>
+
+
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpContent_Container">
+
+		<script type="text/javascript" src="/global_inc/js/ContentScores.js"></script>
+
+	<div style="padding:5px 0px 15px 0px; clear:both;">
+	
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " addthis:url="http://www.calnoc.org/default.asp?page=16">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;pub=yourmembership" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=yourmembership"></script>
+
+<script type="text/javascript">
+	var addthis_exclude = 'print, email';
+</script>
+<!-- AddThis Button END -->
+
+	</div>
+	
+	<div id="CustomPageBody"><table width="100%" id="maincontentsubtable" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr id="maincontentsubrow">
+            <td id="leftnavcell" valign="top" style="letter-spacing: 0px; padding-right: 20px; word-spacing: 0px; vertical-align: top;">
+            <h5>Research &amp; Resources</h5>
+            <ul>
+                <li><span style="font-size: larger;"><a href="/?page=10">Research Articles</a><br />
+                </span></li>
+                <li><a href="/?page=16"><span style="font-size: larger;">Resources</span></a></li>
+                <li><a href="/?page=A30"><span style="font-size: larger;">Cost of HAPU</span></a></li>
+                <li><span style="font-size: larger;"><a href="/resource/resmgr/Docs/CALNOC_Data_Use_and_Services.pdf" target="_blank">Requesting CALNOC Data</a></span></li>
+                <li><a href="/?page=12"><span style="font-size: larger;">Helpful Links</span><br />
+                </a></li>
+            </ul>
+            <p>&nbsp;</p>
+            </td>
+            <td id="maincontentsubcell" valign="top">
+            <h1>CALNOC Resources</h1>
+            <p>We invite you to leverage these external resources we've found helpful.</p>
+            <h2><span style="line-height: 115%;">Benchmarking/Quality</span><span style="line-height: 115%;"> </span></h2>
+            <h3>CMS Measure Management System- Valuable Resource in Understanding Quality Measures</h3>
+            <p>Centers for Medical and Medicaid Services System Management Overview. <a href="https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/MMS/index.html" id="CMS Measure Management System">CMS Measure Management System - Valuable Resource in Understanding Quality Measures &nbsp;</a></p>
+            <h3>AHRQ Patient Safety Primer on High Reliability</h3>
+            High reliability organizations are organizations that operate in complex, high-hazard domains for extended periods without serious accidents or catastrophic failures. High reliability is an ongoing process of cultivating organizational mindfulness; standardization is necessary but not sufficient for achieving resilient and reliable health care systems.<a href="http://www.psnet.ahrq.gov/primer.aspx?primerID=31">AHRQ Patient Safety Network - High Reliability</a>
+            <div>&nbsp;</div>
+            <h3>Leveraging Data to Transform Nursing Care: Insights From Nurse Leaders </h3>
+            This study was undertaken to gain insight into how nurse leaders are influencing the use of performance data to improve nursing care in hospitals. Two themes emerged: getting relevant, reliable, and timely data into the hands of nurses and the leaders' ability to "connect the dots" in working with different stakeholders. Study findings may inform nurse leaders in their efforts to leverage data to transform nursing care.<a href="http://www.ncbi.nlm.nih.gov/pubmed/25489660" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/25489660</a>
+            <div>&nbsp;</div>
+            <h3>AHRQ’s Guide to Patient and Family Engagement in Hospital Quality and Safety </h3>
+            Research shows that when patients are engaged in their health care, it can lead to measurable improvements in safety and quality.  To promote stronger engagement, the Agency for Healthcare Research and Quality (AHRQ) developed a guide to help patients, families, and health professionals work together as partners to promote improvements in care. To access the full guide go to: <a href="http://www.ahrq.gov/professionals/systems/hospital/engagingfamilies/index.html" target="_blank">http://www.ahrq.gov/professionals/systems/hospital/engagingfamilies/index.html</a>
+            <div>&nbsp;</div>
+            <h3>AHRQ’s Patient Safety Network Offers Primer on Efforts to Prevent "Never Events”. </h3>
+            Health care organizations are under increasing pressure to eliminate "Never Events," which are medical errors such as wrong-site surgery that should never have occurred. Though they rarely occur, these 29 events may indicate fundamental safety problems within a health care organization. AHRQ’s Patient Safety Network (PSNet) offers a primer that describes these events, which of them are most commonly reported, and current national efforts to encourage health care organizations to report, analyze and disclose such errors in order to improve quality. To access the full patient safety primer titled "Never Events" go to: <a href="http://psnet.ahrq.gov/primer.aspx?primerID=3" target="_blank">http://psnet.ahrq.gov/primer.aspx?primerID=3</a>
+            <div>&nbsp;</div>
+            <h3>Help for healthcare professionals to understand organizational compliance. </h3>
+            Regulation and Accreditation, Diane Storer Brown, PhD, RN, CPHQ, FNAHQ, FAAN - Senior Scientist, Collaborative Alliance for Nursing Outcomes, December 2011. Reference material to help healthcare professionals understand the overarching structure for organizational compliance. The first section focuses on regulation, the second section focuses on accreditation and certification, and the third section brings together the program infrastructure for continuous regulatory and accreditation readiness. <a href="/associations/13337/files/ACCREDITATION AND REGULATION Module.pdf" target="_blank">Access the report here.</a>
+            <div>&nbsp;</div>
+            <h3>AHRQ Toolkit Can Help Hospitals Lower Preventable Readmissions.</h3>
+            <p> The Agency for Healthcare Research and Quality has sponsored hundreds of patient safety research and implementation projects, in this report they offer 10 evidence-based tips to prevent adverse events from occurring in your hospital.<a href="http://www.ahrq.gov/legacy/qual/10tips.htm" target="_blank">Ten Patient Safety Tips for Hospitals.</a></p>
+            <p><a href="http://www.ahrq.gov/legacy/qual/10tips.htm" target="_blank">
+            </a></p>
+            <div>&nbsp;</div>
+            <hr />
+            <h2><span style="line-height: 115%;">ED Throughput</span><span style="line-height: 115%; font-family: Calibri, sans-serif; font-size: 11pt;">
+            </span></h2>
+            <div>&nbsp;</div>
+            <h3>Improving Patient Flow and Reducing Emergency Department Crowding </h3>
+            <p><a href="http://www.ahrhttp://www.ahrq.gov/research/findings/final-reports/ptflow/section1.htmlq.gov/legacy/qual/ptflow/" target="_blank">An AHRQ&nbsp;Guide for Hospitals</a></p>
+            <div>&nbsp;</div>
+            <hr />
+            <h2><span style="line-height: 115%;">Falls</span><span style="line-height: 115%; font-family: Calibri, sans-serif; font-size: 11pt;"><br />
+            </span></h2>
+            <div> </div>
+            <h3>When and how to use restraints</h3>
+            <div>Few things cause as much angst for a nurse as placing a patient in a restraint, who may feel his or her personal freedom is being taken away. But in certain situations, restraining a patient is the only option that ensures the safety of the patient and others. This is a an article from Gale Springer, RN, MSN, PMHCNS-BC. The full text is available from American Nurse today at <a href="http://www.americannursetoday.com/use-restraints/" target="_blank">http://www.americannursetoday.com/use-restraints/</a>
+            </div>
+            <h3></h3>
+            <br />
+            <h3>Falls and fall-related injuries in hospitals.</h3>
+            Clinics in Geriatric Medicine, Nov. 2010. D. Oliver, et al. (2010, Nov). Clinics in Geriatric Medicine.&nbsp; 645-692
+            <div>&nbsp;</div>
+            Becker, C., &amp; Rapp, K.&nbsp; (2010). Falls prevention in Nursing Homes. Clinics in Geriatric Medicine.&nbsp; 693-704.
+            <div>&nbsp;</div>
+            <h3>Special Issue:&nbsp; Falls in the Older Adult. </h3>
+            Clinical Nursing Research, An International Journal. 21(1) Feb. 2012:&nbsp;Spoelstra, S. L., Given, B.A., &amp; Given, C.W. (2012).&nbsp; Fall prevention in hospitals:&nbsp; An integrative review. Clinical Nursing Research. 21(1). 92-112)<br />
+            <br />
+            <h3>Fall prevention in the elderly:&nbsp; Analysis and comprehensive review of methods used in the hospital and the home.</h3>
+            Clyburn, T.A., &amp; Heydemann, J.A. (2011).&nbsp; J. of Am. Academy of Orthopedic Surgeons. 19(7):&nbsp; 402-409. <br />
+            <br />
+            <h3>
+            Partnering to Prevent Falls. Using a Multimodal Multidisciplinary Team.</h3>
+            An organizational goal to decrease fall rates was initiated using a multidisciplinary, multimodal approach. One innovative strategy was the Friday fall review, where nurse managers present each fall that occurred to determine causes and potential preventive measures. Results of the project include a fall rate below the benchmark for 9 of 10 recent consecutive quarters. Because of the success of this initiative, the quality department has adopted the format to review all core measure indicators where there is noncompliance or less than optimal performance.The Journal of Nursing Administration. June 2013 - Volume 43 - Number 6 - pp 336-341. <a href="http://www.nursingcenter.com/lnc/JournalArticle?Article_ID=1553367&amp;Journal_ID=54024&amp;Issue_ID=1553224" target="_blank">Select to access the article&nbsp;on Nursingcenter.com</a>.
+            <div>&nbsp;</div>
+            <div>
+            <h3> An Insider's View on Fall Prevention.</h3>
+            An NP with a history of falls argues that we can do better. AJN, American Journal of Nursing. April 2013 - Volume 113 - Issue 4 - p 11. <a href="http://journals.lww.com/ajnonline/Fulltext/2013/04000/An_Insider_s_View_on_Fall_Prevention.2.aspx" target="_blank">Select to access the article&nbsp;on AJN</a>.</div>
+            <div>&nbsp;</div>
+            <div>
+            <h3>Report Says Effectiveness Studies of Hospital Fall Prevention Methods Need Improvement.</h3>
+            Promising interventions exist for preventing hospital patients from falling, but the authors of a new AHRQ-funded literature review found that only a small proportion reported sufficient data to evaluate their effectiveness. To better determine effectiveness, a new report from AHRQ’s Southern California Evidence-based Practice Center says that interventions should include better outcomes documentation, more information about comparison groups, and details about the components, implementation, and adherence. The report authors analyzed 59 studies published over 28 years that met their inclusion criteria. "Hospital Fall Prevention: A Systematic Review of Implementation, Components, Adherence, and Effectiveness,” was published online on March 25 in the Journal of the American Geriatrics Society. <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hospital+Fall+Prevention%3A+A+Systematic+Review+of+Implementation%2C+Components%2C+Adherence%2C+and+Effectiveness" target="_blank">Select to access the abstract on PubMed.</a> </div>
+            <br />
+            <div>&nbsp;</div>
+            <div>
+            <h3> Reconceptualizing Patient Safety Attendants.</h3>
+            Alexandra Wiggins, MSN, RN, NEBC; Cheryl Welp, BSN, RN, CNML; and Dana N. Rutledge, PhD, RN. Nursing Management, May 2012; 43(5):25-27. Describes the assessment and plan to reduce usage of patient safety attendants (PSAs) or sitters at St. Joseph Hospital in Orange, California.</div>
+            <div>&nbsp;</div>
+            <div>
+            <h3> New AHRQ Resource Can Help Prevent Patient Falls in Hospitals</h3>
+            The Agency for Healthcare Research and Quality has a new online toolkit, "Preventing Falls in Hospitals: A Toolkit for Improving Quality of Care," that focuses on reducing falls that occur during a patient’s hospital stay. Nearly one million patients fall in U.S. hospitals each year. The Toolkit is organized under six major areas that address hospital readiness, program management, choosing fall prevention practices, implementation, measurement, and sustainability. Fall prevention programs require an interdisciplinary approach to care in order to manage a patient’s underlying fall risk factors, such as problems with walking and transfers, medication side effects, confusion, and frequent toileting needs. To find out more, visit <a href="http://www.ahrq.gov/professionals/systems/hospital/fallpxtoolkit/index.html" target="_blank">http://www.ahrq.gov/professionals/systems/hospital/fallpxtoolkit/index.html</a></div>
+            <p><a href="http://www.ahrq.gov/professionals/systems/hospital/fallpxtoolkit/index.html" target="_blank"><br />
+            </a></p>
+            <hr />
+            <h2><span style="line-height: 115%;">Healthcare Acquired Infections</span><span style="line-height: 115%;">&nbsp;</span></h2>
+            <div> </div>
+            <h3>Healthcare-associated Infections (HAI) Progress Report</h3>
+            <div>The HAI Progress Report describes significant reductions reported at the national level in 2013 for nearly all infections. CLABSI and SSI show the greatest reduction, with some progress shown in reducing hospital-onset MRSA bacteremia and hospital-onset C. difficile infections. The Report shows an increase in CAUTI, signaling a strong need for additional prevention efforts.<a href="http://www.cdc.gov/hai/progress-report/index.html" target="_blank">Click here to read the full article. </a>
+            <br />
+            <br />
+            <h3></h3>
+            <h3>Health Care Failure Mode and Effect Analysis to Reduce NICU Line–Associated Bloodstream Infections</h3>
+            <div>A health care failure mode and effect analysis team identified 5 common failure modes that contribute
+            to the development of CLABSIs. These included contamination, suboptimal
+            environment of care, improper documentation and evaluation
+            of central venous catheter dressing integrity, issues with equipment
+            and suppliers, and lack of knowledge. Since implementing the appropriate
+            action plans, the NICU has experienced a significant decrease in
+            CLABSIs from 2.6 to 0.8 CLABSIs per 1000 line days. <a href="http://pediatrics.aappublications.org/content/131/6/e1961.full.pdf+html" target="_blank">Click here to read the full article. </a>
+            <br />
+            <br />
+            <h3></h3>
+            <h3>The Drive to Zero Surgical Site Infections</h3>
+            <div>The focus on surgical site infection (SSI) prevention has never been more important given current trends in health care, including the ongoing shift from inpatient to outpatient ORs, non-reimbursement for health care associated-infections, and mandated public reporting of infection rates in some states. <a href="/resource/resmgr/Zero_SSI.pdf" target="_blank">Click here to read the full article. </a>
+            <br />
+            <br />
+            </div>
+            <h3></h3>
+            <h3>Guide to Preventing Catheter-Associated Urinary Tract Infections (CAUTI)</h3>
+            <div>The guide is available from The Association for Professionals in Infection Control and Epidemiology (APIC) as a free <a href="http://apic.org/Resource_/EliminationGuideForm/6473ab9b-e75c-457a-8d0f-d57d32bc242b/File/APIC_CAUTI_web_0603.pdf" target="_blank">download</a>, it contains updated content on the epidemiology and causes of CAUTI, as well as detailed information on surveillance and reporting. Developed by a team of infection prevention experts, the guide also features new content that addresses patient safety, the Comprehensive Unit-based Safety Program (CUSP), and other behavioral models for CAUTI prevention. Additionally, this guide includes new information on CAUTI prevention in special populations, including pediatric, spinal cord injury, long-term care, and intensive care unit patients. Distribution of this guide as an online resource from the APIC website is made possible by the Agency for Healthcare Research &amp; Quality (AHRQ) through the national On the CUSP: Stop CAUTI project. </div>
+            <div>&nbsp;</div>
+            <h3>Hand Hygiene Information and Tools from the VA</h3>
+            <div><a href="http://www.patientsafety.va.gov/professionals/onthejob/hands.asp" target="_blank">An observation tool kit to better understand hand hygiene practices.
+            </a><br />
+            <br />
+            </div>
+            <h3></h3>
+            <h3> AHRQ Report Provides Blueprint for National Effort To Reduce Catheter-Associated Urinary Tract Infections </h3>
+            <div> A report on an AHRQ-funded project published in the October issue of Infection Control and Hospital Epidemiology (ICHE) identifies key components of a national project to reduce catheter-associated urinary tract infection (CAUTI) in more than 1,500 participating hospital units. The report and an <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Implementing+a+National+Program+to+Reduce+Catheter-Associated+Urinary+Tract+Infection%3A+A+Quality+Improvement+Collaboration+of+State+Hospital+Associations%2C+Academic+Medical+Centers%2C+Professional+Societies%2C+and+Governmental+Agencies%2C" target="_blank"><strong>abstract</strong></a> of a journal article, titled "Implementing a National Program to Reduce Catheter-Associated Urinary Tract Infection: A Quality Improvement Collaboration of State Hospital Associations, Academic Medical Centers, Professional Societies, and Governmental Agencies,” explain how the project has leveraged the expertise of different organizations to reduce catheter-related harm. Key components of the national project are centralized coordination of the effort and dissemination of information, data collection based on established definitions and approaches, focused guidance on the technical practices that will prevent CAUTI, emphasis on understanding program socio-adaptive aspects, and partnering with specialty organizations and governmental agencies that have expertise in reducing healthcare-associated infections. In addition to the ICHE article, AHRQ recently released an interim data report on the progress so far in this national project of hospital units that are implementing the Comprehensive Unit-based Safety Program to prevent CAUTI. </div>
+            <div>&nbsp;</div>
+            <h3>Video Features Clinicians Discussing the Power of CUSP Toolkit to Reduce Infections</h3>
+            AHRQ's Comprehensive Unit-based Safety Program (CUSP) toolkit can help your clinical teams build the capacity to address patient safety challenges on the front lines of care. Find out how clinicians in the field are using this tool to eliminate healthcare-associated infections in their facilities. To learn more about CUSP and how it was developed, watch the video What Is CUSP? <a href="http://links.govdelivery.com/track?type=click&amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTMxMjA5LjI2MjA0MDcxJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDEzMTIwOS4yNjIwNDA3MSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE3OTAzNjc2JmVtYWlsaWQ9ZGlhbmUuYnJvd25Aa3Aub3JnJnVzZXJpZD1kaWFuZS5icm93bkBrcC5vcmcmZmw9JmV4dHJhPU11bHRpdmFyaWF0ZUlkPSYmJg==&amp;&amp;&amp;100&amp;&amp;&amp;http://www.ahrq.gov/professionals/education/curriculum-tools/cusptoolkit/videos/00_overview/">http://www.ahrq.gov/professionals/education/curriculum-tools/cusptoolkit/videos/00_overview/</a> .<br />
+            The CUSP toolkit is free and available online at <a href="http://links.govdelivery.com/track?type=click&amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTMxMjA5LjI2MjA0MDcxJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDEzMTIwOS4yNjIwNDA3MSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE3OTAzNjc2JmVtYWlsaWQ9ZGlhbmUuYnJvd25Aa3Aub3JnJnVzZXJpZD1kaWFuZS5icm93bkBrcC5vcmcmZmw9JmV4dHJhPU11bHRpdmFyaWF0ZUlkPSYmJg==&amp;&amp;&amp;101&amp;&amp;&amp;http://www.ahrq.gov/professionals/education/curriculum-tools/cusptoolkit/">http://www.ahrq.gov/professionals/education/curriculum-tools/cusptoolkit/</a><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+            <h3>CDC Study: Prevention Led to 200,000 Fewer Bloodstream Infections. </h3>
+            <p><strong>Hospitals report mixed results in protecting patients from infections </strong><br />
+            Hospitals in the U.S. continue to make progress in the fight against central line-associated bloodstream infections and some surgical site infections, but did not see improvement in catheter-associated urinary tract infections between 2010 and 2011, according to a new report issued by the Centers for Disease Control and Prevention (CDC).&nbsp;<br />
+            &nbsp; <br />
+            CDC reported for 2011:</p>
+            <div> </div>
+            <ul>
+                <li>A 41 percent reduction in central line-associated bloodstream infections since 2008, up from the 32 percent reduction reported in 2010. Progress in preventing these infections was seen in intensive care units (ICU), wards, and neonatal ICUs in all reporting facilities. CDC estimates that 12,400 central line-associated bloodstream infections occurred in 2011, costing one payer, the Centers for Medicare &amp; Medicaid Services (CMS), approximately $26,000 per infection.</li>
+                <li>A 7 percent reduction in catheter-associated urinary tract infections since 2009, which is the same percentage of reduction that was reported in 2010. While there were modest reductions in infections among patients in general wards, there was essentially no reduction in infections reported in critical care locations.</li>
+                <li>The full report is available at <a href="http://www.cdc.gov/hai/national-annual-sir/index.html" target="_blank">http://www.cdc.gov/hai/national-annual-sir/index.html</a>.</li>
+            </ul>
+            <hr />
+            <h2><span style="line-height: 115%;">Medication Administration</span><span style="line-height: 115%; font-family: Calibri, sans-serif; font-size: 11pt;"><br />
+            </span></h2>
+            <div>
+            <h3></h3>
+            <h3>Nursing Strategies to Increase Medication Safety in Inpatient Settings</h3>
+            <p>This article provides nursing recommendations to decrease medication delivery errors through strategies to minimize and address interruptions/distractions. CALNOC is cited as the training method for medication administration observation. <a href="http://journals.lww.com/jncqjournal/Abstract/publishahead/Nursing_Strategies_to_Increase_Medication_Safety.99651.aspx">Link to abstract</a></p>
+            <h3>Pediatric Medication Administration Errors and Workflow Following Implementation of a Bar Code Medication Administration System </h3>
+            This pilot study identified a low rate (5%) of medication administration errors and fair compliance with the six safety processes on two pediatric units and one neonatal unit following Bar Code Medication Administration implementation. <a href="http://onlinelibrary.wiley.com/doi/10.1111/jhq.12071/abstract" target="_blank">http://onlinelibrary.wiley.com/doi/10.1111/jhq.12071/abstract</a></div>
+            <div><a href="http://onlinelibrary.wiley.com/doi/10.1111/jhq.12071/abstract" target="_blank">&nbsp;</a></div>
+            <div><a href="http://onlinelibrary.wiley.com/doi/10.1111/jhq.12071/abstract" target="_blank"></a>
+            <h3>Using Lean “Automation with a Human Touch” to Improve Medication Safety: A Step Closer to the “Perfect Dose”</h3>
+            Ching, Joan M.; Williams, Barbara L.; Idemoto, Lori M.; Blackmore, C. Craig. The Joint Commission Journal on Quality and Patient Safety. Volume 40, Number 8, August 2014, pp. 341. Virginia Mason Medical Center (Seattle) employed the Lean concept of Jidoka (automation with a human touch) to plan for and deploy bar code medication administration (BCMA) to hospitalized patients. <a href="http://www.ingentaconnect.com/content/jcaho/jcjqs/2014/00000040/00000008/art00002" target="_blank">Link to abstract</a></div>
+            <div>&nbsp;&nbsp;</div>
+            <h3>Using Lean to Improve Medication Safety: In Search of the “Perfect Dose”</h3>
+            <p>Ching, Joan; Long, Christina; Williams, Barbara; Blackmore, Craig. The Joint Commission Journal on Quality and Patient Safety. Volume 39, Number 5, May 2013, pp. 195. At Virginia Mason Medical Center (Seattle), the Collaborative Alliance for Nursing Outcomes (CALNOC) Medication Administration Accuracy Quality Study was used in combination with Lean quality improvement efforts to address medication administration safety..&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/23745478" target="_blank">Link to abstract</a></p>
+            <div>
+            <h3>Predictors of Unit-Level Medication Administration Accuracy: Microsystem Impacts on Medication Safety</h3>
+            This study tested multivariate models exploring unit-level predictors of medication administration (MA) accuracy. J Nurs Adm. June 2014. <a href="http://journals.lww.com/jonajournal/Abstract/2014/06000/Predictors_of_Unit_Level_Medication_Administration.10.aspx" target="_blank"> Link to abstract</a></div>
+            <div>&nbsp;</div>
+            <h3>Computerized Provider Order Entry Reduces Medication Errors in Hospitals </h3>
+            Processing a prescription through an electronic ordering system can reduce&nbsp;the likelihood of a drug error by half and potentially&nbsp;avoid more than 17 million such incidents in U.S. hospitals in one year alone, according to a new&nbsp;study supported by the Agency for Healthcare Research and Quality. The authors evaluated published evidence on the impact of computerized provider order entry (CPOE) on hospital drug errors and combined this information with data on the adoption of CPOE and the volume of medication orders processed annually. The results estimated the reduction in drug errors for one year, finding that widespread adoption of CPOE could substantially reduce drug errors.&nbsp;"Reduction in medication errors in hospitals due to adoption of computerized provider order entry systems” appears online in the Journal of the American Medical Informatics Association.To access the abstract, select: <a href="http://jamia.bmj.com/content/early/2013/01/27/amiajnl-2012-001241.full" target="_blank">http://jamia.bmj.com/content/early/2013/01/27/amiajnl-2012-001241.full</a></div>
+            <div>&nbsp;</div>
+            <div>
+            <h3>Patient Safety Primer Offers Strategies to Prevent Medication Errors</h3>
+            A growing evidence base supports specific strategies to prevent adverse drug events (ADEs), according to a patient safety primer posted online on AHRQ’s Patient Safety Network (PSNet). The primer outlines strategies providers can use at each stage of the medication use pathway – prescribing, transcribing, dispensing, administration – to prevent ADEs. These strategies range from computerized provider order entry and clinical decision support to minimizing nurse disruption and providing better patient education and medication labeling. The primer also identifies known risk factors for ADEs, including health literacy, patient characteristics, high alert medications and transitions in care.<br />
+            To access the full patient safety primer, titled Medication Errors, go to: <a href="http://psnet.ahrq.gov/primer.aspx?primerID=23" target="_blank">http://psnet.ahrq.gov/primer.aspx?primerID=23&nbsp;</a>&nbsp;&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>
+            <h3>Lessons from America's Safest Hospital</h3>
+            This article from AARP Magazine profiles medical centers and their efforts to reduce medical errors. <a href="http://www.aarp.org/health/healthy-living/info-04-2013/safe-health-care.html" target="_blank">http://www.aarp.org/health/healthy-living/info-04-2013/safe-health-care.html</a></div>
+            <p><a href="http://www.aarp.org/health/healthy-living/info-04-2013/safe-health-care.html" target="_blank"><br />
+            </a></p>
+            <hr />
+            <h2><span style="line-height: 115%;">Patient Safety</span><span style="line-height: 115%;"> </span></h2>
+            <h3></h3>
+            <h3>New AHRQ Brochure Helps Organizations Effectively Choose a Patient Safety Organization</h3>
+            <div><span>A <a href="http://links.govdelivery.com/track?type=click&amp;enid=ZWFzPTEmbWFpbGluZ2lkPTIwMTYwMzE3LjU2NjY4MDIxJm1lc3NhZ2VpZD1NREItUFJELUJVTC0yMDE2MDMxNy41NjY2ODAyMSZkYXRhYmFzZWlkPTEwMDEmc2VyaWFsPTE3Mjg0NzU1JmVtYWlsaWQ9bmFuY3kuZG9uYWxkc29uQG51cnNpbmcudWNzZi5lZHUmdXNlcmlkPW5hbmN5LmRvbmFsZHNvbkBudXJzaW5nLnVjc2YuZWR1JmZsPSZleHRyYT1NdWx0aXZhcmlhdGVJZD0mJiY=&amp;&amp;&amp;100&amp;&amp;&amp;https://www.federalregister.gov/articles/2016/03/08/2016-04439/patient-protection-and-affordable-care-act-hhs-notice-of-benefit-and-payment-parameters-for-2017"><span style="color: #471955;">new regulation</span></a> from the Centers for Medicare &amp; Medicaid Services allows qualified health plans to meet the requirements of the Affordable Care Act by contracting with hospitals that work with Patient Safety Organizations (PSOs).&nbsp;<span><span style="color: #471955;"><a href="https://pso.ahrq.gov/sites/default/files/wysiwyg/ChoosingPSO_2016.pdf" target="_blank">Download AHRQ’s new brochure</a><a href="https://pso.ahrq.gov/sites/default/files/wysiwyg/ChoosingPSO_2016.pdf" target="_blank">.</a></span></span>&nbsp;</span>&nbsp;</div>
+            <h3>&nbsp;</h3>
+            <h3>When and How to Use Restraints</h3>
+            <div>Few things cause as much angst for a nurse as placing a patient in a restraint, who may feel his or her personal freedom is being taken away. But in certain situations, restraining a patient is the only option that ensures the safety of the patient and others. This is a an article from Gale Springer, RN, MSN, PMHCNS-BC. The full text is available from American Nurse today at <a href="http://www.americannursetoday.com/use-restraints/" target="_blank">http://www.americannursetoday.com/use-restraints/</a>
+            <br />
+            <br />
+            </div>
+            <h3></h3>
+            <div>
+            <h3><a target="_blank" href="/resource/resmgr/Files/hand_hygiene_leader_checklis.pdf">What You Can Do to Improve Hand Hygiene</a></h3>
+            A leader guide
+            on how to improve your HH Compliance. Use this Unit/Service leader checklist periodically to remind yourself of what you can do to improve hand hygiene on your unit/service.<br />
+            <br />
+            </div>
+            <div> </div>
+            <div>
+            <h3><a href="/resource/resmgr/docs/nix_the_noise_part_1_final.pdf" target="_blank">Nix the Noise: Managing Alarms, Alerts and Interruptions</a></h3>
+            As new technologies are developed and adopted across healthcare settings, the problem continues to grow, forcing organizations to reach beyond previous attempts to drive chatter out of the hospital. <br />
+            <br />
+            </div>
+            <div> </div>
+            <div>
+            <h3><a href="http://www.beckershospitalreview.com/quality/15-statistics-on-patient-safety-distribution-of-hais.html" target="_blank">15 Statistics on Patient Safety, Distribution of HAIs</a></h3>
+            Statistics on hospital-acquired conditions, adverse events and patient safety extracted from chapter three, "Patient Safety Importance," from the 2012 National Healthcare Quality Report, produced by the Agency for Healthcare Research and Quality.</div>
+            <p>&nbsp;</p>
+            <hr />
+            <h2><span style="line-height: 115%;">Pressure Ulcers</span></h2>
+            <h3><a href="http://www.npuap.org/national-pressure-ulcer-advisory-panel-npuap-announces-a-change-in-terminology-from-pressure-ulcer-to-pressure-injury-and-updates-the-stages-of-pressure-injury/ " target="_blank">National Pressure Ulcer Advisory Panel (NPUAP) announces a change in terminology from pressure ulcer to pressure injury and updates the stages of pressure injury</a>.&nbsp;</h3>
+            <p><span style="line-height: 115%;"> </span></p>
+            <div>To learn more about hospital acquired pressure ulcer (HAPU) prevention:</div>
+            <ul>
+                <li>Baharestani, M. 2008 Deep Tissue Injuries: Clinical insights. Symposium on Advanced Wound Care, San Diego, CA .</li>
+                <li>Bates-Jensen, B. (2001). Bates-Jensen Wound Assessment Tool.</li>
+                <li>Baumgarten, B. Margolis, D. Localio, A. et al.(2006) Pressure ulcers among elderly patients early in the hospital stay. Journal of Gerontologoy: Medical Sciences 61A (7):749-755.</li>
+                <li>Beeckman, D, Van Lancker, A, Van Hecke, A., Verhaeghe, S. (2014) A systematic review and meta analysis of incontinence associated dermatitis, incontinence and moisture as risk factors for pressure ulcer development, Res. Nurs Health, June, 37(3), 204-218.</li>
+                <li>Braden, B. and J. Maklebust (2005). "Preventing Pressure Ulcers with the Braden Scale: An update on this easy-to-use tool that assesses a patient's risk." American Journal of Nursing 105(6): 70-72</li>
+                <li>Butler, C. (2009). Pediatric Skin Care: Guidelines for assessment, prevention and treatment. Dermatology Nursing.</li>
+                <li>CALNOC Website Tutorial: <a href="https://www.secure-calnoc.org" target="_blank">https://www.secure-calnoc.org</a> using your hospital-wide logon (only CALNOC participating hospitals will have access to this tutorial).</li>
+                <li>Coyer FM, Stotts NA, Blackman, VS. A prospective window into medical device-related pressure ulcers in intensive care. Int Would J 2013; doi: 10.1111/iwj.12026</li>
+                <li>Dorner, B., Posthauer, M., Thomas, D. (2009).The Role of Nutrition in Pressure Ulcer Prevention and Treatment: National Pressure Ulcer Advisory Panel White Paper. NPUAP, Available through the NPUAP website,&nbsp;<a href="http://www.npuap.org/" target="_blank"> www.npuap.org</a></li>
+                <li>Gunningberg, L. (2005). Are patients with or at risk of pressure ulcers allocated appropriate prevention measures? International Journal of Nursing Practice 11(2): 58-67.</li>
+                <li>Institute for Healthcare Improvement: Prevent Pressure Ulcers—Getting Started Kit at&nbsp;<a href="http://www.ihi.org/knowledge/Pages/Tools/HowtoGuidePreventPressureUlcers.aspx" target="_blank">http://www.ihi.org/knowledge/Pages/Tools/HowtoGuidePreventPressureUlcers.aspx</a></li>
+                <li>National Pressure Ulcer Advisory Panel (NPUAP):<a href="http://www.npuap.org/" target="_blank"> www.npuap.org</a></li>
+                <li>NPUAP (2007). Pressure Ulcer Prevention Points. Available through the NPUAP website, <a href="http://www.npuap.org/" target="_blank">www.npuap.org</a></li>
+                <li>NPUAP and EPUAP (2009) International Guideline: Prevention of Pressure Ulcers: Quick Reference Guide. Available through the NPUAP website, <a href="http://www.npuap.org/" target="_blank">www.npuap.org</a>.</li>
+                <li>Perioperative Pressure Ulcers prevention toolkit is available from the Association of periOperative Registered Nurses at <a href="https://www.aorn.org/guidelines/clinical-resources/tool-kits/prevention-of-perioperative-pressure-ulcers-tool-kit">www.aorn.org</a>.</li>
+                <li>Schindler, C. et al. (2011). Protecting fragile skin: Nursing interventions to decrease development of pressure ulcers in pediatric care. AM J Critical Care.</li>
+                <li>Stotts, N. and L. Gunningberg (2007). "Predicting Pressure Ulcer Risk, Using the Braden Scale with Older Hospitalized Adults: the Evidence Supports It." American Journal of Nursing 107(11): 40-48.&nbsp;</li>
+                <li>Suleman, L and Percival, S. Biofilm-Infected pressure ulcers: Current knowledge and emerging treatment strategies.  Biofilm-based Healthcare Associated Infections, 2(29-43).</li>
+                <li>Wound, Ostomy and Continence Nurses Society. (2003) Guideline for Prevention and Management of Pressure Ulcers. WOCN: Glenview, IL.</li>
+            </ul>
+            <hr />
+            <h2><span style="line-height: 115%;">Restraints</span><span style="line-height: 115%;"> </span></h2>
+            <h3>When and how to use restraints</h3>
+            <div>Few things cause as much angst for a nurse as placing a patient in a restraint, who may feel his or her personal freedom is being taken away. But in certain situations, restraining a patient is the only option that ensures the safety of the patient and others. This is a an article from Gale Springer, RN, MSN, PMHCNS-BC. The full text is available from American Nurse today at <a href="http://www.americannursetoday.com/use-restraints/" target="_blank">http://www.americannursetoday.com/use-restraints/</a>
+            <br />
+            <br />
+            </div>
+            <h3></h3>
+            <h3>Standards BoosterPak<sup>TM</sup> </h3>
+            for Use of Restraint and Seclusion for Organizations Using Joint Commission Accreditation for Deemed Status. Published by The Joint Commission Accreditation 2013.
+            <div>&nbsp;</div>
+            <h3>Practice parameters </h3>
+            identified by professional groups for specific populations in regards to aggressive behavior, seclusion and restraint. These include the following:</div>
+            <div>&nbsp;</div>
+            <div>
+            <div style="margin-left: 40px;">• Child &amp; Adolescent:</div>
+            <div style="margin-left: 40px;">American Academy of Child &amp; Adolescent Psychiatry: Practice Parameter for the Prevention and Management of Aggressive Behavior in Child and Adolescent Psychiatric Institutions, With Special Reference to Seclusion and Restraint</div>
+            <div style="margin-left: 40px;"><a href="http://www.aacap.org/galleries/PracticeParameters/JAACAP_SR_2002.pdf" target="_blank">http://www.aacap.org/galleries/PracticeParameters/JAACAP_SR_2002.pdf</a></div>
+            <div style="margin-left: 40px;">&nbsp;</div>
+            <div style="margin-left: 40px;">• Special Needs Population:</div>
+            <div style="margin-left: 40px;">National Association of State Mental Health Program Directors: Reducing the Use of Seclusion and Restraint</div>
+            <div style="margin-left: 40px;">PART II: Findings, Principles, and Recommendations for Special Needs Populations</div>
+            <div style="margin-left: 40px;"><a href="http://www.nasmhpd.org/docs/publications/archiveDocs/2001/Seclusion_Restraint_2.pdf" target="_blank">http://www.nasmhpd.org/docs/publications/archiveDocs/2001/Seclusion_Restraint_2.pdf</a></div>
+            <div style="margin-left: 40px;">&nbsp;</div>
+            <div style="margin-left: 40px;">• American Psychiatric Nursing Association: Seclusion &amp; Restraint Position Statement :</div>
+            <div style="margin-left: 40px;"><a href="http://www.apna.org/files/public/APNA_SR_Position_Statement_Final.pdf" target="_blank">http://www.apna.org/files/public/APNA_SR_Position_Statement_Final.pdf</a></div>
+            <div style="margin-left: 40px;">&nbsp;</div>
+            <div style="margin-left: 40px;">• National Association of Psychiatric Health Systems: Learning from Each Other: Success Stories and Ideas for Reducing Restraint/Seclusion in Behavioral Health</div>
+            <div style="margin-left: 40px;"><a href="https://www.naphs.org/resources/home.aspx" target="_blank">https://www.naphs.org/resources/home.aspx</a></div>
+            <div>&nbsp;</div>
+            <hr />
+            <h2>
+            <span style="line-height: 115%;">Staffing</span></h2>
+            <h3><a href="http://www.chcf.org/publications/2014/03/california-nurses" target="_blank"></a></h3>
+            <h3>
+            </h3>
+            <h3 style="color: #000000; margin-top: 0px; margin-bottom: 7px;"><a href="http://journals.lww.com/lww-medicalcare/Abstract/2014/11000/Examining_the_Value_of_Inpatient_Nurse_Staffing_.8.aspx">Examining the Value of Inpatient Nurse Staffing: An Assessment of Quality and Patient Care Costs</a></h3>
+            <p>A recent study using data from the Agency for Healthcare Research and Quality (AHRQ) showed that increases in hospital nurse staffing levels are associated with reductions in adverse events and lengths of stay. In addition, the study found that increased staffing levels do not lead to increased cost.&nbsp;</p>
+            <h3><a href="http://www.chcf.org/publications/2014/03/california-nurses" target="_blank">California Nurses: Taking the Pulse.</a></h3>
+            This report provides an overview of California’s nursing workforce, including supply and demographics,
+            education, distribution, and compensation. Provided by the California Healthcare Foundation.
+            <div>&nbsp;</div>
+            <h3>Reconceptualizing Patient Safety Attendants</h3>
+            Alexandra Wiggins, MSN, RN, NEBC; Cheryl Welp, BSN, RN, CNML; and Dana N. Rutledge, PhD, RN. Nursing Management, May 2012; 43(5):25-27. Describes the assessment and plan to reduce usage of patient safety attendants (PSAs) or sitters at St. Joseph Hospital in Orange, California.
+            <div>&nbsp;</div>
+            <h3>An Increase In The Number Of Nurses With Baccalaureate Degrees Is Linked To Lower Rates Of Postsurgery Mortality.</h3>
+            Ann Kutney-Lee, Douglas M. Sloane and Linda H. Aiken.&nbsp;HealthAffairs. March 2013 vol. 32 no. 3 579-586. Using Pennsylvania nurse survey and patient discharge data from 1999 and 2006,&nbsp;the authors&nbsp;found a ten-point increase in the percentage of nurses holding a baccalaureate degree in nursing within a hospital was associated with an average reduction of 2.12 deaths for every 1,000 patients.
+            &nbsp;
+            <p>&nbsp;</p>
+            </div>
+            </td>
+        </tr>
+        <tr id="maincontentsubrow">
+            <td valign="top" style="letter-spacing: 0px; padding-right: 20px; word-spacing: 0px; vertical-align: top;">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+        </tr>
+    </tbody>
+</table></div>
+
+	<div id="ResourceCollection">
+		
+	
+	<script type="text/javascript">
+	function LaunchThis(sender, strURL)
+	{
+		window.open (strURL);	
+		return false;
+	}
+	
+	function NewCollection(Collection)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=";
+		return false;
+	}
+	
+	function ModifyThis(Collection, ItemID)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=&itemID=" + ItemID;
+		return false;
+	}
+	</script>
+
+	</div></td>
+</tr>
+</table><!--END SpContent-->
+
+
+<div id="PageBase_RaiseAlert" class="yui-skin-sam"></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+					<!--@@DG_PRINT_PAGE_END@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+				</div> <!-- Close left div --></td>
+				<div id="right">
+				<div id="RightRailTopContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+					
+           			<div id="events" class="zone" style="display:none;">
+                		<div class="irailhead"><a href="/events/event_list.asp">more</a>Calendar</div>
+						<div class="irailcontent"><p>The upcoming calendar is currently empty.</p><p><a href='/events/event_list.asp?cid=&show=past'>Click here to view past events and photos &raquo;</a></p></div>
+					</div>
+					
+					<div id="news" class="zone" style="display:none;">
+						<div class="irailhead"><a href="/news/">more</a>Latest News</div>
+						<div class="irailcontent">There are currently no news items posted.</div>
+					</div>				
+					
+					
+								<div id="railbottom"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--><h1>CALNOC Partners&nbsp;</h1>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="/resource/resmgr/images/ucsf_logo_new.jpg"></p>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-acnl.jpg"></p>
+<p align="left">&nbsp;</p>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-csmc.jpg"></p>
+<p align="left">&nbsp;</p>
+<div>
+<br>
+<br>
+<br>
+</div>
+<p align="left">&nbsp;</p></div>
+						</div><!-- end div right -->
+						
+				<div class="clear"></div>				
+		
+			</div> <!-- Close sp-content div -->
+			<div id="BottomContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+			</div> <!-- Close icontent div -->
+
+		    <div id="FooterContentArea">
+			    <!--YMPSTITLE=TgBBAA==/YMPSTITLE--><div class="grid_24">
+<table align="center" style="border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px; vertical-align: top;">
+            <h3>&nbsp;</h3>
+            <h3>Navigation</h3>
+            <p><a href="http://www.calnoc.org"><span style="color: #696969;">Home</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=7"><span style="color: #696969;">Mission</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=8"><span style="color: #696969;">Registry</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=17"><span style="color: #696969;">Education</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Testimonials</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Benefits of Joining</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=23"><span style="color: #696969;">In the News</span></a></p>
+            <p><a href="http://calnoc.site-ym.com/events/event_list.asp"><span style="color: #696969;">Calendar of Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=12"><span style="color: #696969;">Helpful Links</span></a></p>
+            </td>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">About Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=6"><span style="color: #696969;">History</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=15"><span style="color: #696969;">FAQ</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=9"><span style="color: #696969;">Medication Administration</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Customers</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Join Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=21"><span style="color: #696969;">Apply</span></a></p>
+            <p><a href="/events/event_list.asp"><span style="color: #696969;">Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=10"><span style="color: #696969;">CALNOC Articles &amp; Research</span></a></p>
+            <p><a href="/?page=A12"><span style="color: #696969;">Contact Us</span></a></p>
+            </td>
+            <td style="border: 1px #000000; width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">Overview - CALNOC Advantage</span></a><span style="color: #696969;"> </span> </p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=3"><span style="color: #696969;">Leadership</span></a></p>
+            <p><a href="/?page=A2"><span style="color: #696969;">Offerings</span></a></p>
+            <p><a href="/?page=1"><span style="color: #696969;">Services</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=19"><span style="color: #696969;">Partners</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=18"><span style="color: #696969;">Who Should Join?</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=20"><span style="color: #696969;">Press Releases</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=4"><span style="color: #696969;">CALNOC Annual Conference</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=16"><span style="color: #696969;">Resources</span></a></p>
+            <p>&nbsp;</p>
+            </td>
+            <td style="text-align: left; letter-spacing: 0px; padding-right: 20px; padding-left: 20px; word-spacing: 0px; vertical-align: top; border-left-color: #dcdcdc; border-left-width: 1px; border-left-style: dashed;">
+            <h3>&nbsp;</h3>
+            <h3>Location</h3>
+            <p><span style="color: #696969;">2410 Camino Ramon</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Suite 360</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">San Ramon, CA 94583</span></p>
+            <p><span style="color: #696969;">Voice: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Fax: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Email:</span> <a href="mailto:info@calnoc.org">info@calnoc.org</a></p>
+            <p><a href="http://maps.google.com/maps?q=2410+Camino+Ramon+San+Ramon+CA+94583&amp;hl=en&amp;sll=37.772651,-121.963671&amp;sspn=0.008565,0.018969&amp;hnear=2410+Camino+Ramon,+San+Ramon,+California+94583&amp;t=m&amp;z=16" target="_blank">Google Map</a></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="grid_6">
+<p class="grid_24" style="text-align: center;"><span style="color: #696969;">Copyright 2017 © CALNOC.org</span> | <a href="displaycommon.cfm?an=1&amp;subarticlenbr=22"><span style="color: #696969;">Terms of Use</span></a></p>
+<p>&nbsp;</p>
+</div>
+		    </div>
+
+		    <div id="Foot"><!-- FOOTER --> </div>
+
+		    <div id="icopyright">Association Management Software Powered by <a href='http://www.yourmembership.com/'>YourMembership</a> &nbsp;::&nbsp; <a href='/ams/legal-privacy.htm'>Legal</a><!-- Copyright (c) 1998-2018 YourMembership.com Inc. All Rights Reserved. Copyright: Certain elements of this website are: Copyright (c) 1998-2018, YourMembership.com, Incorporated. YourMembership.com, Incorporated provides a limited license to use its Copyrights to the entity from whose web page you are viewing. Certain elements of this website may also be copyrighted by that entity; please see its Terms of Use or contact the organization for more information. General information about copyright laws can be found at: http://www.copyright.gov/. For more specific information, please consult an attorney. --></div>
+</body>
+
+
+</html>
+<!--END_OF_FILE-->

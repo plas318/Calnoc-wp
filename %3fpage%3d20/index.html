@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fbe52127be","applicationID":"27820297","transactionName":"b1FaNUtUV0dWV0xYClYbbRNQGl1RUVVNXREWVUsR","queueTime":0,"applicationTime":385,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYOUVZbCRACU1lQBwMOUQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		
+
+        <!-- Important: include as high up as possible, but after sensitive tags such as X-UA-Compatible -->
+        <title>Press Releases - Collaborative Alliance for Nursing Outcomes</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/combined.css?_v=1.83.108.133&context=sp"/>
+        <link rel="stylesheet" type="text/css" href="https://ws.yourmembership.com/Ams/40034/custom.css?cacheID=133" />
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.58"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
+
+
+
+<body id="PageBody" onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}">
+	<div id="icontainer">
+		<div id="icontent">
+            <div id="LeaderContentArea">
+                <!--YMPSTITLE=TgBBAA==/YMPSTITLE-->
+            </div>
+			<div id="topbar">
+				<div id="inavigation"><div id="FrontendMainMenu" class="radmenu RadMenu_YMPublic ">
+	<!-- 4.3.2 --><script type="text/javascript" src="/global_inc/RadControls/Menu/Scripts/4_3_2/RadMenu.js"></script><span id="FrontendMainMenuStyleSheetHolder" style="display:none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css');</script><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Skins/YMPublic/styles.css');</script><ul class="horizontal rootGroup">
+		<li class="item first"><a href="https://www.secure-calnoc.org/globalPages/mainpage.aspx" id="FrontendMainMenu_m0" class="link"><span class="text">Hospital Login</span></a></li><li class="item"><a href="/?page=A1" id="FrontendMainMenu_m1" class="link"><span class="text">About</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A1" id="FrontendMainMenu_m1_m0" class="link"><span class="text">Overview</span></a></li><li class="item"><a href="/?page=7" id="FrontendMainMenu_m1_m1" class="link"><span class="text">Mission</span></a></li><li class="item"><a href="/?page=6" id="FrontendMainMenu_m1_m2" class="link"><span class="text">History</span></a></li><li class="item"><a href="/?page=3" id="FrontendMainMenu_m1_m3" class="link"><span class="text">Leadership</span></a></li><li class="item"><a href="/resource/resmgr/Files/MarketingBrochureCALNOC_Fina.pdf" target="_blank" id="FrontendMainMenu_m1_m4" class="link"><span class="text">CALNOC Brochure</span></a></li><li class="item"><a href="/?page=25" id="FrontendMainMenu_m1_m5" class="link"><span class="text">Board of Directors</span></a></li><li class="item"><a href="/?page=27" id="FrontendMainMenu_m1_m6" class="link"><span class="text">Careers</span></a></li><li class="item last"><a href="/?page=15" id="FrontendMainMenu_m1_m7" class="link"><span class="text">FAQ</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A2" id="FrontendMainMenu_m2" class="link"><span class="text">Offerings</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A2" id="FrontendMainMenu_m2_m0" class="link"><span class="text">The Calnoc Advantage</span></a></li><li class="item"><a href="/?page=8" id="FrontendMainMenu_m2_m1" class="link"><span class="text">CALNOC Registry</span></a></li><li class="item"><a href="/?page=9" id="FrontendMainMenu_m2_m2" class="link"><span class="text">Medication Administration Accuracy</span></a></li><li class="item"><a href="/?page=1" id="FrontendMainMenu_m2_m3" class="link"><span class="text">Consulting Services</span></a></li><li class="item last"><a href="/?page=17" id="FrontendMainMenu_m2_m4" class="link"><span class="text">Education Services</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=13" id="FrontendMainMenu_m3" class="link"><span class="text">Customers</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=13" id="FrontendMainMenu_m3_m0" class="link"><span class="text">Customers</span></a></li><li class="item"><a href="/?page=28" id="FrontendMainMenu_m3_m1" class="link"><span class="text">2013 Top Performers</span></a></li><li class="item last"><a href="/?page=19" id="FrontendMainMenu_m3_m2" class="link"><span class="text">Partnership for Patients</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A6" id="FrontendMainMenu_m4" class="link"><span class="text">Join</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A6" id="FrontendMainMenu_m4_m0" class="link"><span class="text">Join Us</span></a></li><li class="item"><a href="/?page=18" id="FrontendMainMenu_m4_m1" class="link"><span class="text">Who Should Join?</span></a></li><li class="item"><a href="/?page=5" id="FrontendMainMenu_m4_m2" class="link"><span class="text">Benefits of Participation</span></a></li><li class="item last"><a href="/?page=21" id="FrontendMainMenu_m4_m3" class="link"><span class="text">Apply</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A7" id="FrontendMainMenu_m5" class="link"><span class="text">News</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=20" id="FrontendMainMenu_m5_m0" class="link"><span class="text">Press Releases</span></a></li><li class="item"><a href="/?page=23" id="FrontendMainMenu_m5_m1" class="link"><span class="text">In the News</span></a></li><li class="item"><a href="/?page=24" id="FrontendMainMenu_m5_m2" class="link"><span class="text">Webinars</span></a></li><li class="item last"><a href="/events/event_list.asp" id="FrontendMainMenu_m5_m3" class="link"><span class="text">Community Calendar</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/page/4" id="FrontendMainMenu_m6" class="link"><span class="text">Conference</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="#" id="FrontendMainMenu_m6_m0" class="link"><span class="text">Dates & Location</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m1" class="link"><span class="text">Call For Abstracts</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m2" class="link"><span class="text">Agenda</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m3" class="link"><span class="text">Exhibitors</span></a></li><li class="item last"><a href="#" id="FrontendMainMenu_m6_m4" class="link"><span class="text">Register</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A9" id="FrontendMainMenu_m7" class="link"><span class="text">Research</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=10" id="FrontendMainMenu_m7_m0" class="link"><span class="text">Research Articles</span></a></li><li class="item"><a href="/?page=16" id="FrontendMainMenu_m7_m1" class="link"><span class="text">Resources</span></a></li><li class="item"><a href="/?page=A30" id="FrontendMainMenu_m7_m2" class="link"><span class="text">Cost of HAPU</span></a></li><li class="item"><a href="/resource/resmgr/Docs/CALNOC_Data_Use_and_Services.pdf" target="_blank" id="FrontendMainMenu_m7_m3" class="link"><span class="text">Requesting CALNOC Data</span></a></li><li class="item last"><a href="/?page=12" id="FrontendMainMenu_m7_m4" class="link"><span class="text">Helpful Links</span></a></li>
+			</ul>
+		</div></li><li class="item last"><a href="/?page=A12" id="FrontendMainMenu_m8" class="link"><span class="text">Contact</span></a></li>
+	</ul><input type="hidden" id="FrontendMainMenu_Hidden" name="FrontendMainMenu" /><script type="text/javascript">window["FrontendMainMenu"] = RadMenu.Create("FrontendMainMenu");window["FrontendMainMenu"].Initialize({"EnableAutoScroll":true,"Skin":"YMPublic","Enabled":true},{"FrontendMainMenu_m6_m0":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m1":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m2":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m3":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m4":{"NavigateAfterClick":false}});</script>
+</div><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css"/><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Skins/YMPublic/styles.css"/></div>
+				
+					<div id="isearch"><form id="QuickSearchForm" name="QuickSearchForm" action="/search/all.asp">
+		<div id="QuickSearchFormInner1" class="ui-widget">
+			<input id="QuickSearchForm_bst" name="bst" maxlength='50' value='Enter search criteria...'@"onfocus='QuickSearchForm_OnFocus();'/>
+		</div>
+		<div id='QuickSearchFormInner2'><a href='#' id='QuickSearchSubmit' onclick='return QuickSearchForm_DoSubmit();'>Search&nbsp;&raquo;</a></div>
+</form><script type="text/javascript">
+function QuickSearchForm_DoSubmit()
+{
+		var QuickSearchForm = document.QuickSearchForm;
+     if(QuickSearchForm)
+     {
+			ClearDefaultValue(QuickSearchForm.bst);
+         QuickSearchForm.submit();
+     }
+		return false;
+}
+$(document).ready(function ()
+{
+		$("#QuickSearchForm_bst").click(function()
+		{
+			if ($("#QuickSearchForm_bst").val() == "Enter search criteria...")
+				$("#QuickSearchForm_bst").val('');
+			});
+			$("#QuickSearchForm_bst").blur(function ()
+			{
+				if ($("#QuickSearchForm_bst").val() == '')
+					$("#QuickSearchForm_bst").val('Enter search criteria...');
+				});
+				$("#QuickSearchForm_bst").autocomplete({
+					minLength: 3,
+					delay: 1000,
+					source: function (request, response)
+					{
+						$.ajax({
+						url: url = '/general/CategorySearchReciever.aspx?SearchTerm=' + $("#QuickSearchForm_bst").val() + "&cb=" + getCurrentTime(),
+						dataType: "json",
+						data: {
+						featureClass: "P",
+						style: "full",
+						maxRows: 20,
+						name_startsWith: request.term
+					},
+					success: function (data)
+					{
+						response($.map(data.CatalogSearchSuggestions, function (item)
+						{
+							return item;
+						}));
+					}
+				});
+			},
+			focus: function (event, ui)
+			{
+				return false;
+			},
+			select: function (event, ui)
+			{				document.location.href = ui.item.url;
+				return false;
+			},
+			open: function ()
+			{
+				$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+			},
+			close: function ()
+			{
+				$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+			}
+         }).data("autocomplete")._renderItem = function (ul, item)
+         {
+				var linkText = "";
+             var index = parseInt(item.index);
+				if (item.category != "")
+				{
+					linkText = item.category + ": ";
+				}
+				linkText += item.desc;
+             if (index > 0)
+             {
+					return $("<li>").data("item.autocomplete", item).append("<a href=" + item.url + ">" + linkText + "</a>").appendTo(ul);
+             }
+				else
+             {
+                 return $("<li class=\"FirstAutoCompleteItem\">").data("item.autocomplete", item).append(linkText).appendTo(ul)
+             }
+         }
+	});
+</script></div>
+				
+			</div>
+
+			<div id="iheader"><!-- header -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto:400,500,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<div id="header">
+	<a href="/" id="logo"></a>
+</div>
+<style type="text/css">
+      #Head
+      {
+          background-image: url('/graphics/bg_top.gif');
+      }
+  </style></div>
+			
+			<div id="itoolbar_bg">
+				<div id="itoolbar"><a id="PrintPage" href="#" onclick="return false;" title="Print view will be available once the page has finished loading."><img src="/global_graphics/icons/print_bw.gif" border="0" height="16" width="16" style="margin:5px 5px 0 0;valign:bottom;" />Print Page</a><script type='text/javascript'>function PrintPageClickHandler(){this.handleEvent = createPrintPagePopup }PrintPage_OnClick = new PrintPageClickHandler(); addEventHandler_OnLoad(function(){ var element = document.getElementById("PrintPage"); if(element) { element.onclick = PrintPage_OnClick.handleEvent; element.title = "Print Page";} });</script> &nbsp; | &nbsp; <a href='/general/?type=CONTACT'>Contact Us</a></div>
+			</div>
+	
+		<div id="sp-content">
+			<div id="left">
+				<!--@@DG_PRINT_PAGE_BEGIN@@
+					IMPORTANT! DO NOT MOVE OR MODIFY -->
+				
+  <script type="text/javascript">var blnUseEngagement = false; </script> 
+  
+<script type="text/javascript" src="/global_inc/js/favorite.js"></script>
+
+
+<style type="text/css">
+	#tat_table {
+		z-index:99;
+	}
+	#FavoriteEditorTitle {
+		margin: 0;
+	}
+</style>
+<div class="yui-skin-sam">
+<div id="FavoriteOptsPanel" style="visibility:hidden;">
+	<div id="FavoriteOptsPanelBody" class="bd">
+		<div id="FormErrors" style="display:none">
+			<div class="infobox">
+				<ul id="FormErrorList" class="redalert"></ul>
+			</div><br>
+		</div>
+			<form id="FavoriteEditor" name="FavoriteEditor" onsubmit="return FavoriteEditor_Submit(this)" style="display:none; margin: 0 10px 0 10px;">
+			<input type="hidden" id="FavoriteID" name="FavoriteID" value="">
+			<input type="hidden" id="strFavoriteTypeID_FK" name="strFavoriteTypeID_FK" value="">
+			<input type="hidden" id="strFavoriteParameters" name="strFavoriteParameters" value="">
+			<input type="hidden" name="strCommand" value="">
+			<input type="hidden" id="blnFavoriteReload" value="">
+			<table border="0" cellspacing="12" cellpadding="0">
+				<tr>
+					<td align="center">
+            
+               <img src="/global_graphics/icons/star_32x32.gif" border="0" width="32" height="32">
+            
+              </td>
+					<td><h2 id="FavoriteEditorTitle">
+            
+               Edit This Favorite
+            
+              </h2></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" id="strTitle" name="strTitle" value="" size="40" maxlength="100" />
+					<INPUT TYPE="hidden" NAME="ERR_strTitle" VALUE="strTitle|Name|20|1||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td>
+						<input type="text" id="strCategory" name="strCategory" value="" size="40" autocomplete="off" maxlength="100" />
+						<INPUT TYPE="hidden" NAME="ERR_strCategory" VALUE="strCategory|Category|20|0||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Share:</td>
+					<td>
+						<input id="blnIsPrivate0" type="radio" value="0" name="blnIsPrivate"/><label for="blnIsPrivate0">Yes</label>
+						<input id="blnIsPrivate1" type="radio" value="1" name="blnIsPrivate"/><label for="blnIsPrivate1">No, Keep Private</label>
+						<INPUT TYPE="hidden" NAME="ERR_blnIsPrivate" VALUE="blnIsPrivate|Share -- Yes/No, Keep Private|20|1||0">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" style="padding-top:10px;">
+						<input type="submit" id="FavoriteEditor_btnSubmit" value="Submit" class="formbutton"
+							onclick="return FavoriteEditor_btnSubmit_OnClick(this);">
+						<input type="button" value="Cancel" class="formbutton" 
+							onclick="YAHOO.container.FavoriteOpts.hide();">
+						<input type="submit" id="FavoriteEditor_btnDelete" value="Delete" class="formbutton" style="display:none;"
+							onclick="return FavoriteEditor_btnDelete_OnClick(this);">
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="__ASPVIEWSTATE" value="e8e580c2e757fe98c0c3d0e454576d47d7d9f5ddb9ce588bb9d1722bcee3ec16e3144db5966e4c3ddd3f6cb8bcf4013393990202ebe16f7c47d757e6f4f750987cd9441bf94da1e7401e5da3b8383fc7371a967687acea99d2ec62a9a080fabd5d6e71bbc78c561fc0d9c9d59e4cc7935b59f53e55401e9790b14614e10caecfc061">
+			</form>
+	</div>
+</div></div>
+
+
+
+<script type="text/javascript" src="/global_inc/js/hit_highlighter.js"></script>
+<script type="text/javascript">
+	function Window_OnLoad() {
+		highlightDtSearchTerms('CustomPageBody');
+		highlightDtSearchTerms('ResourceCollection');
+	}
+
+	addEventHandler_OnLoad(Window_OnLoad);
+</script>
+
+<style type="text/css">
+
+.ScoreControl
+{
+	display:block;
+	float:left;
+}
+</style>
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">
+Press Releases
+	</td>
+</tr>
+
+
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpContent_Container">
+
+		<script type="text/javascript" src="/global_inc/js/ContentScores.js"></script>
+
+	<div style="padding:5px 0px 15px 0px; clear:both;">
+	
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " addthis:url="http://www.calnoc.org/default.asp?page=20">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;pub=yourmembership" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=yourmembership"></script>
+
+<script type="text/javascript">
+	var addthis_exclude = 'print, email';
+</script>
+<!-- AddThis Button END -->
+
+	</div>
+	
+	<div id="CustomPageBody"><table width="100%" id="maincontentsubtable" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr id="maincontentsubrow">
+            <td id="leftnavcell" valign="top" style="letter-spacing: 0px; padding-right: 20px; word-spacing: 0px; vertical-align: top;">
+            <h5>News &amp; Events</h5>
+            <ul>
+                <li><a href="/?page=20"><span style="font-size: larger;">Press Releases<br>
+                </span></a></li>
+                <li><a href="/?page=23"><span style="font-size: larger;">In the News</span></a></li>
+                <li><a href="/?page=24"><span style="font-size: larger;">Webinars</span></a></li>
+                <li><a href="/?page=4"><span style="font-size: larger;">CALNOC Conference<br>
+                </span></a></li>
+                <li><a href="/events/event_list.asp"><span style="font-size: larger;">Event Calendar</span></a></li>
+            </ul>
+            <p>&nbsp;</p>
+            </td>
+            <td id="maincontentsubcell" valign="top">
+            <h1>CALNOC Press Releases</h1>
+            <h2>Catch the latest news from CALNOC here.</h2>
+            <p><span style="font-size: small;">Click on the title of the press releases below to view the entire contents of each press release.</span></p>
+            <p>
+            </p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">March 23, 2016</span><br>
+            </span><a href="#CALNOC Launches New Measures to Support Quality Improvement in Ambulatory Care"> <span style="font-size: medium;">CALNOC Launches New Measures to Support Quality Improvement in Ambulatory Care</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">March 3, 2016</span><br>
+            </span><a href="#CALNOC Recognizes Dignity Health for Earning Performance Excellence"> <span style="font-size: medium;">CALNOC Recognizes Dignity Health for Earning Performance Excellence</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">December 16, 2015</span><br>
+            </span><a href="#CALNOC and the American Academy of Ambulatory Care Nursing Announce Partnership to Develop New Ambulatory Nurse Sensitive Indicators"> <span style="font-size: medium;">CALNOC and the American Academy of Ambulatory Care Nursing Announce Partnership to Develop New Ambulatory Nurse Sensitive Indicators</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">October 26, 2015</span><br>
+            </span><a href="#CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in Long Beach"> <span style="font-size: medium;">CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in Long Beach</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">June 25, 2015</span><br>
+            </span><a href="#Advisory Board's Carol Boston-Fleischhauer to Deliver Keynote Address at Upcoming CALNOC Conference"> <span style="font-size: medium;">Advisory Board's Carol Boston-Fleischhauer to Deliver Keynote Address at Upcoming CALNOC Conference</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">April 21, 2015</span><br>
+            </span><a href="#Nationally Recognized Nurse Leader Linda Burnes Bolton to present keynote address at CALNOC Conference"> <span style="font-size: medium;">Nationally Recognized Nurse Leader Linda Burnes Bolton to present keynote address at CALNOC Conference</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">February 24, 2015</span><br>
+            </span><a href="#Call for Abstracts: 2015 CALNOC Conference"> <span style="font-size: medium;">Call for Abstracts: 2015 CALNOC Conference</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">February 12, 2015</span><br>
+            </span><a href="#CALNOC Elects Alice Naqvi Mugler as New Chairperson"> <span style="font-size: medium;">CALNOC Elects Alice Naqvi Mugler as New Chairperson</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">January 6, 2015</span><br>
+            </span><a href="#CALNOC Hits the Million Milestone Mark"> <span style="font-size: medium;">CALNOC Hits the Million Milestone Mark</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">October 27, 2014</span><br>
+            </span><a href="#CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in San Diego"> <span style="font-size: medium;">CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in San Diego</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">October 27, 2014</span><br>
+            </span><a href="#Healthcare Leaders to Address Reliability and Resiliency in Hospitals"> <span style="font-size: medium;">Healthcare Leaders to Address Reliability and Resiliency in Hospitals</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">March 11, 2014</span><br>
+            </span><a href="#CALNOC Announces 2014 Call for Abstracts"> <span style="font-size: medium;">CALNOC Announces 2014 Call for Abstracts</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">October 28, 2013</span><br>
+            </span><a href="#CALNOC Presents Sustained Excellence Awards to Hospitals at Seattle Conference"> <span style="font-size: medium;">CALNOC Presents Sustained Excellence Awards to Hospitals at Seattle Conference</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">April 17, 2013</span><br>
+            </span><a href="#CALNOC Participating Hospitals Recognized as the Top in the Nation"> <span style="font-size: medium;">CALNOC Participating Hospitals Recognized as the Top in the Nation</span></a></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">June 14, 2012</span><br>
+            </span><a href="#CALNOC_2012_Performance_Excellence_Awards"><span style="font-size: larger;"><span style="font-size: medium;">CALNOC Presents Performance Excellence Awards to Kaiser Permanente Downey Medical Center and Kaiser Permanente Hayward</span></span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 0, 0);"><span style="font-size: small;">April 9, 2012</span></span><br>
+            <a href="#04.09.12_CALNOC_Conference_Keynotes"><span style="font-size: medium;">CALNOC Announces 2012 CALNOC Conference and Keynote Speakers Peter V. Lee, Dr. William B. Munier, and Dr. Patricia A. Quigley</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 51, 0);"><span style="font-size: small;">February 29, 2012</span></span><br>
+            <a href="#March_1_2012"><span style="font-size: medium;">CALNOC Leaders Dr. Nancy Donaldson &amp; Dr. Mary Foley Receive Awards from the Association of California Nurse Leaders</span></a></h3>
+            <p>&nbsp;</p>
+            <h3><span style="color: rgb(0, 51, 0);"><span style="font-size: small;">February 1, 2012</span></span><br>
+            <a href="#Feb_1_21012_PR"><span style="font-size: medium;">CALNOC Announces Introduces New Service Lines for Maternal / Child Care and Emergency Department</span></a></h3>
+            <p>&nbsp;</p>
+            <h3><span style="font-size: small;"><span style="color: rgb(51, 51, 51);">December 6, 2011</span></span><a href="#December_6_PR"><span style="font-size: small;">
+            </span><span style="font-size: medium;">CALNOC Announces the CALNOC Research Fund™ Dedicated to Advancing Innovative Research</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="font-size: small;"><span style="color: rgb(51, 51, 51);">September 26, 2011</span></span><a href="#September_26_PR"><span style="font-size: small;"><br>
+            </span><span style="font-size: medium;">Dr. Nancy Donaldson, CALNOC Chairperson and Senior Scientist, Receives the 2011 Excellence in Leadership Award from Betty Irene Moore School of Nursing at UC Davis</span></a></h3>
+            <h3></h3>
+            <p>&nbsp;</p>
+            <h3><span style="font-size: small;"><span style="color: rgb(51, 51, 51);">March 8, 2011</span></span><a href="#March_08_Press_Release"><span style="font-size: small;"><br>
+            </span><span style="font-size: medium;">CALNOC Announces New Education Online Media</span></a></h3>
+            <h3></h3>
+            <hr>
+            <div>
+            <h3><a name="CALNOC Recognizes Dignity Health for Earning Performance Excellence"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Recognizes Dignity Health for Earning Performance Excellence</span></h3>
+            <h4><em>The prestigious CALNOC award represents Dignity Health's tireless dedication to quality patient care</em></h4>
+            <p><strong>SAN RAMON, CA (PRWEB) March 23, 2016</strong></p>
+            <div>
+            <p>The Collaborative Alliance for Nursing Outcomes (CALNOC), the nation’s first nursing quality indicators database, today announced it has recognized 17 Dignity Health hospitals for attaining and sustaining excellence in the prevention of injury falls and hospital acquired pressure ulcers. Together the organizations share an important mission to prevent the conditions patients can suffer during hospitalization.   </p>
+            <p>The CALNOC Performance Excellence award program recognizes hospitals for improvement on key nurse sensitive quality indicators that in turn increase the chances of positive outcomes and reduce length of hospital stay for patients. To become a 2015 Performance Excellence winner, Dignity Health hospitals had to achieve zero falls or pressure ulcers for 3 or more quarters in a row.</p>
+            <p>“We are extremely honored to be recognized by CALNOC as a Performance Excellence award winner,“ said Barbara Pelletreau, senior vice president of patient safety, Dignity Health. “Our patients deserve the highest quality care and that is why each day we strive for excellence and the best possible outcomes in the care we provide.” </p>
+            <p>“CALNOC is pleased to recognize Dignity Health for providing the highest standard of care for their patients” said Tony Sung, chief executive officer, CALNOC. “They’ve done exemplary work in reducing hospital acquired conditions and are to be congratulated for their outstanding dedication and commitment to quality patient care.”</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Hospital Acquired Pressure Ulcers (HAPU Stage II+):</p>
+            <p>Dignity Health - Chandler Regional Hospital – Arizona, Dignity Health - Dominican Hospital - Santa Cruz, Dignity Health - Mark Twain St. Josephs Hospital, Dignity Health - Mercy Gilbert Medical Center, Dignity Health - Mercy Medical Center Redding, Dignity Health - Mercy Mt. Shasta, Dignity Health - Sierra Nevada, Dignity Health - St. Elizabeth Community Hospital, Dignity Health - St. Francis Memorial - San Francisco, Dignity Health - St. Johns Pleasant Valley, Dignity Health - St. Mary Medical Center - San Francisco and Dignity Health - Woodland Healthcare.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Injury Falls:</p>
+            <p>Dignity Health - California Hospital Medical Center, Dignity Health - Community Hospital of San Bernardino, Dignity Health - French Hospital Medical Center, Dignity Health - Glendale Memorial Hospital &amp; Health Center, Dignity Health - Mark Twain St. Josephs Hospital, Dignity Health - Mercy Bakersfield, Dignity Health - Mercy Gilbert Medical Center, Dignity Health - Mercy Mt. Shasta, Dignity Health - St. Francis Memorial - San Francisco, Dignity Health - St. Johns Pleasant Valley and Dignity Health - Woodland Healthcare. </p>
+            <p>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence, and research on nurse sensitive quality indicators. CALNOC serves as the nation’s only nurse sensitive registry managed, operated and designed by nursing. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_blank">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <div>
+            <h3><a name="CALNOC Launches New Measures to Support Quality Improvement in Ambulatory Care"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Launches New Measures to Support Quality Improvement in Ambulatory Care</span></h3>
+            <h4><em>The New CALNOC Ambulatory Measures Allow Quality to be Measured Across the Entire Care Continuum </em></h4>
+            <p><strong>SAN RAMON, CA (PRWEB) March 23, 2016</strong></p>
+            <div>
+            <p>The Collaborative Alliance for Nursing Outcomes (CALNOC), today announced the first of its kind nursing quality indicators to measure and monitor the role of nursing in the Ambulatory setting. Previously the CALNOC measures guided improvement in the Acute Care setting. Quality leaders now have a new set of measures to drive performance and quality improvement in ambulatory clinics resulting in better and safer quality of healthcare for all.</p>
+            <p>A goal of healthcare reform is to shift care from the inpatient acute care setting to outpatient ambulatory care. This shift works toward the goal to improve the overall health of the community, to prevent serious illness which would require hospital care and to provide care in the lowest cost setting. With the launch of the new Ambulatory Measures, CALNOC is meeting the need to measure safety and quality in community ambulatory settings.</p>
+            <p>“We are excited to launch these new indicators for the Ambulatory care setting,” said Tony Sung, CEO of CALNOC. “I believe they will make a difference in improving the quality of Ambulatory care.” </p>
+            <p>The Phase I Initial measure set includes Ambulatory Surgery Centers and Procedure Units. Phase II &amp; III measures are being developed in collaboration with the American Academy of Ambulatory Care Nurses. The new measures sets were introduced to the CALNOC Community on February 26, with a kick off web seminar.</p>
+            <p>About CALNOC</p>
+            <p>The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence, and research on nurse sensitive quality indicators. CALNOC serves as the nation’s only nurse sensitive registry managed, operated and designed by nursing. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_blank">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <div>
+            <h3><a name="CALNOC and the American Academy of Ambulatory Care Nursing Announce Partnership to Develop New Ambulatory Nurse Sensitive Indicators"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC and the American Academy of Ambulatory Care Nursing Announce Partnership to Develop New Ambulatory Nurse Sensitive Indicators</span></h3>
+            <h4><em>New measure sets will empower ambulatory care nurses to use evidence-based information for improvement.</em></h4>
+            <p><strong>SAN RAMON, CA (PRWEB) DECEMBER 16, 2015</strong></p>
+            <div>
+            <p>The Collaborative Alliance for Nursing Outcomes (CALNOC), the nation’s
+            first nursing quality indicators database, today announced an important collaboration with the American Academy of Ambulatory Care Nursing (AAACN). The collaboration will expand CALNOC’s national database of nursing quality indicators beyond acute care hospitals into the ambulatory care setting for the benefit of patient safety and quality.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>An estimated 1 billion ambulatory visits occur in the U.S. each year, with most care today provided outside of hospitals. However, much of the work done to date in patient safety addresses hospital care. The <a href="http://www.npsf.org/?freefromharm" target="_blank">Free from Harm</a> report recently released from the National Patient Safety Foundation advocates for more work to be done to prevent harm beyond the hospital setting. The collaboration between CALNOC and AAACN addresses this
+            need and will help ambulatory care nurses to use evidence-based information across outpatient health care settings to increase patient safety and quality of care.</p>
+            <p>“It is now more important than ever to pursue this work and further validate the critical role and need for registered nurses in ambulatory care settings,” said Cynthia Nowicki Hnatiuk, EdD, RN, CAE, FAAN, Chief Executive Officer of AAACN. “This new collaboration with CALNOC will provide new ways to measure and improve performance in ambulatory care.”</p>
+            <p>Tony Sung, Chief Executive Officer of CALNOC, said, “This collaboration is an exciting and important step toward the goal of keeping all patients safe and improving healthcare quality. CALNOC has expertise in measures development, and AAACN is known for its strength in ambulatory care, together we can make significant progress toward safer healthcare.”</p>
+            <p>The two organizations are expected to first begin measure development with a pilot testing phase. Look for the
+            new measure set to be ready for wide use in the first half of 2016.</p>
+            <p>About AAACN<br>
+            The American Academy of Ambulatory Care Nursing (AAACN) is the specialty nursing organization for registered nurses practicing in ambulatory care or outpatient settings. Founded in 1978, AAACN provides opportunities for over 3,000 members to advance their practice and leadership skills, provide connections with others in similar roles, and advocate for the ambulatory care nursing specialty. In fulfilling its mission to
+            advance the art and science of the specialty, AAACN expands the influence of ambulatory care nurses as leaders of coordinated, cost-effective and quality patient care in the ambulatory setting. For additional information, visit <a href="http://www.aaacn.org" target="_blank">http://www.aaacn.org</a>.</p>
+            </div>
+            <p>About CALNOC<br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_blank">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <div>
+            <h3><a name="CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in Long Beach"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in Long Beach</span></h3>
+            <h4><em>Over 300 attendees gathered to recognize and celebrate top performance in the reduction of Hospital Acquired Pressure Ulcers, Falls and Infections</em></h4>
+            <p><strong>SAN RAMON, CA AND LONG BEACH, CA (PRWEB) OCTOBER 26, 2015</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nurse quality indicators database, today announced its annual CALNOC Performance Excellence Awards recognizing distinguished hospitals for excellent performance in the reduction of hospital acquired pressure ulcers, injuries from falls and infections. One hundred and forty nine hospitals are recognized for their commitment and dedication to quality improvement.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>This year’s winners represent the extraordinary dedication and commitment nurses and hospitals have to quality patient care and safety. These hospitals are not only able to achieve excellence in preventing harm to patients but they are also able to sustain excellent performance over many quarters.</p>
+            <p>“We congratulate all the 2015 awardees for this significant achievement to improve patient quality care and patient safety. Their work is important to the community and represents a considerable dedication to healthcare quality,” said Tony Sung, Chief Executive Officer for CALNOC.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Hospital Acquired Pressure Ulcers (HAPU Stage II+):</p>
+            <p>Adventist Medical Center-Reedley, Chandler Regional Hospital - Arizona, Colusa Regional Medical Center, Contra Costa Regional Medical Center, Dominican Hospital - Santa Cruz, El Camino Hospital-Los Gatos, Frank R. Howard Memorial Hospital, Fresno Heart and Surgical Hospital, Glendale Adventist Medical Center, Grays Harbor Community Hospital, Hemet Valley Medical Center, Island Hospital, John Muir Med Ctr Concord, Kaiser Permanente - Fontana, Kaiser Permanente - Manteca, Kaiser Permanente - Moanalua Med Ctr-Hawaii, Kaiser Permanente - Modesto, Kaiser Permanente - Panorama City, Kaiser Permanente - Redwood City, Kaiser Permanente - Roseville, Kaiser Permanente - San Diego, Kaiser Permanente - Santa Clara, Kaiser Permanente - Santa Rosa, Kaiser Permanente - Woodland Hills, LAC + USC Medical Center, Legacy Emanuel Hospital, Legacy Mount Hood Medical Center, Long Beach Memorial, Los Alamitos Medical Center, Mark Twain St. Josephs Hospital, Marshall Medical, Menifee Valley Medical Center, Mercy Gilbert Medical Center, Mercy Medical Center Redding, Mercy Mt. Shasta, Mills Peninsula Health Services, Mission Hospital Regional Med Ctr-Laguna Beach, Modoc Medical Center, Natividad Medical Center, Pomona Valley Hospital Medical Center, Rancho Los Amigos National Rehabilitation Center, Santa Clara Valley Medical Center, Sharp Chula Vista Medical Center, Sharp Coronado Hospital, Sharp Memorial Hospital, Sierra Nevada, Sonora Regional Medical Center, St. Elizabeth Community Hospital, St. Francis Memorial - San Fran. , St. Johns Pleasant Valley, St. Mary Medical Center - San Francisco, Swedish Medical Center-Ballard, Tahoe Forest Hospital, Twin Cities Community Hospital, UC Davis Health System, UCSD Medical Center, UCSF Medical Center at Mt. Zion, UCSF Medical Center-Parnassus, VA Medical Center -Sacramento, Walla Walla General Hospital, Woodland Healthcare</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Injury Falls:</p>
+            <p>Arrowhead Regional Medical Center, California Hospital Medical Center, Cascade Valley Hospital, Community Hospital of San Bernardino, Community Memorial Hospital-Ventura, Community Regional Medical Center, Contra Costa Regional Medical Center, East Los Angeles Doctors Hospital, El Camino Hospital-Los Gatos, El Camino Hospital-Mountain View, Feather River Hospital, Frank R. Howard Memorial Hospital, French Hospital Medical Center, Glendale Memorial Hospital &amp; Health Ctr. , Henry Mayo Newhall Memorial Hospital, Hi Desert Memorial Health Care District, Kaiser Permanente - Fontana, Kaiser Permanente - Manteca, Kaiser Permanente - Modesto, Kaiser Permanente - Moreno Valley, Kaiser Permanente - Orange County - Anaheim, Kaiser Permanente - Westside Medical Center, Long Beach Memorial, Mark Twain St. Josephs Hospital, Mercy Bakersfield, Mercy Gilbert Medical Center, Mercy Mt. Shasta, Modoc Medical Center, NorthBay Vaca Valley Hospital-Vacaville, Northridge Hospital, Novato Community Hospital, O Connor Hospital, Pioneer Memorial Hospital, Pomerado Hospital, Salinas Valley Hospital, San Joaquin Community Hospital, Sierra Vista Regional Medical Center, Silverton Hospital, St. Charles Medical Center-Redmond, St. Francis Memorial - San Fran., St. Helena Hospital - Clear Lake, St. Johns Pleasant Valley, Sutter Amador, Sutter Davis, Sutter Lakeside, Swedish Medical Center-Edmonds, Tahoe Forest Hospital, Tri City Medical Center, UC Irvine Medical Center, UCSF Medical Center at Mt. Zion, Virginia Mason Medical Center, Walla Walla General Hospital, White Memorial Medical Center, Woodland Healthcare.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Central Line-Associated Blood Stream Infections:</p>
+            <p>Cascade Valley Hospital, Central Washington Hospital, Colusa Regional Medical Center, Community Hospital of Huntington Park, Doctors Hospital of Manteca, El Camino Hospital-Los Gatos, El Camino Hospital-Mountain View, Enloe Medical Center, Foothill Presbyterian Hospital, Fountain Valley Regional Hospital Medical Center, Garfield Medical Center, Grays Harbor Community Hospital, Hi Desert Memorial Health Care District, Hollywood Presbyterian Medical Center, Kaiser Permanente - Fremont, Kaiser Permanente - Fresno, Kaiser Permanente - Los Angeles, Kaiser Permanente - Ontario, Kaiser Permanente - Orange County - Irvine, Kaiser Permanente - Riverside, Kaiser Permanente - Roseville, Kaiser Permanente - San Rafael, Kaiser Permanente - South Bay, Kaiser Permanente - South Sacramento, Kaiser Permanente - South San Francisco, Kern Medical Center, Legacy Mount Hood Medical Center, Legacy Salmon Creek, Los Alamitos Medical Center, Menifee Valley Medical Center, Mills Peninsula Health Services, Mission Hospital Regional Med Ctr-Laguna Beach, Monterey Park Hospital, Oak Valley Hospital, PIH Health Hospital-Whittier, Placentia-Linda Hospital, Pomerado Hospital, Providence Little Company of Mary - San Pedro, Providence St. Mary Medical Center, Seton Medical Center, Silverton Hospital, Sonora Regional Medical Center, St. Charles Medical Center-Redmond, St. Helena Hospital - Clear Lake, St. Joseph Hospital-Eureka, Swedish Medical Center-Issaquah, Tahoe Forest Hospital, Tulare Local Healthcare District, Twin Cities Community Hospital, UC Irvine Medical Center, Ukiah Valley Medical Center</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Cather-Associated Urinary Tract Infections:</p>
+            <p>Anaheim Regional Medical Center, Cascade Valley Hospital, Central Washington Hospital, Childrens Hospital of Los Angeles, Colusa Regional Medical Center, Community Memorial Hospital-Ventura, Doctors Medical Center Modesto, El Camino Hospital-Los Gatos, Fresno Heart and Surgical Hospital, Grays Harbor Community Hospital, Hi Desert Memorial Health Care District, Kaiser Permanente - Moreno Valley, Menifee Valley Medical Center, Miller Children's Hospital, Mission Hospital Regional Med Ctr-Laguna Beach, Monterey Park Hospital, Oak Valley Hospital, Skagit Valley Hospital, St. Charles Medical Center-Redmond, Tahoe Forest Hospital, Twin Cities Community Hospital, Ukiah Valley Medical Center</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Methicillin-Resistant Staphylococcus Aureus (MRSA) Infections:</p>
+            <p>Adventist Medical Center-Portland, Alameda County Medical Center, Cascade Valley Hospital, Central Washington Hospital, Colusa Regional Medical Center, Doctors Hospital of Manteca, East Los Angeles Doctors Hospital, El Camino Hospital-Los Gatos, Foothill Presbyterian Hospital, Fresno Heart and Surgical Hospital, Grays Harbor Community Hospital, Hi Desert Memorial Health Care District, John F. Kennedy Memorial, Kaiser Permanente - Antioch, Kaiser Permanente - Fresno, Kaiser Permanente - Orange County - Irvine, Kaiser Permanente - Redwood City, Kaiser Permanente - San Rafael, Kaiser Permanente - Santa Rosa, Kaiser Permanente - South San Francisco, Kaiser Permanente - Vacaville Medical Center, Kaiser Permanente - Vallejo, Kaiser Permanente - Walnut Creek, Kaiser Permanente - Westside Medical Center, Legacy Meridian Park Hospital, Mills Peninsula Health Services, Mission Hospital Regional Med Ctr-Laguna Beach, Modoc Medical Center, Monterey Park Hospital, NorthBay Medical Center-Fairfield, NorthBay Vaca Valley Hospital-Vacaville, Oak Valley Hospital, Orange Coast Memorial Hospital, Pioneer Memorial Hospital, Providence Little Company of Mary - San Pedro, Silverton Hospital, Sonora Regional Medical Center, St. Charles Medical Center-Bend, St. Charles Medical Center-Redmond, St. Helena Hospital - Clear Lake, St. Helena Hospital - Napa Valley, Sutter Santa Rosa Regional Hospital, Swedish Medical Center-Ballard, Swedish Medical Center-Edmonds, Swedish Medical Center-Issaquah, Tahoe Forest Hospital, Ukiah Valley Medical Center</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Clostridium difficile (C-diff) Infections:</p>
+            <p>Cascade Valley Hospital, Fountain Valley Regional Hospital Medical Center, Hollywood Presbyterian Medical Center, Legacy Meridian Park Hospital, Miller Children's Hospital, Modoc Medical Center, Oak Valley Hospital, Pioneer Memorial Hospital, Providence St. Mary Medical Center, San Joaquin Community Hospital, Sharp Mary Birch Hospital for Women &amp; Newborns, Silverton Hospital, Swedish Medical Center-Ballard</p>
+            <p>About CALNOC<br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence and Research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit http://www.calnoc.org.</p>
+            </div>
+            <hr>
+            <div>
+            <h3><a name="Advisory Board's Carol Boston-Fleischhauer to Deliver Keynote Address at Upcoming CALNOC Conference"></a><span style="line-height: 115%; font-size: 12pt;">Advisory Board's Carol Boston-Fleischhauer to Deliver Keynote Address at Upcoming CALNOC Conference</span></h3>
+            <h4><em>Carol Boston-Fleischhauer is a Prominent Patient Care Advocate and Managing Director for the Advisory Board Company.</em></h4>
+            <p><strong>(PRWEB) June 25, 2015</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nursing quality indicators database, today announced Carol Boston-Fleischhauer, JD, MS, BS, to keynote day two of their upcoming conference – Navigating the Chaos of Healthcare Transformation - in Long Beach, CA on October 27, 2015.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>Ms. Boston-Fleischhauer has over 30 years of progressive health care experience in patient care practice, education and consultation in academic medical centers, community hospitals and clinics. In her current role, Ms. Boston-Fleischhauer serves as the global spokesperson on nursing practice for the Advisory Board; working with clinical leadership teams throughout the world. Her most recent leadership position prior to joining the Advisory Board was that of systems director, quality improvement for a multi-hospital system in the Pacific Northwest. Other prior positions have included executive director of the American Organization of Nurse Executives, a subsidiary of the American Hospital Association. Ms. Boston-Fleischhauer holds a clinical assistant professor appointment at the University of Washington, with curricular responsibilities for graduate-level health care students. Ms. Boston-Fleischhauer holds Bachelor’s and Master’s Degrees in Nursing from Northern Illinois University and a Juris Doctorate from John Marshall Law School.</p>
+            <p>Ms. Boston-Fleischhauer’s keynote address is titled - Disruptive Innovation in Healthcare and the Implications for Nursing Leadership. "We are very excited to welcome Carol to the CALNOC conference, her insights into clinical quality improvement will be an invaluable asset to the conference" said Tony Sung, CEO of CALNOC. "We look forward to her keynote address on healthcare disruption and how leaders might equip themselves for the many challenges they face in today’s healthcare environment.”</p>
+            <p>CALNOC’s 2015 Conference will focus on navigating the strategies and tactics healthcare leaders can employ to lead transformational change and prevent hospital acquired conditions. The CALNOC Conference will examine evidence-based insights, best practices and emerging CALNOC nursing-sensitive data findings to assist nursing and quality leadership in advancing patient care excellence. CALNOC’s conference will be held on October 26-27 in the heart of Southern California at the Hilton Long Beach.</p>
+            <p>About CALNOC<br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence and Research on nurse sensitive quality indicators. CALNOC serves as the nation’s only nurse sensitive registry managed, operated and designed by nursing. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <h3><a name="Nationally Recognized Nurse Leader Linda Burnes Bolton to present keynote address at CALNOC Conference"></a><span style="line-height: 115%; font-size: 12pt;">Nationally Recognized Nurse Leader Linda Burnes Bolton to present keynote address at CALNOC Conference</span></h3>
+            <h4><em>Dr. Burnes Bolton is Vice President, Chief Nursing Officer of Cedars-Sinai Medical Center and founding member of CALNOC.</em></h4>
+            <p><strong>San Ramon, CA – April 21, 2015</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nursing quality indicators database today announced Linda Burnes Bolton, DrPH, RN, FAAN, will keynote their upcoming conference – Navigating the Chaos of Healthcare Transformation - in Long Beach, CA on October 26, 2015. <span style="font-weight: bold;">&nbsp;</span></p>
+            <p>Dr. Burnes Bolton is the current President of the American Organization of Nurse Executives (AONE) and the first African American to hold this position. As past president of the American Academy of Nursing and the National Black Nurses Association, she has provided leadership for several state and national programs including service as chair of the National Advisory Committee for Transforming Care at the Bedside, VA Commission on Nursing and vice chair of the Robert Wood Johnson Foundation Initiative on the Future of Nursing at the Institute of Medicine. She was named one of the top 25 women in health care in 2011 by Modern Healthcare Magazine and woman of the year in 2012 by Women in Health Administration. Dr. Burnes Bolton was appointed to the Robert Wood Johnson Foundation board of directors in 2012. Dr. Burnes Bolton received her bachelor of science in nursing from Arizona State University, masters in nursing, masters in public health and doctorate in public health from UCLA. </p>
+            <p>“We are extremely pleased to have Linda kick off the 2015 CALNOC Conference”, said Tony Sung, Chief Executive Officer for CALNOC.  “She has been a driving force in the organization since its beginning through her strategic leadership and research contributions. We look forward to the insights she will bring as she addresses the CALNOC healthcare community”.</p>
+            <p>CALNOC’s 2015 Conference will focus on navigating the strategies and tactics healthcare leaders can employ to lead transformational change and prevent hospital acquired conditions. The CALNOC Conference will examine evidence-based insights, best practices and emerging CALNOC nursing-sensitive data findings to assist nursing and quality leadership in advancing patient care excellence. CALNOC’s conference will be held on October 26-27 in the heart of Southern California at the Long Beach Hilton.</p>
+            <p>About CALNOC<br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence, and Research on nurse sensitive quality indicators. CALNOC serves as the nation’s only nurse sensitive registry managed, operated and designed by nursing. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <h3><a name="Call for Abstracts: 2015 CALNOC Conference"></a><span style="line-height: 115%; font-size: 12pt;">Call for Abstracts: 2015 CALNOC Conference</span></h3>
+            <h4><em>The CALNOC Conference Planning Committee invites participating hospitals to share their
+            journey to eliminate hospital acquired conditions by submitting an abstract for a panel or
+            poster presentation.</em></h4>
+            <p><strong>San Ramon, CA – February 24, 2015</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nursing quality indicators
+            database announced abstracts are now being accepted for the upcoming CALNOC Conference in Long Beach,
+            CA. CALNOC’s 2015 Conference will focus on Navigating the Chaos of Healthcare Transformation as
+            hospitals strive to provide safe high quality patient care. CALNOC’s conference will be held on October 26-27
+            in the heart of Southern California at the Long Beach Hilton.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>“We are excited to once again bring this conference back to Long Beach and invite all participating hospitals to
+            present their latest research, accomplishments, innovations, and improvements in patient care to the entire
+            CALNOC community”, said Alice Naqvi, MS, RN and Chair of the Board for CALNOC.</p>
+            <p>CALNOC is seeking abstracts which focus on transforming care delivery during the current chaotic scene of
+            healthcare reform. Abstracts will be carefully reviewed and authors will be invited to share innovative projects
+            and practices through poster and panel presentations that advance patient care improvements. The highlight of
+            each conference is when hospitals share their improvement journeys and best practices which attendees can
+            then take back for immediate implementation into their own practice environments.</p>
+            <p>For more information about the 2015 CALNOC Conference and how to submit your abstract, visit the
+            CALNOC Conference website. The deadline to submit an abstract is March 31, 2015.</p>
+            <p>About CALNOC<br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence, and Research on nurse sensitive quality indicators. CALNOC serves as the nation’s only nurse sensitive registry managed, operated and designed by nursing. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <h3><a name="CALNOC Hits the Million Milestone Mark"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Hits the Million Milestone Mark</span></h3>
+            <h4><em>Over 1 million patients observed in the Pressure Ulcer Prevalence Study.</em></h4>
+            <p><strong>San Ramon, CA – January 6, 2015</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nursing quality indicators database today announced a significant milestone representing their continued commitment to quality and safety. CALNOC hospitals have observed over 1 million patients for pressure ulcers in 16 years of data collection. The database now contains detailed pressure ulcer prevention records on 1,030,524 patients!<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>“This milestone would not have been possible without the tireless efforts of our participating hospitals and their dedication to quality patient care outcomes”, said Tony Sung, Chief Executive Officer of CALNOC. “Pressure Ulcers are preventable and one is one to many.”</p>
+            <p>The National Quality Forum (NQF) has identified hospital acquired Stage 3 or 4 pressure ulcers as a Never Event. Many CALNOC hospitals use prevalence studies to spot and prevent pressure ulcers in their medical centers. Hospitals working with CALNOC have made significant strides in pressure ulcer prevention to rates below the national average or in many cases to zero.</p>
+            <p>About CALNOC<br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence, and Research on nurse sensitive quality indicators. CALNOC serves as the nation’s only nurse sensitive registry managed, operated and designed by nursing. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <hr>
+            <h3><a name="CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in San Diego"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Presents Performance Excellence Awards to Hospitals at Annual Conference in San Diego</span></h3>
+            <h4><em>CALNOC Performance Excellence Awards recognizes top performers in the reduction of Hospital Acquired Pressure Ulcers, Falls Management and Infections</em></h4>
+            <p><strong>San Ramon, CA and San Diego, CA – October 27, 2014</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nurse quality indicators database, today announced its annual CALNOC Performance Excellence Awards recognizing exceptional hospitals for outstanding performance in the areas of reducing hospital acquired pressure ulcers,
+            injuries from falls and infections. 130 hospitals are recognized for their commitment and dedication to nursing quality.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>This year’s winners represent hospitals of various sizes and affiliation. These hospitals have a long and consistent track record of monitoring and measuring performance with the CALNOC registry in order to deliver the highest standard of care to their communities.</p>
+            <p>“We applaud the efforts of these hospitals in improving patient health and safety. Their work is exemplary and
+            represents a lasting commitment to healthcare quality,” said Tony Sung, Chief Executive Officer for CALNOC.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Hospital Acquired Pressure Ulcers (HAPU Stage II+):</p>
+            <p>Adventist Medical Center, Colusa Regional Medical Center Citrus Valley Medical Center, Community Hospital Huntington Park, East Los Angeles Doctor’s Hospital, El Camino Hospital Los Gatos, Frank R. Howard. Memorial Hospital, French Hospital Medical Center, Fresno Heart and Surgical Hospital, Hemet Valley Medical Center, Hi Desert Memorial Health Care District, Island Hospital, Glendale Adventist Medical Center, Kaiser Permanente Antioch, Kaiser Permanente Downey, Kaiser Permanente Fontana, Kaiser Permanente Modesto, Kaiser Permanente Moanalua, Kaiser Permanente Oakland, Kaiser Permanente Orange County Irvine, Kaiser Permanente Redwood City, Kaiser Permanente Richmond, Kaiser Permanente Sacramento,
+            Kaiser Permanente San Diego, Kaiser Permanente San Francisco, Kaiser Permanente Santa Clara, Kaiser Permanente San Rafael, Kaiser Permanente Santa Rosa, Kaiser Permanente South San Francisco, Kaiser Permanente Woodland Hills, LA County/USC Medical Center, Legacy Meridian Park Hospital, Long Beach Memorial, Marian Medical Center, Mercy Mount Shasta, Mercy San Juan Medical Center, Northbay Vaca Valley Hospital Vacaville, Palomar Medical Center, Pomona Valley Hospital, Providence Holy Cross, Providence Regional Medical Center Everett-Colby, Providence St. Mary Medical Center, Rancho Los Amigos National Rehabilitation, Redlands Community Hospital, Saddleback Memorial, Santa Clara Medical Center, Santa Paula Hospital Seton Medical Center, Sharp Coronado Hospital, Sharp Memorial Hospital, St. Elizabeth Community Hospital, St Francis Memorial San Francisco, St. John’s Pleasant Valley, St. John’s Regional Medical Center, St. Joseph Medical Center Stockton, Sutter Medical Center Santa Rosa, Swedish Medical Center Ballard, Swedish Medical Center Issaquah, UC Davis Health System, UC San Diego Medical Center, Walla Walla General Hospital, Washington Hospital.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Injury Falls:</p>
+            <p>Alameda Hospital, Alhambra Hospital, Arroyo Grande Community Hospital, California Pacific-California Campus, California Pacific Davis Campus, Cascade Valley Hospital, Community Hospital Huntington Park, French Hospital Medical Center, Fountain Valley Regional, Kaiser Permanente Fontana, Kaiser Permanente Hayward, Kaiser Permanente Manteca, Kaiser Permanente Moreno Valley, Kaiser Permanente Riverside, Kaiser Permanente Sacramento, Kaiser Permanente South San Francisco, Kaiser Permanente Vacaville, Methodist Hospital of Southern California, Modoc Medical Center, Northbay Medical Center Fairfield, O’Connor Hospital, Queen of the Valley, Scripps Mercy San Diego, San Joaquin Community Hospital, Santa Clara Medical Center, Seton Medical Center, Silverton Hospital, Sonora Regional Medical Center, St. Elizabeth Community Hospital, St. Helena Hospital Clear Lake, St Mary Medical Center, Sutter Auburn Faith, Sutter Coast Hospital, Sutter Davis Hospital, Swedish Medical Ballard, Tahoe Forest Hospital, Tri City Medical Center, Tulare Local Healthcare District, UC San Francisco, Medical Center of Mt. Zion, Walla Walla General Hospital, White Memorial Medical Center, Woodland Healthcare.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Central Line-Associated Blood Stream Infections:</p>
+            <p>Colusa Regional Medical Center, Doctor’s Hospital of Manteca, El Camino Hospital Los Gatos, El Camino Hospital, Enloe Medical Center, Foothill Presbyterian Hospital, Hi Desert Medical Center, Legacy Meridian Park Medical Center, Legacy Mount Hood Medical Center, Legacy Salmon Creek Medical Center, Marshall Medical Center, Menifee Valley Medical Center, Mercy Gilbert Medical Center, Mill Peninsula Health Services, Mission Hospital Laguna Beach, O’Connor Hospital, Orange Coast Memorial Medical Center, Placentia-Linda Hospital, Pioneer Memorial Hospital (Prineville), Pomerado Hospital, Providence Little Company of Mary MC San Pedro, Redlands Community Hospital, Sierra View District Hospital, St. Anthony Hospital, Sierra View District Hospital, Silverton Hospital, Skagit Valley Hospital, Sonora Regional Medical Center, St Charles Medical Redmond, St. Clare Hospital, St. Elizabeth Hospital, St. Francis Hospital Tacoma, St. Helena Hospital Napa, St. Joseph Hospital Eureka, St. Vincent Medical Center, Tulare Regional Medical Center, Twin Cities Community Hospital, ValleyCare Health System, Virginia Mason Medical Center.</p>
+            <p>The following hospitals were recognized for Performance Excellence in the Reduction of Cather-Associated Urinary Tract Infections:</p>
+            <p>Colusa Regional Medical Center, Doctor’s Hospital of Manteca, El Camino Hospital, El Camino Hospital Los Gatos, Foothill Presbyterian Hospital, Hi Desert Medical Center, Kaiser Permanente Baldwin Park, Kaiser Permanente Downey, Legacy Meridian Park Medical Center, Legacy Mount Hood Medical Center, Legacy Salmon Creek Hospital, Lucile Packard Children’s Hospital, Marshal Medical Center, Menifee Valley Medical Center, Mercy Gilbert Medical Center, Miller Children’s Hospital, Mission Hospital Laguna Beach, Orange Coast Memorial Medical Center, Pioneer Memorial Hospital (Prineville), Placentia-Linda Hospital, Pomerado
+            Hospital, Presbyterian Intercommunity Hospital, Providence Little Company of Mary MC San Pedro, Redlands Community Hospital, St. Anthony Hospital, Sierra View District Hospital, Silverton Hospital, Skagit Valley Hospital, Sonora Regional Medical Center, St. Charles Medical Center Redmond, St. Clare Hospital, St. Helena Hospital Napa, St. Joseph Hospital Eureka, St. Vincent Medical Center, Sutter Medical Center Santa Rosa, Tulare Regional Medical Center, Twin Cities Community Hospital, ValleyCare Health System.</p>
+            <p>About CALNOC <br>
+            The Collaborative Alliance for Nursing Outcomes (CALNOC), is the leading provider of Business Intelligence and Research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indcators which turns patient outcome data into
+            powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <h3><a name="Healthcare Leaders to Address Reliability and Resiliency in Hospitals"></a><span style="line-height: 115%; font-size: 12pt;">Healthcare Leaders to Address Reliability and Resiliency in Hospitals</span></h3>
+            <h4><em>3 Dynamic Keynote Speakers present the positive impacts of High Reliability and Resiliency on Patient Care at the 2014 CALNOC Conference.</em></h4>
+            <p><strong>San Ramon, CA and San Diego, CA – October 27, 2014</strong></p>
+            <div>
+            <p>CALNOC, the nation’s first nurse quality indicators database, kicks off its Reliability &amp; Resiliency: Dynamic Organizations for Dynamic Times Conference at the U.S. Grant Hotel in downtown San Diego. The CALNOC Conference brings together patient care experts in a dynamic exchange to advance hospital’s collaborative efforts to eliminate hospital acquired conditions!<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>“This year’s conference keynote speakers exemplify the importance of High Reliability and Resiliency in patient care and how it positively effects patient outcomes” said Alice Naqvi Mugler, CALNOC Board Chairperson – Elect.</p>
+            <p>The 2014 CALNOC Conference keynote presentations will be delivered by these leading patient safety and quality advocates!</p>
+            <p>Keith R. Doram, MD, MBA, FACP, is Vice President for Clinical Effectiveness/Chief Medical Officer for Adventist Health and oversees patient safety and quality of care throughout the system. Dr. Doram’s conference presentation will focus on Building Resiliency to Combat Healthcare Burnout.</p>
+            <p>Julianne M. Morath, RN, MS, currently serves as the President/CEO of the Hospital Quality Institute (HQI). Her keynote discussion will explore what constitutes High Reliable Organizations and also offer tips, suggestions and strategies for dealing with the frantic pace of health care reform.</p>
+            <p>Thorton Kirby, is President and CEO of the South Carolina Hospital Association. Mr. Kirby will present the evolution of quality and safety work in South Carolina hospitals and their experience with The Joint Commission to help hospitals transform their organizations into highly reliable systems of care.</p>
+            <p>Erin DuPree, MD, Chief Medical Officer and Vice President, Joint Commission Center for Transforming Healthcare leads a hands-on session focused on Robust Process Improvement (RPI) methodology.</p>
+            <p>Today’s conference will also feature sessions, breakouts, panel discussions lead by members of the CALNOC Leadership Team and its Senior Scientists along with new learning opportunities and strategies to improve patient health and safety.</p>
+            <p>About CALNOC <br>
+            CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of Business Intelligence and Research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <h3><a name="CALNOC Announces 2014 Call for Abstracts"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Announces 2014 Call for Abstracts</span></h3>
+            <h4><em>The CALNOC Conference Planning Committee invites participating hospitals to share their journey, accomplishments, innovations, and improvements by submitting an abstract for a panel or poster presentation.</em></h4>
+            <p><strong>San Ramon, CA – March 11, 2014</strong></p>
+            <div>
+            <p>CALNOC, the leading provider of actionable information and research on nurse sensitive quality indicators, today announced its 2014 Call for Abstracts for the upcoming CALNOC Conference in San Diego. CALNOC’s 2014 conference will focus on reliability and resilience in today’s dynamic healthcare environment as hospitals strive to provide safe patient care. CALNOC’s conference will be held on October 27-28 at the historic US Grant Hotel in San Diego’s Gaslamp district.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>CALNOC is seeking abstracts for posters or panel presentations which focus on reliability and resiliency during the current healthcare environment and economic pressures. The highlight of each conference are the poster and panels where hospitals share their improvement journeys and provide best practices that participants can take back for immediate implementation into their own practice environments</p>
+            <p>"CALNOC is excited about this abstract call and we look forward to seeing all the rich and rewarding work being done to eliminate Hospital Acquired Conditions while promoting safe, high quality patient care,” said Kathy Harren, RN, MHA, MSNc, and Chair of the Board for CALNOC. "Our goal is to welcome as many abstracts as the program and space will permit.”</p>
+            <p>For more information about the 2014 CALNOC Conference and how to submit your abstract, please visit the <a href="http://calnoc.site-ym.com/?page=4" target="_self">CALNOC Conference website</a>. The deadline to submit an abstract is April 25, 2014.</p>
+            <p>About CALNOC <br>
+            CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indicators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit <a href="http://www.calnoc.org/?page=4" target="_self">http://www.calnoc.org</a>.</p>
+            </div>
+            <hr>
+            <h3><a name="CALNOC Presents Sustained Excellence Awards to Hospitals at Seattle Conference"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Presents Sustained Excellence Awards to Hospitals at Seattle Conference</span></h3>
+            <h4><em>CALNOC Sustained Excellence Awards recognizes top performers in the reduction of Hospital Acquired Pressure Ulcers, Falls Management and Infections</em></h4>
+            <p><strong>San Ramon, CA and Seattle, WA – October 28, 2013</strong></p>
+            <div>
+            <p>– CALNOC, the leading provider of actionable information and research on nurse sensitive quality indicators, today announced its annual CALNOC Sustained Excellence Awards recognizing exceptional hospitals for outstanding performance in the areas of reduction of hospital acquired pressure ulcers, injuries from falls and infections. 70 hospitals are recognized for their commitment and dedication to nursing quality.<span style="font-weight: bold;">&nbsp;</span></p>
+            <p>This year’s winners represent hospitals of various sizes and affiliation. These hospitals have a long and consistent track record of monitoring and measure performance with the CALNOC registry in order to deliver the highest standard of care.</p>
+            <p>"We are proud of the effort of these hospitals in improving patient health and safety. Their work is exemplary and represents a lasting commitment to healthcare quality,” said Tony Sung, Chief Operating Officer for CALNOC.</p>
+            <p>The following hospitals were recognized for Best Performance in the Reduction of Pressure Ulcers (Stage II+):</p>
+            <p>California Pacific Hospital - California Campus, Community Hospital of Huntington Park, El Camino Hospital – Los Gatos, Dominican Hospital – Santa Cruz, Frank R. Howard Memorial Hospital, French Hospital Medical Center, Island Hospital, Kaiser Permanente –Downey, Kaiser Permanente – Hayward, Kaiser Permanente-San Diego, Kaiser Permanente – South San Francisco, Kaiser Permanente – Vacaville Medical Center, Long Beach Memorial, Mercy Mt. Shasta, Mission Hospital Regional Medical Center – Laguna Beach, Natividad Medical Center, Pomona Valley Medical Center, Sharp Grossmont Hospital, Sierra Vista Regional Medical Center, White Memorial Medical Center.</p>
+            </div>
+            <p>The following hospitals were recognized for Best Performance in the Reduction of Falls:</p>
+            <p>Alameda Hospital, Community Hospital of Huntington Park, Community Medical-Clovis, Community Regional Medical Center, Kaiser Permanente-Los Angeles, Kaiser Permanente-Manteca, Kaiser Permanente South San Francisco, Marian Medical Center, Marshall Medical, Mission Hospital Regional Medical Center-Laguna Beach, Modoc Medical Center, St. Elizabeth Community Hospital, St. John’s Pleasant Valley, Sutter Coast Hospital, Tahoe Forest, UC Davis, UC Irvine Medical Center.</p>
+            <p>The following hospitals were recognized for Best Performance in the Reduction of Infections (Total Facility):</p>
+            <p>Colusa Regional Medical Center, El Camino Hospital Los Gatos, Enloe Medical Center, Hi Desert Medical Center, Hollywood Presbyterian Medical Center, Lodi Memorial Hospital, Marshall Medical Center, Mills Peninsula Health Services, Monterey Park Hospital, O’Connor Hospital, Orange Coast Memorial Medical Center, San Francisco General Hospital and Trauma Center, Santa Clara Valley Medical Center, Sharp Mary Birch Hospital for Women, St. Joseph’s Medical Center-Stockton, Stanford Hospital and Clinics.</p>
+            <p>The following hospitals were recognized for Best Performance in the Reduction of Infections (Critical Care):</p>
+            <p>Kaiser Permanente-Downey Medical Center, Pomerado Hospital, Providence Little Company of Mary Medical Center-San Pedro, St. Francis Hospital (WA), St. Charles Medical Center-Bend, Pioneer Memorial Hospital (Prineville), Silverton Hospital, St. Charles Medical Center-Redmond, St. Clare Hospital, St. Elizabeth Hospital, Tulare Regional Medical Center.</p>
+            <p><span style="font-weight: bold;">About CALNOC</span></p>
+            CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nurse sensitive indcators which turns patient outcome data into powerful information for hospital executives to guide decisions to advance global patient care. Hundreds of hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit 501 (c) (3) public benefit corporation with headquarters in San Ramon, California. For more information call 888-586-1994 or visit<span style="text-decoration: underline;"> </span><a href="/">www.calnoc.org</a><span style="text-decoration: underline;">.</span>
+            <p>&nbsp;</p>
+            <hr>
+            <h3><a name="CALNOC Participating Hospitals Recognized as the Top in the Nation"></a><span style="line-height: 115%; font-size: 12pt;">CALNOC Participating Hospitals Recognized as the Top in the Nation</span></h3>
+            <h4><em>CALNOC congratulates eight of its participating hospitals for being named top performers.</em></h4>
+            <p><strong>San Ramon, CA – April 17, 2013</strong> – The Collaborative Alliance for Nursing Outcomes (CALNOC), the leading provider of actionable information and research on nurse sensitive quality indicators, congratulates eight of its participating hospitals recently recognized as top performers according to Healthgrades, Inc., and the Centers for Medicare &amp; Medicaid Services (CMS).</p>
+            <p>Two CALNOC hospitals, Hoag Memorial Hospital Presbyterian in Newport Beach, CA and Saint Vincent Medical Center in Los Angeles, CA, made Healthgrades’ 2013 list of America’s 50 Best Hospitals.</p>
+            <p>Five additional CALNOC hospitals in California made Healthgrades’ list of America’s 100 Best Hospitals. These award recipients include Scripps Mercy Hospital in San Diego, Sequoia Hospital in Redwood City, John Muir Medical Center in Walnut Creek, Mills Health Center in San Mateo, and Saddleback Memorial Medical Center in Laguna Hills.</p>
+            <p>Healthgrades has ranked its 50 Best Hospitals in the top 1% of hospitals in the nation for exhibiting clinical excellence year after year, while the 100 Best Hospitals are ranked in the top 2%. These hospitals have the lowest overall average risk adjusted in-hospital mortality and complication rates for certain procedures, according to the report released on February 18, 2013.</p>
+            <p>According to Healthgrades, if all hospitals performed at the level of the 100 Best Hospitals (from 2009 through 2011), more than 165,000 lives could potentially have been saved.</p>
+            <p>CALNOC would also like to congratulate Sonora Regional Medical Center, named as a top performer by CMS. For improving the quality of inpatient care, they received a bonus payment of $37,191. The award is based on the increase in the hospital’s average Composite Quality Score (CQS). Sonora Regional Medical Center is part of Adventist Health and is located in the heart of the Mother Lode in Sonora, CA.</p>
+            <p>"Their exceptional performance reflects a dedication and commitment to quality,” said Tony Sung, Chief Operating Officer of CALNOC. "These award recipients have consistently provided quality care, which results in the best possible patient outcomes.”</p>
+            <p><strong>About CALNOC<br>
+            </strong>CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nursing sensitive indicators. Always on the forefront of patient care excellence, CALNOC created the first database registry of nursing sensitive indicators, which turns patient outcome data into powerful information. This information helps hospital executives make decisions that advance improvement in patient care quality, safety, and outcomes. Hundreds of leading hospitals have joined CALNOC in its quest to advance global patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California.</p>
+            <hr>
+            <h3>CALNOC Presents Performance Excellence Awards to Kaiser Permanente Downey Medical Center and Kaiser Permanente Hayward</h3>
+            <h4><em>CALNOC Performance Excellence Awards recognizes top performers in the reduction of Hospital Acquired Pressure Ulcers and Falls Management</em></h4>
+            <p><strong>San Ramon, CA and Sacramento, CA – June 14, 2012</strong> – CALNOC, the leading provider of actionable information and research on nurse sensitive quality indicators, today announced its second annual CALNOC Performance Excellence Awards recognizing exceptional hospitals for outstanding performance in the areas of reduction of hospital acquired pressure ulcers and injuries from falls. Chosen among almost 300 hospitals, the two hospitals selected are recognized for their commitment and dedication to nursing quality.</p>
+            <p>This year’s winners represent hospitals of various sizes and affiliation. These hospitals not only improved but sustained their performance consistently over 24 months and have been exemplary in their approach and dedication. The winners of the 2012 Performance Excellence Awards are:</p>
+            <p>Kaiser Permanente Downey Medical Center, also a winner of the award in 2011, led by Jim Branchick, Chief Operating Officer and Patty Clausen, Chief Nursing Officer. Kaiser Permanente Downey Medical Center cares for over 300,000 members with nine medical offices and a 352-bed hospital in Southeast Los Angeles County, California.</p>
+            <p>Kaiser Permanente Hayward located in Northern California, and is led by JoAnn Mette, , Chief Nursing Officer. Kaiser Hayward is a 210 bed facility with a 20-bed pediatric unit and a 12-bed neonatal intensive care unit.</p>
+            <p>"CALNOC is pleased to honor Kaiser Permanente Downey and Kaiser Permanente Hayward for their exemplary performance and dedication to patient care excellence,” said Kathy Harren, RN, MHA, MSNc, and Chair of the Board for CALNOC. "These hospitals have a long and consistent track record of monitoring and measuring performance with CALNOC in order to deliver the highest standard in care.”</p>
+            <p>In addition to the CALNOC Awards of Excellence recipients, the following hospitals were recognized for their commitment to patient care excellence:</p>
+            <p>Arroyo Grande Community Hospital, California Pacific – California Campus, Community Regional Medical Center, Frank R. Howard Memorial Hospital, Fresno Heart and Surgical Hospital, Kern Medical Center, Kaiser Permanente – Anaheim, Kaiser Permanente – Baldwin Park, Kaiser Permanente – Fontana, Kaiser Permanente – Hayward, Kaiser Permanente – Manteca, Kaiser Permanente – San Diego, Kaiser Permanente – South San Francisco, Kaiser Permanente – Vacaville, Long Beach Memorial, Mercy Mt. Shasta, Mission Hospital – Laguna Beach, Modoc Medical Center, Pomerado Hospital, Pomona Valley Hospital and Medical Center, Providence Little Company of Mary – San Pedro, San Mateo Medical Center, St. Elizabeth Community Hospital, St. Johns Pleasant Valley, San Joaquin Community Hospital, Sharp Grossmont Hospital, Sierra Vista Regional Medical Center, Sutter Coast Hospital, UC Irvine Medical Center, UC San Diego Medical Center, White Memorial Medical Center.</p>
+            <p><strong><br>
+            About CALNOC</strong><br>
+            CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first nursing database registry of nursing sensitive indicators which turns patient outcome data into powerful information for hospital executives to help guide decisions to advance global patient care. Hundreds of leading hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California. For more information call 888.586.1994 or visit www.calnoc.org.</p>
+            <hr>
+            <p><span style="color: rgb(0, 162, 147); font-size: 17px;">CALNOC Announces 2012 CALNOC Conference and Keynote Speakers Peter V. Lee, Dr. William B. Munier, and Dr. Patricia A. Quigley</span></p>
+            <h4><em>The 2012 CALNOC Conference, "Leading Transformational Change", will focus on the strategies and tactics healthcare leaders can employ to lead transformational change in patient care excellence. </em></h4>
+            <p><strong>San Ramon, Calif. -- April 09, 2012. </strong><a href="../../">CALNOC</a> (the Collaborative Alliance for Nursing Outcomes), the leading provider of actionable information and research on nurse sensitive quality indicators, today announced the dates, theme and keynote presenters for the 2012 CALNOC Conference. With the theme of "Leading Transformational Change", the 2012 CALNOC Conference will focus on the strategies and tactics healthcare leaders can employ to lead transformational change in patient care excellence. The CALNOC Conference will examine trends, innovations and public policies affecting healthcare, as well as evidence-based insights, best practices and emerging CALNOC nursing-sensitive data findings to assist nursing and quality leadership in advancing patient care excellence.</p>
+            <p><a title="Keynote Speakers" href="http://www.cvent.com/events/2012-calnoc-conference-leading-transformational-change/custom-17-ec3824f9c15a42a7803f31589b0a449c.aspx"><strong>Keynote presentations</strong></a><strong> will be delivered by healthcare visionaries and leaders:</strong></p>
+            <p>Peter V. Lee, JD, the Executive Director of the California Health Benefit Exchange and former Deputy Director of the Center for Medicare and Medicaid Innovation. Previously Mr. Lee was the CEO of the Pacific Business Group on Health. Mr. Lee has served on a range of boards and commissions, including the National Committee on Quality Assurance (NCQA); the National Quality Forum; the National Business Coalition on Health; and as co-chair of the Consumer/Purchaser Disclosure Project.</p>
+            <p>William B. Munier, MD, MBA, the Director, Center for Quality Improvement and Patient Safety at the Agency for Healthcare Research and Quality (AHRQ) within the Department of Health and Human Services. Dr. Munier has been in healthcare management most of his career with a particular focus on performance measurement, quality and safety, and clinical software development.</p>
+            <p>Patricia A. Quigley, PhD, MPH, ARNP, CRRN, FAAN, FAANP, Associate Director and Associate Chief of Nursing for Research for the Veterans Administration. Dr. Quigley's contributions to patient safety, nursing and rehabilitation are evident at a national level - with emphasis on clinical practice innovations designed to promote elders' independence and safety through reduction of falls and protection from fall-related injuries.</p>
+            <p><strong>CALNOC Presentations</strong></p>
+            <p>Members of the <a title="CALNOC Leadership Team" href="../../displaycommon.cfm?an=1&amp;subarticlenbr=3">CALNOC Leadership Team and its Senior Scientists</a> will lead presentations highlighting CALNOC's emerging research findings examining factors that predict and reduce medication administration errors, as well as clinical redesigns and innovations to reduce in patient falls and fall-related injury, restraint use and hospital acquired pressure ulcers. Presentations by participating hospitals in CALNOC will identify key factors contributing to "best practice" performance and share strategies to achieving and sustaining improvements in nursing sensitive processes and outcomes of patient care. CALNOC team members leading conference sessions include:</p>
+            <p>Diane Storer Brown, PhD, RN, CPHQ, FNAHQ, FAAN, CALNOC Senior Scientist and strategic leader for Hospital Accreditation Programs for Kaiser Permanente-Northern California Region.</p>
+            <p>Nancy Donaldson, DNSc, RN, FAAN, CALNOC Senior Scientist and Director of UCSF Centre for Evidence-based Quality Improvement-A JBI Affiliate, UCSF School of Nursing. <br>
+            Carolyn Aydin, PhD, CALNOC Data Management Services Director &amp; Research Scientist at Cedars-Sinai Medical Center and Burns &amp; Allen Research Institute.</p>
+            <p>Mary E. Foley, PhD, RN, CALNOC Education Services Director &amp; Director of the Center for Nursing Research and Innovation at the University of California, San Francisco, School of Nursing (UCSF).</p>
+            <p>Kathy Harren, R.N., M.H.A., MSNc, CALNOC Board Chair &amp; Regional Director of the Nursing Institute for Providence Health and Services of Southern California.</p>
+            <p>Tony Sung, CALNOC Chief Operating Officer, responsible for the day to day operations as well as the implementation of CALNOC's corporate strategy imperatives.</p>
+            <p><strong>2012 CALNOC Conference Details</strong></p>
+            <p>For more information about the 2012 CALNOC Conference and to register to attend, visit the <a href="../../displaycommon.cfm?an=1&amp;subarticlenbr=4">2012 CALNOC Conference website</a>.</p>
+            <p><strong>About CALNOC</strong></p>
+            <p>CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first nursing database registry of nursing sensitive indicators which turns patient outcome data into powerful information for hospital executives to help guide decisions to advance global patient care. Hundreds of leading hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California. For more information call 888.586.1994 or visit <a href="../../">www.calnoc.org</a>.</p>
+            <hr>
+            <h3><a name="March_1_2012" class=" FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC">CALNOC Leaders Dr. Nancy Donaldson &amp; Dr. Mary Foley Receive Awards from the Association of California Nurse Leaders </a></h3>
+            <h4><em>Association of California Nurse Leaders (ACNL) honors CALNOC leaders with excellence in nursing leadership awards.</em></h4>
+            <p><strong>San Ramon, Calif. – February 29, 2012. </strong>CALNOC (Collaborative Alliance for Nursing Outcomes), the leading provider of actionable information and research on nurse sensitive quality indicators, today announced that leaders from CALNOC have received awards from the Association of California Nurse Leaders (ACNL) at the recent ACNL Conference held in Rancho Mirage, California. The Association of California Nurse Leaders Recognition Awards Program was establish to recognize individuals who have demonstrated excellence in nursing leadership.</p>
+            <p>Nancy Donaldson, DNSc, RN, FAAN – Receives Award for Contributions to ACNL</p>
+            <p>Dr. Nancy Donaldson, Senior Scientist for CALNOC, &amp; Clinical Professor and Director Centre for Evidence-Based Quality Improvement at UC San Francisco School of Nursing, was recognized with an award for her many contributions over the years to ACNL.</p>
+            <p>Dr. Donaldson is an internationally recognized leader in nursing quality measurement, nurse staffing effectiveness and patient safety. For 16 years, Dr. Donaldson’s passion and dedication has helped sustain and grow the Collaborative Alliance for Nursing Outcomes (CALNOC). Today CALNOC is the leading provider of actionable information and research on nurse sensitive quality indicators. Through her contributions to life-long learning and evidence-based practice, Dr. Donaldson has consistently improved quality patient care and increased the capacity of nurses as health care leaders. Her success has contributed greatly to ACNL’s success.</p>
+            <p>"Nancy Donaldson’s commitment to transform health care through nursing leadership, education and research exemplifies the mission and vision of ACNL,” said Patricia Lenihan McFarland, MS, RN, FAAN, and CEO of ACNL.</p>
+            <p>Mary Foley, PhD, RN – Receives ACNL Award for Contributions as a Humanitarian</p>
+            <p>Dr. Mary Foley, CALNOC Director of Education and the Director, Center for Research and Innovation at UC San Francisco School of Nursing was recognized for her contributions as a humanitarian.</p>
+            <p>Throughout her career as a nurse leader, Dr. Foley has been devoted to providing nurses with the knowledge and tools to improve patient care outcomes. In 2011, Dr. Foley led a delegation of nurse leaders to Rwanda. Describing the trip as a "life changing experience,” Dr. Foley has committed to improving health care for the people of Rwanda by providing the country’s nurses with the resources to advance their professional practice. She is developing partnerships between American nurse leaders and their colleagues in Rwanda, and has begun to orchestrate donations of simulation equipment and textbooks to build and promote nursing excellence.</p>
+            <p>"Through her dedication to advancing professional practice, Mary Foley inspires and empowers nurses in the US and abroad to improve patient care,” said Tony Sung, COO of CALNOC.</p>
+            <h4>About CALNOC</h4>
+            <p>CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first nursing database registry of nursing sensitive indicators which turns patient outcome data into powerful information for hospital executives to help guide decisions to advance global patient care. Hundreds of leading hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California. For more information call 888.586.1994 or visit www.calnoc.org.</p>
+            <hr>
+            <h3><a name="Feb_1_21012_PR" class=" FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC">CALNOC Announces Introduces New Service Lines for Maternal / Child Care and Emergency Department </a></h3>
+            <h4><em>CALNOC now gathers and analyzes data across all service lines offering hospital-wide visibility into actionable information to monitor, benchmark, and improve patient care</em></h4>
+            <p><strong>San Ramon, Calif. – February 1, 2012. </strong>CALNOC (Collaborative Alliance for Nursing Outcomes), the leading provider of actionable information and research on nurse sensitive quality indicators, today announced the expansion of its services to include Maternal / Child Care and Emergency Departments. These new benchmarking additions complement CALNOC’s existing services. With today’s announcement, CALNOC services cover all departments within a hospital, including post-acute and acute rehabilitation areas, and can provide invaluable, actionable information to nursing leaders, hospital administrators, and executives.</p>
+            <p>CALNOC created the nation’s first registry of nursing sensitive indicators, transforming hospital staffing, processes of care, and patient outcome data into powerful information to help guide decisions advancing improvement in patient care quality, costs, safety, and outcomes. CALNOC’s registry and reporting combines staffing variables overlaid with nursing sensitive patient variables at the unit level to allow hospitals to benchmark against themselves and multiple combinations of other institutions. </p>
+            <p>"Hospitals are challenged to better understand patient flow and how to optimize throughput in order to ensure the proper level of service to its patients while simultaneously ensuring best outcomes and managing costs,” said Nancy Donaldson, DNSc, RN, FAAN, CALNOC Senior Scientist and Board Member. "Although nursing is the biggest cost center for a hospital, quality nursing care is critical to patient care excellence. CALNOC data enable clinical and administrative leaders to examine links between staffing, processes of care and outcomes. Optimal quality of care is generally the most cost effective care, so fully leveraging the insight and information from CALNOC data can maximize financial performance, value-based purchasing positioning and market place public reporting.”</p>
+            <h4>Pricing and availability</h4>
+            <p>CALNOC’s new service lines are available now. CALNOC participants may begin submitting data immediately and reports will be available for Q1 in Q2, along with all other customizable reports -- at no additional fee.</p>
+            <p>For more information, please visit www.calnoc.org or email info@calnoc.org.</p>
+            <h4>About CALNOC</h4>
+            <p>CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first nursing database registry of nursing sensitive indicators which turns patient outcome data into powerful information for hospital executives to help guide decisions to advance global patient care. Hundreds of leading hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California. For more information call 888.586.1994 or visit www.calnoc.org.</p>
+            <hr>
+            <h3>
+            <a name="December_6_PR" class=" FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC">CALNOC Announces the CALNOC Research Fund™ Dedicated to Advancing Innovative Research</a></h3>
+            <h4><em>CALNOC Research Fund provides one year grants to be awarded to research projects focused on priorities in the 2010 Institute of Medicine (IOM) Future of Nursing Report</em></h4>
+            <p><strong>San Ramon, Calif. – December 6, 2011</strong>. CALNOC (Collaborative Alliance for Nursing Outcomes), the leading provider of actionable information and research on nurse sensitive quality indicators, today announced the availability of one year grants to advance innovative research and demonstration projects that addresses research priorities emerging from the 2010 Institute of Medicine (IOM) Future of Nursing Report.</p>
+            <p>The CALNOC Research Fund™ is now available to both CALNOC participating and non-participating hospitals and doctoral students as initial and matching grants of up to $5,000 will be awarded. Contributions to The CALNOC Research Fund are made possible by generous donations received at CALNOC’s Gala Event: An Evening Transforming Patient Care during the CALNOC Annual Conference this past summer.</p>
+            <p>"CALNOC is pleased to be offering the CALNOC Research Fund to spur research aimed at advancing global patient care excellence,” said Dr. Nancy Donaldson, DNSc, RN, FAAN, CALNOC Chairperson and Chief Scientist. "We are grateful to our generous donors who contributed to this fund, and we look forward to the exciting research that will be made possible through the fund.”</p>
+            <p>Proposed research should focus on one or more of the research priorities cited in IOM Future of Nursing Report: Leading Change, Advancing Health (Washington DC, 2011), including care management models, comparative effectiveness, education, leadership, residencies, scope of practice, teamwork, technology, and value of reforms. Furthermore, research projects should focus on inpatient settings and/or transitions across the continuum of care.</p>
+            <h4>Examples of relevant research include:</h4>
+            <ul>
+                <li>Impacts of new models of care delivery on nursing work and nursing care</li>
+                <li>Impacts of workforce configurations on health care costs, quality and access</li>
+                <li>Strategies for increasing the efficient education, preparation and distribution of the nursing workforce, including nurse residencies</li>
+                <li>Impacts of evolving payment innovations on nursing work and quality of care</li>
+                <li>Impacts of introduction of new technologies on nursing care</li>
+                <li>Impacts of team-based care models and other advances</li>
+                <li>Impacts of nurse-led innovations in patient care design and delivery</li>
+                <li>Comparative effectiveness of approaches to delivery nursing care</li>
+            </ul>
+            <h4>Research Grant Application Process</h4>
+            <p>To apply for a research grant, please <a href="/associations/13337/files/CALNOC Reserach Fund Call for Proposals_Application_Instructions.pdf"><strong>click here to download the application and instructions.</strong></a></p>
+            <p>For questions, contact CALNOC at info@calnoc.org or call 888.586.1994, or visit the <a href="displaycommon.cfm?an=1&amp;subarticlenbr=11">CALNOC Research Fund</a> page on the CALNOC Website.</p>
+            <p><strong>The application deadline is January 20, 2012.</strong></p>
+            <h4>About CALNOC</h4>
+            <p>CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first nursing database registry of nursing sensitive indicators which turns patient outcome data into powerful information for hospital executives to help guide decisions to advance global patient care. Hundreds of leading hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California. For more information call 888.586.1994 or visit www.calnoc.org.</p>
+            <hr>
+            <h3>
+            <a name="September_26_PR" class=" FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC">Dr. Nancy Donaldson, CALNOC Chairperson and Senior Scientist, Receives the 2011 Excellence in Leadership Award from Betty Irene Moore School of Nursing at UC Davis</a></h3>
+            <h4><em>Excellence in Leadership Award honors Donaldson’s leadership and contributions to nursing, education, and research</em></h4>
+            <p><strong>San Ramon, Calif. – September 26, 2011.</strong> CALNOC (Collaborative Alliance for Nursing Outcomes), the leading provider of actionable information and research on nurse sensitive quality indicators, today announced that Dr. Nancy Donaldson, DNSc, RN, FAAN has been awarded the 2011 Excellence in Leadership Award from the Betty Irene Moore School of Nursing at UC Davis. Dr. Donaldson is Chairperson and Chief Scientist for CALNOC and is an internationally recognized leader in nursing quality measurement, nurse staffing effectiveness, and clinical patient safety.</p>
+            <p>The award celebrates and recognizes nursing leaders who exemplify the values of the Betty Irene Moore School of Nursing and serve as role models for the enactment of the school’s vision to transform health care through nursing leadership, education, and research.</p>
+            <p>"Dr. Donaldson is a nursing leader who has built a strong foundation for the nursing profession and continues to be an advocate for health,” said Heather M. Young, Associate Vice Chancellor of Nursing and Founding Dean of the Betty Irene Moore School of Nursing at UC Davis. "Her commitment to strengthen the quality of health care and increase the capacity of nurses as leaders throughout the nation embodies this school’s vision.”</p>
+            <p>"We in nursing are blessed to share the journey of birth and death, of illness beyond cure and recovery beyond imagining,” said Donaldson. "I am honored to receive this award from a Betty Irene Moore School of Nursing, a school that is forming tomorrow’s nursing leaders who will continue to provide advancements in global patient care excellence.”</p>
+            <h4>About Dr. Nancy Donaldson, DNSc, RN, FAAN</h4>
+            <p>Dr. Nancy Donaldson has served as the Co-Principal Investigator for CALNOC since its inception in 1996 and today is Chairperson of the CALNOC Board of Directors and CALNOC Senior Scientist, Donaldson is a clinical professor at the UCSF School of Nursing and director of the UCSF Centre for Evidence-Based Patient Care Quality Improvement. She has been engaged in clinically based, multisite quality improvement and translational science inquiry and evidence-based practice capacity development for two decades. She is a productive author of peer-reviewed journal articles, book chapters and academic/staff development educational courseware and media.</p>
+            <p>Donaldson serves as a member of the National Advisory Council for Healthcare Research &amp; Quality of the Agency for Healthcare Research &amp; Quality (AHRQ) and served, from 2001 to 2008, on the AHRQ Patient Safety Research Coordinating Center Steering committee. Donaldson served as a member of the California Health Policy &amp; Data Advisory Commission Technical Panel since 1997 and a myriad nursing and health-care quality advisory panels nationwide. She is co-chair of the American Academy of Nursing Expert Panel of Quality. Dr. Donaldson received her DNSc. from the University of California, San Francisco.</p>
+            <h4>About CALNOC</h4>
+            <p>CALNOC (the Collaborative Alliance for Nursing Outcomes), is the leading provider of actionable information and research on nurse sensitive quality indicators. Always on the forefront of patient care excellence, CALNOC created the first nursing database registry of nursing sensitive indicators which turns patient outcome data into powerful information for hospital executives to help guide decisions to advance global patient care. Hundreds of leading hospitals have joined CALNOC to monitor and benchmark performance in order to deliver excellence in patient care. CALNOC is a non-profit corporation with headquarters in San Ramon, California. For more information call 925.831.4757 or visit www.calnoc.org.</p>
+            <hr>
+            <h3><a name="March_08_Press_Release" class=" FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC FCK__AnchorC">CALNOC Announces New Education Online Media</a></h3>
+            <h4>CALNOC offers a unique on demand learning tool to streamline learning and maximize the CALNOC<br>
+            Advantage.</h4>
+            <p><strong>Sacramento, Calif. -- March 08, 2010.</strong> CALNOC is pleased to announce that its member hospitals can now view on demand educational video presentations on the CALNOC website. This innovative new tool will assist hospitals in reaching the full potential of their CALNOC membership, fully leveraging the website and the resources they offer.<br>
+            "</p>
+            <p>I am extremely excited that this program is up and running,” stated Dr. Nancy Donaldson RN, DNSc, FAAN, and CALNOC Chairperson-elect. "The five new educational online video modules help member hospitals optimize the value of their CALNOC data and how they can benefit from our services. It gives the user a chance to learn at their own pace, while recognizing the effortlessness in using, generating customized reports and learning the CALNOC registry to expedite performance improvement.”</p>
+            <p>This value added aspect of the CALNOC website will give hospitals an insight on the driving demand for quality nursing, running CALNOC reports, and assisting hospitals on how to use CALNOC reports to drive<br>
+            improvement. It will offer descriptions and learning objectives to be put to use by hospitals looking to create a kaizen strategy.</p>
+            <p>"CALNOC Online videos give our membership another unique service offered through their association and involvement with CALNOC and the CALNOC registry,” states Mary Foley, Director of Education for CALNOC.</p>
+            <h4>About CALNOC</h4>
+            <p>The mission of the Collaborative Alliance for Nursing Outcomes, CALNOC, is to advance global patient care safety, outcomes and performance measurement efforts.At the core of the CALNOC advantage is the member hospital database. Through CALNOC, unit level hospital data are captured about acute care nurse staffing and nurse-related patient outcomes. CALNOC has continuously improved the sophistication and strategic utility of its data reports provided to participating hospitals via secure Web access that has resulted in a virtual dashboard reporting system. Early adopters of CALNOC measures have been able to translate their benchmarking data into information to guide decisions for providing and improving patient care. CALNOC has aggregated over 11 years of data, representing more than 1,600 patient units, over 48 million patient days (48,558,920), over 137,000 patient falls, and 338,000 patients have been evaluated for pressure ulcers and restraint use.</p>
+            <hr>
+            <p>&nbsp;</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table></div>
+
+	<div id="ResourceCollection">
+		
+	
+	<script type="text/javascript">
+	function LaunchThis(sender, strURL)
+	{
+		window.open (strURL);	
+		return false;
+	}
+	
+	function NewCollection(Collection)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=";
+		return false;
+	}
+	
+	function ModifyThis(Collection, ItemID)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=&itemID=" + ItemID;
+		return false;
+	}
+	</script>
+
+	</div></td>
+</tr>
+</table><!--END SpContent-->
+
+
+<div id="PageBase_RaiseAlert" class="yui-skin-sam"></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+					<!--@@DG_PRINT_PAGE_END@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+				</div> <!-- Close left div --></td>
+				<div id="right">
+				<div id="RightRailTopContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+					
+           			<div id="events" class="zone" style="display:none;">
+                		<div class="irailhead"><a href="/events/event_list.asp">more</a>Calendar</div>
+						<div class="irailcontent"><p>The upcoming calendar is currently empty.</p><p><a href='/events/event_list.asp?cid=&show=past'>Click here to view past events and photos &raquo;</a></p></div>
+					</div>
+					
+					<div id="news" class="zone" style="display:none;">
+						<div class="irailhead"><a href="/news/">more</a>Latest News</div>
+						<div class="irailcontent">There are currently no news items posted.</div>
+					</div>				
+					
+					
+								<div id="railbottom"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--><h1>CALNOC Partners&nbsp;</h1>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="/resource/resmgr/images/ucsf_logo_new.jpg"></p>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-acnl.jpg"></p>
+<p align="left">&nbsp;</p>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-csmc.jpg"></p>
+<p align="left">&nbsp;</p>
+<div>
+<br>
+<br>
+<br>
+</div>
+<p align="left">&nbsp;</p></div>
+						</div><!-- end div right -->
+						
+				<div class="clear"></div>				
+		
+			</div> <!-- Close sp-content div -->
+			<div id="BottomContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+			</div> <!-- Close icontent div -->
+
+		    <div id="FooterContentArea">
+			    <!--YMPSTITLE=TgBBAA==/YMPSTITLE--><div class="grid_24">
+<table align="center" style="border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px; vertical-align: top;">
+            <h3>&nbsp;</h3>
+            <h3>Navigation</h3>
+            <p><a href="http://www.calnoc.org"><span style="color: #696969;">Home</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=7"><span style="color: #696969;">Mission</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=8"><span style="color: #696969;">Registry</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=17"><span style="color: #696969;">Education</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Testimonials</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Benefits of Joining</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=23"><span style="color: #696969;">In the News</span></a></p>
+            <p><a href="http://calnoc.site-ym.com/events/event_list.asp"><span style="color: #696969;">Calendar of Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=12"><span style="color: #696969;">Helpful Links</span></a></p>
+            </td>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">About Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=6"><span style="color: #696969;">History</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=15"><span style="color: #696969;">FAQ</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=9"><span style="color: #696969;">Medication Administration</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Customers</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Join Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=21"><span style="color: #696969;">Apply</span></a></p>
+            <p><a href="/events/event_list.asp"><span style="color: #696969;">Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=10"><span style="color: #696969;">CALNOC Articles &amp; Research</span></a></p>
+            <p><a href="/?page=A12"><span style="color: #696969;">Contact Us</span></a></p>
+            </td>
+            <td style="border: 1px #000000; width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">Overview - CALNOC Advantage</span></a><span style="color: #696969;"> </span> </p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=3"><span style="color: #696969;">Leadership</span></a></p>
+            <p><a href="/?page=A2"><span style="color: #696969;">Offerings</span></a></p>
+            <p><a href="/?page=1"><span style="color: #696969;">Services</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=19"><span style="color: #696969;">Partners</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=18"><span style="color: #696969;">Who Should Join?</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=20"><span style="color: #696969;">Press Releases</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=4"><span style="color: #696969;">CALNOC Annual Conference</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=16"><span style="color: #696969;">Resources</span></a></p>
+            <p>&nbsp;</p>
+            </td>
+            <td style="text-align: left; letter-spacing: 0px; padding-right: 20px; padding-left: 20px; word-spacing: 0px; vertical-align: top; border-left-color: #dcdcdc; border-left-width: 1px; border-left-style: dashed;">
+            <h3>&nbsp;</h3>
+            <h3>Location</h3>
+            <p><span style="color: #696969;">2410 Camino Ramon</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Suite 360</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">San Ramon, CA 94583</span></p>
+            <p><span style="color: #696969;">Voice: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Fax: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Email:</span> <a href="mailto:info@calnoc.org">info@calnoc.org</a></p>
+            <p><a href="http://maps.google.com/maps?q=2410+Camino+Ramon+San+Ramon+CA+94583&amp;hl=en&amp;sll=37.772651,-121.963671&amp;sspn=0.008565,0.018969&amp;hnear=2410+Camino+Ramon,+San+Ramon,+California+94583&amp;t=m&amp;z=16" target="_blank">Google Map</a></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="grid_6">
+<p class="grid_24" style="text-align: center;"><span style="color: #696969;">Copyright 2017 © CALNOC.org</span> | <a href="displaycommon.cfm?an=1&amp;subarticlenbr=22"><span style="color: #696969;">Terms of Use</span></a></p>
+<p>&nbsp;</p>
+</div>
+		    </div>
+
+		    <div id="Foot"><!-- FOOTER --> </div>
+
+		    <div id="icopyright">Association Management Software Powered by <a href='http://www.yourmembership.com/'>YourMembership</a> &nbsp;::&nbsp; <a href='/ams/legal-privacy.htm'>Legal</a><!-- Copyright (c) 1998-2018 YourMembership.com Inc. All Rights Reserved. Copyright: Certain elements of this website are: Copyright (c) 1998-2018, YourMembership.com, Incorporated. YourMembership.com, Incorporated provides a limited license to use its Copyrights to the entity from whose web page you are viewing. Certain elements of this website may also be copyrighted by that entity; please see its Terms of Use or contact the organization for more information. General information about copyright laws can be found at: http://www.copyright.gov/. For more specific information, please consult an attorney. --></div>
+</body>
+
+
+</html>
+<!--END_OF_FILE-->

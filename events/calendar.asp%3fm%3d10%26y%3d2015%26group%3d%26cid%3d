@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		<title>Collaborative Alliance for Nursing Outcomes</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/combined.css?_v=1.71.108.131&context=sp"/>
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.52"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+
+	<body id="PageBody" style="margin:0px 0px 0px 0px"
+		onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}">
+		
+		<table id="SpPopup" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+		<tr>
+			<td id="SpPopup_Container">
+
+
+
+<script type="text/javascript">
+	var m_blnSuppressAdminNavBar = true;</script>
+
+<style type="text/css">
+#Calendar {
+}
+
+#Calendar th {
+	background-color: #777777;
+	color: #ffffff;
+}
+
+#Calendar th.Head {
+	background-color: #eeeeee;
+	font-size: 18px;
+	color: #333333;
+}
+
+#Calendar th.Head a {
+	font-size: 12px;
+}
+
+#Calendar tr.Normal {
+	background-color: #ffffff;
+}
+
+#Calendar tr.Highlight {
+}
+
+#Calendar td {
+	vertical-align: top;
+	width: 110px;
+	height:70px;
+	border: 1px solid #000000;
+	padding:3px 3px 3px 3px;
+}
+
+#Calendar td.MonthPrevNext {
+	background-color: #eeeeee;
+}
+
+#Calendar td.EndWeek {
+	border: none;
+	vertical-align: middle;
+}
+
+#Calendar tr.Normal a.MonthDay, tr.Normal a.MonthDayNow {
+	float:right;
+	text-align: center;
+	border: 0px solid #000000;
+	width: 31px;
+	height: 28px;
+	display:block;
+	padding:0px 0px 0px 0px;
+}
+
+#Calendar tr.Highlight a.MonthDay, tr.Highlight a.MonthDayNow {
+	float:right;
+	text-align: center;
+	border: 0px solid #000000;
+	width: 31px;
+	height: 28px;
+	display:block;
+	padding:0px 0px 0px 0px;
+	background-image: url(/global_graphics/calendar_bg_over.gif);
+	color:#ffffff;
+	text-decoration: underline;
+}
+
+#Calendar a.MonthDay {
+	background-image: url(/global_graphics/calendar_bg.gif);
+	color:#333333;
+}
+
+#Calendar  a.MonthDayNow {
+	background-image: url(/global_graphics/calendar_bg_over.gif);
+	color:#ffffff;
+	font-weight: bold;
+}
+
+#Calendar a.MonthDay:hover, a.MonthDayNow:hover {
+	background-image: url(/global_graphics/calendar_bg_over.gif);
+	color:#ffffff;
+	text-decoration: underline;
+}
+
+#Calendar ul.EventDetails {
+	font-size: 11px;
+	margin:0px;
+	padding:2px;
+}
+
+#Calendar ul.EventDetails li {
+	list-style:none;
+	border:1px solid #BBBBBB;
+	padding:0 0 5px 5px;
+	margin:0px;
+}
+</style>
+
+<script language="javascript" type="text/javascript">
+<!--
+function closeAndGoTo(sUrl){
+	if(opener){
+		opener.location.href = sUrl
+		opener.focus();
+		self.close();
+	}
+	else {
+		location.href = sUrl;
+	}
+	return false;
+}
+
+function highlightWeek(strValue, strClass)
+{
+	var ItemRow = document.getElementById(strValue.toString());
+	
+	if(ItemRow)
+	{
+		ItemRow.className = strClass;
+	}
+}
+//-->
+</script>
+
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">
+		Calendar</td>
+</tr>
+<tr>
+	<td id="SpNavBar">
+	<form action="/events/calendar.asp" method="get">
+
+
+<input type="hidden" name="group" value="">
+	<select name="m">
+	<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option VALUE="10" SELECTED>October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+
+	</select>
+	<select name="y">
+	<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option VALUE="2015" SELECTED>2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+
+	</select>
+	<input type="submit" name="btGo1" value="GO" class="formbutton" style="margin-bottom:2px;">
+	</form>
+	<a href="/events/calendar.asp?m=10&y=2015&group=&cid=">Current Month</a>
+	<a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F1%2F2015&end=10%2F31%2F2015&view=month&group=&cid=');"">List View</a>
+	<a href="#" onClick="return closeAndGoTo('/events/event_list.asp?group=&cid=');">Close Popup</a>
+
+	<a href="#" onClick="JavaScript: window.print(); return false;">
+	<img src="/global_graphics/icons/print_bw.gif" align="left" border=0 height=16 width=16>Print Page</a>
+	
+	</td>
+</tr>
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0" style="height:auto">
+<tr>
+	<td id="SpContent_Container">
+
+
+
+
+
+
+
+	<div class="yui-skin-sam">
+		<div id="tt-container"></div>
+	</div>
+	<table width="880" border="0" cellspacing="4" cellpadding="1" id="Calendar">
+	<tr>
+		<th class="Head" colspan="7">
+		<a href="?m=9&y=2015&group=&cid=">&laquo; Previous</a>&nbsp;&nbsp;
+		October 2015&nbsp;&nbsp;
+		<a href="?m=11&y=2015&group=&cid=">Next &raquo;</a>
+		</th>
+		<th style="background-color:white">
+		</th>
+	</tr>
+	<tr>
+		<th>Sunday</th>
+		<th>Monday</th>
+		<th>Tuesday</th>
+		<th>Wednesday</th>
+		<th>Thursday</th>
+		<th>Friday</th>
+		<th>Saturday</th>
+		<th style="background-color:white">
+		</th>
+	</tr>
+
+	<tr id="Week40" class="Normal">
+
+			<td class="MonthPrevNext">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=9%2F27%2F2015&end=9%2F27%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">27</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthPrevNext">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=9%2F28%2F2015&end=9%2F28%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">28</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthPrevNext">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=9%2F29%2F2015&end=9%2F29%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">29</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthPrevNext">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=9%2F30%2F2015&end=9%2F30%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">30</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F1%2F2015&end=10%2F1%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">1</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F2%2F2015&end=10%2F2%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">2</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F3%2F2015&end=10%2F3%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">3</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="EndWeek"><a href="#" onMouseOver="highlightWeek('Week40', 'Highlight');" onMouseOut="highlightWeek('Week40', 'Normal');" onClick="return closeAndGoTo('/events/event_list.asp?start=9%2F27%2F2015&end=10%2F3%2F2015&view=week&group=&cid=');">View Week</a></td>
+	</tr>
+
+	<tr id="Week41" class="Normal">
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F4%2F2015&end=10%2F4%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">4</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F5%2F2015&end=10%2F5%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">5</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F6%2F2015&end=10%2F6%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">6</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F7%2F2015&end=10%2F7%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">7</div></a></div><br clear=all>
+
+			<ul class="EventDetails">
+			<li style="background-color:#FFFFFF">
+
+						<span id="Event-526702"><a class="MonthViewEventLink" href="#" id="MiniEventDetailLink_526702_20151007000000" onclick="MiniEventDetailLink_OnMouseOver(526702, '20151007000000'); return false;"><b>Washington State Hospital Association 83rd Annual Meeting</b></a></span>
+
+			</li>
+			</ul>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F8%2F2015&end=10%2F8%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">8</div></a></div><br clear=all>
+
+			<ul class="EventDetails">
+			<li style="background-color:#FFFFFF">
+
+						<span id="Event-526702"><a class="MonthViewEventLink" href="#" id="MiniEventDetailLink_526702_20151008000000" onclick="MiniEventDetailLink_OnMouseOver(526702, '20151008000000'); return false;"><b>Washington State Hospital Association 83rd Annual Meeting</b></a></span>
+
+			</li>
+			</ul>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F9%2F2015&end=10%2F9%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">9</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F10%2F2015&end=10%2F10%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">10</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="EndWeek"><a href="#" onMouseOver="highlightWeek('Week41', 'Highlight');" onMouseOut="highlightWeek('Week41', 'Normal');" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F4%2F2015&end=10%2F10%2F2015&view=week&group=&cid=');">View Week</a></td>
+	</tr>
+
+	<tr id="Week42" class="Normal">
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F11%2F2015&end=10%2F11%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">11</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F12%2F2015&end=10%2F12%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">12</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F13%2F2015&end=10%2F13%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">13</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F14%2F2015&end=10%2F14%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">14</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F15%2F2015&end=10%2F15%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">15</div></a></div><br clear=all>
+
+			<ul class="EventDetails">
+			<li style="background-color:#FFFFFF">
+
+						<span id="Event-640023"><a class="MonthViewEventLink" href="#" id="MiniEventDetailLink_640023_20151015000000" onclick="MiniEventDetailLink_OnMouseOver(640023, '20151015000000'); return false;"><b>Global Handwashing Day</b></a></span>
+<script>var YMTTipcal640023 = new YAHOO.widget.Tooltip("YMTTipcal640023", { context: "Event-640023", container: "tt-container", width: "245px", text: "Global Handwashing Day (October 15)  is an annual global advocacy day dedicated to increasing awareness and understanding about the importance of handwashing with soap as an easy, effective, and affordable way to prevent diseases.", autodismissdelay: 120000 });</script>
+			</li>
+			</ul>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F16%2F2015&end=10%2F16%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">16</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F17%2F2015&end=10%2F17%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">17</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="EndWeek"><a href="#" onMouseOver="highlightWeek('Week42', 'Highlight');" onMouseOut="highlightWeek('Week42', 'Normal');" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F11%2F2015&end=10%2F17%2F2015&view=week&group=&cid=');">View Week</a></td>
+	</tr>
+
+	<tr id="Week43" class="Normal">
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F18%2F2015&end=10%2F18%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">18</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F19%2F2015&end=10%2F19%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">19</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F20%2F2015&end=10%2F20%2F2015&view=day&group=&cid=');" class="MonthDayNow"><div style="margin-top:5px;">20</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F21%2F2015&end=10%2F21%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">21</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F22%2F2015&end=10%2F22%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">22</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F23%2F2015&end=10%2F23%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">23</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F24%2F2015&end=10%2F24%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">24</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="EndWeek"><a href="#" onMouseOver="highlightWeek('Week43', 'Highlight');" onMouseOut="highlightWeek('Week43', 'Normal');" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F18%2F2015&end=10%2F24%2F2015&view=week&group=&cid=');">View Week</a></td>
+	</tr>
+
+	<tr id="Week44" class="Normal">
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F25%2F2015&end=10%2F25%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">25</div></a></div><br clear=all>
+
+			<ul class="EventDetails">
+			<li style="background-color:#FFFFFF">
+
+						<span id="Event-673530"><a class="MonthViewEventLink" href="#" id="MiniEventDetailLink_673530_20151025000000" onclick="MiniEventDetailLink_OnMouseOver(673530, '20151025000000'); return false;"><b>2015 CALNOC Conference Hilton Long Beach</b></a></span>
+<script>var YMTTipcal673530 = new YAHOO.widget.Tooltip("YMTTipcal673530", { context: "Event-673530", container: "tt-container", width: "245px", text: "Navigating the Chaos of Healthcare Transformation<br />", autodismissdelay: 120000 });</script>
+						&nbsp;<a href="#" title="Export to Your Calendar" id="AddToCalendarHoverLink_673530_20151025000000" onclick="AddToCalendarHoverLink_OnMouseOver(673530, '20151025000000'); return false;"><img valign="absbottom" src="/global_graphics/icons/ical_small.gif" border="0" alt="Export to Your Calendar"></a><br />
+
+			</li>
+			</ul>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F26%2F2015&end=10%2F26%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">26</div></a></div><br clear=all>
+
+			<ul class="EventDetails">
+			<li style="background-color:#FFFFFF">
+
+						<span id="Event-673530"><a class="MonthViewEventLink" href="#" id="MiniEventDetailLink_673530_20151026000000" onclick="MiniEventDetailLink_OnMouseOver(673530, '20151026000000'); return false;"><b>2015 CALNOC Conference Hilton Long Beach</b></a></span>
+<script>var YMTTipcal673530 = new YAHOO.widget.Tooltip("YMTTipcal673530", { context: "Event-673530", container: "tt-container", width: "245px", text: "Navigating the Chaos of Healthcare Transformation<br />", autodismissdelay: 120000 });</script>
+						&nbsp;<a href="#" title="Export to Your Calendar" id="AddToCalendarHoverLink_673530_20151026000000" onclick="AddToCalendarHoverLink_OnMouseOver(673530, '20151026000000'); return false;"><img valign="absbottom" src="/global_graphics/icons/ical_small.gif" border="0" alt="Export to Your Calendar"></a><br />
+
+			</li>
+			</ul>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F27%2F2015&end=10%2F27%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">27</div></a></div><br clear=all>
+
+			<ul class="EventDetails">
+			<li style="background-color:#FFFFFF">
+
+						<span id="Event-673530"><a class="MonthViewEventLink" href="#" id="MiniEventDetailLink_673530_20151027000000" onclick="MiniEventDetailLink_OnMouseOver(673530, '20151027000000'); return false;"><b>2015 CALNOC Conference Hilton Long Beach</b></a></span>
+<script>var YMTTipcal673530 = new YAHOO.widget.Tooltip("YMTTipcal673530", { context: "Event-673530", container: "tt-container", width: "245px", text: "Navigating the Chaos of Healthcare Transformation<br />", autodismissdelay: 120000 });</script>
+						&nbsp;<a href="#" title="Export to Your Calendar" id="AddToCalendarHoverLink_673530_20151027000000" onclick="AddToCalendarHoverLink_OnMouseOver(673530, '20151027000000'); return false;"><img valign="absbottom" src="/global_graphics/icons/ical_small.gif" border="0" alt="Export to Your Calendar"></a><br />
+
+			</li>
+			</ul>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F28%2F2015&end=10%2F28%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">28</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F29%2F2015&end=10%2F29%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">29</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F30%2F2015&end=10%2F30%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">30</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="MonthNow">
+			<div style="margin-top:2px;"><a href="#" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F31%2F2015&end=10%2F31%2F2015&view=day&group=&cid=');" class="MonthDay"><div style="margin-top:5px;">31</div></a></div><br clear=all>
+
+			</td>
+
+			<td class="EndWeek"><a href="#" onMouseOver="highlightWeek('Week44', 'Highlight');" onMouseOut="highlightWeek('Week44', 'Normal');" onClick="return closeAndGoTo('/events/event_list.asp?start=10%2F25%2F2015&end=10%2F31%2F2015&view=week&group=&cid=');">View Week</a></td>
+	</tr>
+
+	</table>
+
+	</td>
+</tr>
+</table><!--END SpContent-->
+
+<script type="text/javascript" src="/global_inc/js/add_to_calendar_hover.js"></script>
+
+<div class="yui-skin-sam">
+<div id="AddToCalendarHover" style="visibility:hidden"
+	onmouseover="AddToCalendarHover_OnMouseOver();" align="left">
+	<div class="hd">Export to Your Calendar</div>
+	<div id="AddToCalendarHoverBody" class="bd"></div>
+	<a class="bd small" style="display:block; padding-bottom:3px; cursor:hand;" onclick="javascript:$('#timehint').toggle();">Time not importing correctly?</a>
+	<div class="bd small" id="timehint" style="display:none;padding-top:0px;">
+		You may need to adjust the event times in your calendar application for variations in daylight saving time (DST) or summer time.
+	</div>
+</div></div>
+
+<script type="text/javascript" src="/global_inc/js/mini_event_detail.js"></script>
+
+<div class="yui-skin-sam">
+<div id="MiniEventDetail" style="visibility:hidden"
+	onmouseover="MiniEventDetail_OnMouseOver();" align="left">
+	<div class="hd">Event Details</div>
+	<div id="MiniEventDetailBody" class="bd" style="background:#ffffff"></div>
+</div></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+
+			</td>
+		</tr>
+		</table>
+		
+	</body>
+
+
+
+</html>
+<!--END_OF_FILE-->

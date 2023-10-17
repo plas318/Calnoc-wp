@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		<title>Washington State Hospital Association 83rd Annual Meeting - Collaborative Alliance for Nursing Outcomes</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/combined.css?_v=1.71.108.131&context=sp"/>
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.52"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
+
+
+
+<body id="PageBody" onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}">
+	<div id="icontainer">
+		<div id="icontent">
+            <div id="LeaderContentArea">
+                <!--YMPSTITLE=TgBBAA==/YMPSTITLE-->
+            </div>
+			<div id="topbar">
+				<div id="inavigation"><div id="FrontendMainMenu" class="radmenu RadMenu_YMPublic ">
+	<!-- 4.3.2 --><script type="text/javascript" src="/global_inc/RadControls/Menu/Scripts/4_3_2/RadMenu.js"></script><span id="FrontendMainMenuStyleSheetHolder" style="display:none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css');</script><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Skins/YMPublic/styles.css');</script><ul class="horizontal rootGroup">
+		<li class="item first"><a href="https://www.secure-calnoc.org/globalPages/mainpage.aspx" id="FrontendMainMenu_m0" class="link"><span class="text">Hospital Login</span></a></li><li class="item"><a href="/?page=A1" id="FrontendMainMenu_m1" class="link"><span class="text">About</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A1" id="FrontendMainMenu_m1_m0" class="link"><span class="text">Overview</span></a></li><li class="item"><a href="/?page=7" id="FrontendMainMenu_m1_m1" class="link"><span class="text">Mission</span></a></li><li class="item"><a href="/?page=6" id="FrontendMainMenu_m1_m2" class="link"><span class="text">History</span></a></li><li class="item"><a href="/?page=3" id="FrontendMainMenu_m1_m3" class="link"><span class="text">Leadership</span></a></li><li class="item"><a href="/resource/resmgr/Files/MarketingBrochureCALNOC_Fina.pdf" target="_blank" id="FrontendMainMenu_m1_m4" class="link"><span class="text">CALNOC Brochure</span></a></li><li class="item"><a href="/?page=25" id="FrontendMainMenu_m1_m5" class="link"><span class="text">Board of Directors</span></a></li><li class="item"><a href="/?page=27" id="FrontendMainMenu_m1_m6" class="link"><span class="text">Careers</span></a></li><li class="item last"><a href="/?page=15" id="FrontendMainMenu_m1_m7" class="link"><span class="text">FAQ</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A2" id="FrontendMainMenu_m2" class="link"><span class="text">Offerings</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A2" id="FrontendMainMenu_m2_m0" class="link"><span class="text">The Calnoc Advantage</span></a></li><li class="item"><a href="/?page=8" id="FrontendMainMenu_m2_m1" class="link"><span class="text">CALNOC Registry</span></a></li><li class="item"><a href="/?page=9" id="FrontendMainMenu_m2_m2" class="link"><span class="text">Medication Administration Accuracy</span></a></li><li class="item"><a href="/?page=1" id="FrontendMainMenu_m2_m3" class="link"><span class="text">Consulting Services</span></a></li><li class="item last"><a href="/?page=17" id="FrontendMainMenu_m2_m4" class="link"><span class="text">Education Services</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=13" id="FrontendMainMenu_m3" class="link"><span class="text">Customers</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=13" id="FrontendMainMenu_m3_m0" class="link"><span class="text">Customers</span></a></li><li class="item"><a href="/?page=28" id="FrontendMainMenu_m3_m1" class="link"><span class="text">2013 Top Performers</span></a></li><li class="item last"><a href="/?page=19" id="FrontendMainMenu_m3_m2" class="link"><span class="text">Partnership for Patients</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A6" id="FrontendMainMenu_m4" class="link"><span class="text">Join</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A6" id="FrontendMainMenu_m4_m0" class="link"><span class="text">Join Us</span></a></li><li class="item"><a href="/?page=18" id="FrontendMainMenu_m4_m1" class="link"><span class="text">Who Should Join?</span></a></li><li class="item"><a href="/?page=5" id="FrontendMainMenu_m4_m2" class="link"><span class="text">Benefits of Participation</span></a></li><li class="item last"><a href="/?page=21" id="FrontendMainMenu_m4_m3" class="link"><span class="text">Apply</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A7" id="FrontendMainMenu_m5" class="link"><span class="text">News & Events</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=20" id="FrontendMainMenu_m5_m0" class="link"><span class="text">Press Releases</span></a></li><li class="item"><a href="/?page=23" id="FrontendMainMenu_m5_m1" class="link"><span class="text">In the News</span></a></li><li class="item"><a href="/?page=24" id="FrontendMainMenu_m5_m2" class="link"><span class="text">Webinars</span></a></li><li class="item"><a href="/?page=4" id="FrontendMainMenu_m5_m3" class="link"><span class="text">2015 CALNOC Conference</span></a></li><li class="item last"><a href="/events/event_list.asp" id="FrontendMainMenu_m5_m4" class="link"><span class="text">Community Calendar</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A9" id="FrontendMainMenu_m6" class="link"><span class="text">Research & Resources</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=10" id="FrontendMainMenu_m6_m0" class="link"><span class="text">Research Articles</span></a></li><li class="item"><a href="/?page=16" id="FrontendMainMenu_m6_m1" class="link"><span class="text">Resources</span></a></li><li class="item"><a href="/?page=A30" id="FrontendMainMenu_m6_m2" class="link"><span class="text">Cost of HAPU</span></a></li><li class="item"><a href="/resource/resmgr/Docs/CALNOC_Data_Use_and_Services.pdf" target="_blank" id="FrontendMainMenu_m6_m3" class="link"><span class="text">Requesting CALNOC Data</span></a></li><li class="item last"><a href="/?page=12" id="FrontendMainMenu_m6_m4" class="link"><span class="text">Helpful Links</span></a></li>
+			</ul>
+		</div></li><li class="item last"><a href="/?page=A12" id="FrontendMainMenu_m7" class="link"><span class="text">Contact</span></a></li>
+	</ul><input type="hidden" id="FrontendMainMenu_Hidden" name="FrontendMainMenu" /><script type="text/javascript">window["FrontendMainMenu"] = RadMenu.Create("FrontendMainMenu");window["FrontendMainMenu"].Initialize({"EnableAutoScroll":true,"Skin":"YMPublic","Enabled":true},{});</script>
+</div></div>
+				
+					<div id="isearch"><form id="QuickSearchForm" name="QuickSearchForm" action="/search/all.asp">
+		<div id="QuickSearchFormInner1" class="ui-widget">
+			<input id="QuickSearchForm_bst" name="bst" maxlength='50' value='Enter search criteria...'@"onfocus='QuickSearchForm_OnFocus();'/>
+		</div>
+		<div id='QuickSearchFormInner2'><a href='#' id='QuickSearchSubmit' onclick='return QuickSearchForm_DoSubmit();'>Search&nbsp;&raquo;</a></div>
+</form><script type="text/javascript">
+function QuickSearchForm_DoSubmit()
+{
+		var QuickSearchForm = document.QuickSearchForm;
+     if(QuickSearchForm)
+     {
+			ClearDefaultValue(QuickSearchForm.bst);
+         QuickSearchForm.submit();
+     }
+		return false;
+}
+$(document).ready(function ()
+{
+		$("#QuickSearchForm_bst").click(function()
+		{
+			if ($("#QuickSearchForm_bst").val() == "Enter search criteria...")
+				$("#QuickSearchForm_bst").val('');
+			});
+			$("#QuickSearchForm_bst").blur(function ()
+			{
+				if ($("#QuickSearchForm_bst").val() == '')
+					$("#QuickSearchForm_bst").val('Enter search criteria...');
+				});
+				$("#QuickSearchForm_bst").autocomplete({
+					minLength: 3,
+					delay: 1000,
+					source: function (request, response)
+					{
+						$.ajax({
+						url: url = '/general/CategorySearchReciever.aspx?SearchTerm=' + $("#QuickSearchForm_bst").val() + "&cb=" + getCurrentTime(),
+						dataType: "json",
+						data: {
+						featureClass: "P",
+						style: "full",
+						maxRows: 20,
+						name_startsWith: request.term
+					},
+					success: function (data)
+					{
+						response($.map(data.CatalogSearchSuggestions, function (item)
+						{
+							return item;
+						}));
+					}
+				});
+			},
+			focus: function (event, ui)
+			{
+				return false;
+			},
+			select: function (event, ui)
+			{				document.location.href = ui.item.url;
+				return false;
+			},
+			open: function ()
+			{
+				$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+			},
+			close: function ()
+			{
+				$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+			}
+         }).data("autocomplete")._renderItem = function (ul, item)
+         {
+				var linkText = "";
+             var index = parseInt(item.index);
+				if (item.category != "")
+				{
+					linkText = item.category + ": ";
+				}
+				linkText += item.desc;
+             if (index > 0)
+             {
+					return $("<li>").data("item.autocomplete", item).append("<a href=" + item.url + ">" + linkText + "</a>").appendTo(ul);
+             }
+				else
+             {
+                 return $("<li class=\"FirstAutoCompleteItem\">").data("item.autocomplete", item).append(linkText).appendTo(ul)
+             }
+         }
+	});
+</script></div>
+				
+			</div>
+
+			<div id="iheader"><!-- header -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto:400,500,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<div id="header">
+	<a href="/" id="logo"></a>
+</div>
+<style type="text/css">
+      #Head
+      {
+          background-image: url('/graphics/bg_top.gif');
+      }
+  </style></div>
+			
+			<div id="itoolbar_bg">
+				<div id="itoolbar"><a id="PrintPage" href="#" onclick="return false;" title="Print view will be available once the page has finished loading."><img src="/global_graphics/icons/print_bw.gif" border="0" height="16" width="16" style="margin:5px 5px 0 0;valign:bottom;" />Print Page</a><script type='text/javascript'>function PrintPageClickHandler(){this.handleEvent = createPrintPagePopup }PrintPage_OnClick = new PrintPageClickHandler(); addEventHandler_OnLoad(function(){ var element = document.getElementById("PrintPage"); if(element) { element.onclick = PrintPage_OnClick.handleEvent; element.title = "Print Page";} });</script> &nbsp; | &nbsp; <a href='/general/?type=CONTACT'>Contact Us</a></div>
+			</div>
+	
+		<div id="sp-content">
+			<div id="left">
+				<!--@@DG_PRINT_PAGE_BEGIN@@
+					IMPORTANT! DO NOT MOVE OR MODIFY -->
+				<script type="text/javascript" src="/global_inc/js/favorite.js"></script>
+
+<style type="text/css">
+	#tat_table {
+		z-index:99;
+	}
+	#FavoriteEditorTitle {
+		margin: 0;
+	}
+</style>
+<div class="yui-skin-sam">
+<div id="FavoriteOptsPanel" style="visibility:hidden;">
+	<div id="FavoriteOptsPanelBody" class="bd">
+		<div id="FormErrors" style="display:none">
+			<div class="infobox">
+				<ul id="FormErrorList" class="redalert"></ul>
+			</div><br>
+		</div>
+			<form id="FavoriteEditor" name="FavoriteEditor" onsubmit="return FavoriteEditor_Submit(this)" style="display:none; margin: 0 10px 0 10px;">
+			<input type="hidden" id="FavoriteID" name="FavoriteID" value="">
+			<input type="hidden" id="strFavoriteTypeID_FK" name="strFavoriteTypeID_FK" value="">
+			<input type="hidden" id="strFavoriteParameters" name="strFavoriteParameters" value="">
+			<input type="hidden" name="strCommand" value="">
+			<input type="hidden" id="blnFavoriteReload" value="">
+			<table border="0" cellspacing="12" cellpadding="0">
+				<tr>
+					<td align="center"><img src="/global_graphics/icons/star_32x32.gif" border="0" width="32" height="32"></td>
+					<td><h2 id="FavoriteEditorTitle">Edit This Favorite</h2></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" id="strTitle" name="strTitle" value="" size="40" maxlength="100" />
+					<INPUT TYPE="hidden" NAME="ERR_strTitle" VALUE="strTitle|Name|20|1||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td>
+						<input type="text" id="strCategory" name="strCategory" value="" size="40" autocomplete="off" maxlength="100" />
+						<INPUT TYPE="hidden" NAME="ERR_strCategory" VALUE="strCategory|Category|20|0||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Share:</td>
+					<td>
+						<input id="blnIsPrivate0" type="radio" value="0" name="blnIsPrivate"/><label for="blnIsPrivate0">Yes</label>
+						<input id="blnIsPrivate1" type="radio" value="1" name="blnIsPrivate"/><label for="blnIsPrivate1">No, Keep Private</label>
+						<INPUT TYPE="hidden" NAME="ERR_blnIsPrivate" VALUE="blnIsPrivate|Share -- Yes/No, Keep Private|20|1||0">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" style="padding-top:10px;">
+						<input type="submit" id="FavoriteEditor_btnSubmit" value="Submit" class="formbutton"
+							onclick="return FavoriteEditor_btnSubmit_OnClick(this);">
+						<input type="button" value="Cancel" class="formbutton" 
+							onclick="YAHOO.container.FavoriteOpts.hide();">
+						<input type="submit" id="FavoriteEditor_btnDelete" value="Delete" class="formbutton" style="display:none;"
+							onclick="return FavoriteEditor_btnDelete_OnClick(this);">
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="__ASPVIEWSTATE" value="c9acc5e146f293c1c4d7e95550671ec591fedeb4cd55b883da7b25c9e8a658e81f54e2df695b24c02471a986db032e9f9f1402b6ae7d7f11827bddf1e2418574c05f0cef03aee5411758a7b03c59a9301f9a7185bcbfb5feeb64b3a79cfda044237dbad9935701dcc5d5d48c19ebaf5054f3364d4606c798b34610e60ea7ccc574afce">
+			</form>
+	</div>
+</div></div>
+
+
+
+<script type="text/javascript" src="/global_inc/js/hit_highlighter.js"></script>
+<script type="text/javascript">
+	addEventHandler_OnLoad(highlightDtSearchTerms);</script>
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">
+Washington State Hospital Association 83rd Annual Meeting</td>
+</tr>
+<tr>
+	<td id="SpNavBar">
+
+		<a href="/events/RSVPlist.aspx?id=526702" title="View Registrations"
+		><img src="/global_graphics/icons/view.gif" align="left" border="0">View Registrations</a>
+
+	
+	<a href="/members/send.asp?event=526702">
+		<img align="left" src="/global_graphics/icons/envelope.gif" alt="Tell a Friend About This Event" border="0">Tell a Friend</a>
+
+		
+	
+	</td>
+</tr>
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpContent_Container">
+
+	
+        <h2 style="margin-bottom: 1px;">Washington State Hospital Association 83rd Annual Meeting&nbsp;<a href="#" title="Export to Your Calendar" id="AddToCalendarHoverLink_526702_" onclick="AddToCalendarHoverLink_OnMouseOver(526702, ''); return false;"><img valign="absbottom" src="/global_graphics/icons/ical.gif" border="0" alt="Export to Your Calendar"></a></h2>
+	<p><b>10/7/2015 to 10/8/2015</b></p>
+
+<table border="0" cellspacing="0" cellpadding="0" class="ViewTable1">
+
+<TR>
+	<TD align="LEFT" VALIGN="TOP"><B>When:</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP">
+	10/7/2015<BR>
+	</TD>
+</TR>
+
+</table>
+<p></p>
+
+
+	<table border="0" cellspacing="0" cellpadding="0" width="100%" class="ViewTable1">
+	<tr>
+		<th>Details</th>
+	</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<TR>
+		<TD ALIGN="LEFT" VALIGN="TOP">
+			<p>Please see the WSHA events page for more info&nbsp;<a href="http://www.wsha.org/events.cfm?EventID=7012" target="_blank">http://www.wsha.org/events.cfm?EventID=7012</a></p>
+			<div style="clear:both; page-break-after:always;">&nbsp;</div>
+		</TD>
+	</TR>
+	</TABLE>
+
+
+<div>&nbsp;</div>
+
+
+
+<a name="photos" id="photos"></a>
+
+<p></p>
+
+<a href="/events/event_list.asp">&laquo; Go to Upcoming Event List</a>
+	</td>
+</tr>
+</table><!--END SpContent-->
+
+
+
+<script type="text/javascript">
+	var m_bYuiTriStateDialogResult;
+
+	function YuiTriStateDialog(Id, BodyText, Callback, State1Text, State2Text, State3Text, ContainerId, PanelWidth) {
+		if (!objectExists(State1Text)) State1Text = 'Yes';
+		if (!objectExists(State2Text)) State2Text = 'No';
+		if (!objectExists(State3Text)) State3Text = 'Maybe';
+		if (!objectExists(PanelWidth)) PanelWidth = '300px';
+
+		var dialog = new YAHOO.widget.SimpleDialog(Id, {
+			text: BodyText,
+			iframe: false,
+			visible: false,
+			close: true,
+			draggable: true,
+			fixedcenter: false,
+			constraintoviewport: true,
+			modal: true,
+			postmethod: 'none',
+			underlay: 'shadow',
+			width: PanelWidth,
+			x: $('#EventRegisterRsvpLink').offset().left + $('#EventRegisterRsvpLink').width(),
+			y: $('#EventRegisterRsvpLink').offset().top
+		});
+
+		dialog.setHeader("RSVP");
+		dialog.cfg.setProperty("icon", YAHOO.widget.SimpleDialog.ICON_HELP);
+
+		dialog.cfg.queueProperty("buttons", [
+			{ text: State1Text, handler: function() {
+				m_bYuiTriStateDialogResult = State1Text;
+				this.hide();
+				Callback();
+			}, isDefault: true
+			},
+			{ text: State2Text, handler: function() {
+				m_bYuiTriStateDialogResult = State2Text;
+				this.hide();
+				Callback();
+			} 
+			},
+			{ text: State3Text, handler: function() {
+				m_bYuiTriStateDialogResult = State3Text;
+				this.hide();
+				Callback();
+			}
+			}
+		]);
+
+		if (!objectExists(ContainerId)) ContainerId = "PageBase_RaiseAlert";
+
+		var container = document.getElementById(ContainerId);
+		if (!container) return;
+
+		m_bYuiTriStateDialogResult = null;
+
+		dialog.render(container);
+		dialog.show();
+	}
+
+	function YuiTriStateDialogCallback_ButtonClick(button) {
+		if (m_bYuiTriStateDialogResult == "Yes") {
+			button.onclick = function() { return true; }
+			button.click();
+		}
+	}
+
+
+
+	//login redirect message box
+	var loginredirectdialog = new YAHOO.widget.SimpleDialog('loginredirect', {
+			text: 'You must be signed in to RSVP for this event.<br /><br />Click OK, then sign in and you will be returned to this page where you will need to make your RSVP selection again.',
+			iframe: false,
+			visible: false,
+			close: true,
+			draggable: false,
+			fixedcenter: true,
+			constraintoviewport: true,
+			modal: true,
+			postmethod: 'none',
+			underlay: 'shadow',
+			width: '320px'
+		});
+
+		loginredirectdialog.setHeader("You must be signed in to RSVP");
+		loginredirectdialog.cfg.setProperty("icon", YAHOO.widget.SimpleDialog.ICON_HELP);
+
+		loginredirectdialog.cfg.queueProperty("buttons", [
+			{ text: 'OK', handler: function() {
+				this.hide();
+				window.location = '/login.aspx';
+			}, isDefault: true
+			},
+			{ text: 'Cancel', handler: function() {
+				this.hide();
+			} 
+			}
+		]);
+		//END login redirect message box
+
+
+
+	function ShowRSVPBox() {
+		YuiTriStateDialog(
+			"RSVPpopup",
+			'Will you be attending "Washington State Hospital Association 83rd Annual Meeting"?',
+			function() { //callback function
+				var blnOnlineRegEnabled = ('False' == 'True');
+				var blnLoggedOn = ('False' == 'True');
+				var blnRSVPlistGroupAdminOnly = ('3' == 1);
+
+				if (m_bYuiTriStateDialogResult == "Yes" && blnOnlineRegEnabled){
+					//redirect to the registration page
+					window.location = '/events/attendees.asp?id=526702';
+				}
+				else if (!blnLoggedOn && ((blnOnlineRegEnabled && (m_bYuiTriStateDialogResult == "No" | m_bYuiTriStateDialogResult == "Maybe")) | !blnOnlineRegEnabled) )
+				{
+					//show login redirect dialog
+					loginredirectdialog.render('RSVPbuttonscontent');
+					loginredirectdialog.show();
+				}
+				else{
+					//mark the RSVP
+					var u;
+					u = '/global_engine/ajax/EventRSVPServlet.aspx?cdb=&evnt=526702&rsp=';
+					u = u + m_bYuiTriStateDialogResult;
+					u = u + '&bust=' + Date().getSeconds;
+					$.ajax({
+						url: u,
+						success: function() {
+							if (blnRSVPlistGroupAdminOnly){
+								window.location = '/events/RSVPlist.aspx?id=526702&rsvpty=1&resp=' + m_bYuiTriStateDialogResult;
+							}
+							else{
+								window.location = '/events/RSVPlist.aspx?id=526702&resp=' + m_bYuiTriStateDialogResult;
+							}
+						}
+					});	
+					
+				}
+			},
+			"Yes",
+			"No",
+			"Maybe",
+			"RSVPbuttonscontent",
+			"300px"
+		);
+	}
+	
+	function YuiRegistrationDialog(BodyText)
+	{
+	    var falsetext = 'Cancel';
+	    var PanelWidth = '300px';
+	    var blnCentered = true;
+
+	    var dialog = new YAHOO.widget.SimpleDialog("confirm", {
+	        text: BodyText,
+	        iframe: false,
+	        visible: false,
+	        close: false,
+	        draggable: false,
+	        fixedcenter: blnCentered,
+	        constraintoviewport: true,
+	        modal: true,
+	        postmethod: 'none',
+	        underlay: 'shadow',
+	        width: PanelWidth,
+	    });
+
+	    dialog.setHeader("Attention");
+	    dialog.cfg.queueProperty("buttons", [
+           {
+                text: falsetext, handler: function ()
+                {
+                    this.hide();
+                } 
+            }
+	    ]);
+
+	    var container = document.getElementById("PageBase_RaiseAlert");
+        if (!container) return;
+	    dialog.render(container);
+	    dialog.show();
+	}
+
+	
+
+	function RegistrationValidationBox(){
+	    var blnRegistered = ('False' == 'True');
+	    var blnAllowEdit = ('False' == 'True');
+	    var blnMultipleRegistration = ('True'=='True');
+	    
+	    var txtModifyLinkHtml =
+            [
+                "<div style='padding: 10px 0 0px 25px;'><a style='color: #075574;' href='/events/Register.aspx?id=526702&itemid='>",
+                "<img style='vertical-align:bottom;' width='16' height='16' border='0' title='Modify an Existing Registration' alt='Modify an Existing Registrations' src='/global_graphics/icons/edit.gif'>",
+                "&nbsp;Modify an Existing Registration",
+                "</a></div>"
+            ].join("");
+
+	    var txtAddLinkHtml =
+            [
+                "<div style='padding: 10px 0 0px 25px;'><a style='color: #075574;' href='/events/attendees.asp?add=1&id=526702'>",
+                "<img style='vertical-align:bottom;' width='16' height='16' border='0' title='Add a New Registration' alt='Add a New Registration' src='/global_graphics/icons/buddy_add.gif'>",
+                "&nbsp;Add a New Registration",
+                "</a></div>"
+            ].join("");
+
+	    var msgText = "<div style='padding-bottom: 10px;'>You are already registered for this event.</div>";
+
+	    if (blnRegistered){
+	        if(blnAllowEdit && !blnMultipleRegistration)
+	        {
+	            YuiRegistrationDialog([msgText,txtModifyLinkHtml,"<br>"].join(""));
+	        }
+	        else if(blnAllowEdit && blnMultipleRegistration)
+	        {
+	            YuiRegistrationDialog([msgText,txtModifyLinkHtml,txtAddLinkHtml,"<br>"].join(""));
+	        }
+	        else if(!blnAllowEdit && blnMultipleRegistration)
+	        {
+	            YuiRegistrationDialog([msgText,txtAddLinkHtml,"<br>"].join(""));
+	        }
+	        else if(!blnAllowEdit && !blnMultipleRegistration)
+	        {
+	            window.location = '/events/already_registered.asp?id=526702';
+	        }
+	        return false;
+	    }else{
+	        window.location = '/events/attendees.asp?id=526702';
+	        return true;
+	    }
+	}
+
+
+</script>
+
+<div id="RSVPbuttonscontent" class="yui-skin-sam" style="border:solid 1px gray; padding:8px; visibility:hidden"></div>
+
+<script type="text/javascript" src="/global_inc/js/add_to_calendar_hover.js"></script>
+
+<div class="yui-skin-sam">
+<div id="AddToCalendarHover" style="visibility:hidden"
+	onmouseover="AddToCalendarHover_OnMouseOver();" align="left">
+	<div class="hd">Export to Your Calendar</div>
+	<div id="AddToCalendarHoverBody" class="bd"></div>
+	<a class="bd small" style="display:block; padding-bottom:3px; cursor:hand;" onclick="javascript:$('#timehint').toggle();">Time not importing correctly?</a>
+	<div class="bd small" id="timehint" style="display:none;padding-top:0px;">
+		You may need to adjust the event times in your calendar application for variations in daylight saving time (DST) or summer time.
+	</div>
+</div></div>
+
+
+<div id="PageBase_RaiseAlert" class="yui-skin-sam"></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+					<!--@@DG_PRINT_PAGE_END@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+				</div> <!-- Close left div --></td>
+				<div id="right">
+				<div id="RightRailTopContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+					
+           			<div id="events" class="zone" style="display:;">
+                		<div class="irailhead"><a href="/events/event_list.asp">more</a>Calendar</div>
+						<div class="irailcontent"><div id="tt-container" class="yui-skin-sam"></div><div class='UpcomingEvents UpcomingEvents_1'><p id="EventPnl526702">10/7/2015 &raquo; 10/8/2015<br clear=all><a href='/events/event_details.asp?id=526702'>Washington State Hospital Association 83rd Annual Meeting</a></p></div><div class='UpcomingEvents UpcomingEvents_2'><p id="EventPnl640023">10/15/2015<br clear=all><a href='/events/event_details.asp?id=640023'>Global Handwashing Day</a></p><script>var YMTTipEventPnl640023 = new YAHOO.widget.Tooltip("YMTTipEventPnl640023", { context: "EventPnl640023", container: "tt-container", width: "245px", text: "Global Handwashing Day (October 15)  is an annual global advocacy day dedicated to increasing awareness and understanding about the importance of handwashing with soap as an easy, effective, and affordable way to prevent diseases.", autodismissdelay: 120000 });</script></div><div class='UpcomingEvents UpcomingEvents_1'><p id="EventPnl673530">10/25/2015 &raquo; 10/27/2015<br clear=all><a href='/events/event_details.asp?id=673530'>2015 CALNOC Conference Hilton Long Beach</a></p><script>var YMTTipEventPnl673530 = new YAHOO.widget.Tooltip("YMTTipEventPnl673530", { context: "EventPnl673530", container: "tt-container", width: "245px", text: "Navigating the Chaos of Healthcare Transformation<br />", autodismissdelay: 120000 });</script></div></div>
+					</div>
+					
+					<div id="news" class="zone" style="display:none;">
+						<div class="irailhead"><a href="/news/">more</a>Latest News</div>
+						<div class="irailcontent">There are currently no news items posted.</div>
+					</div>				
+					
+					
+								<div id="railbottom"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--><h1>CALNOC Partners&nbsp;</h1>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="/resource/resmgr/images/ucsf_logo_new.jpg"></p>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-acnl.jpg"></p>
+<p align="left">&nbsp;</p>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-csmc.jpg"></p>
+<p align="left">&nbsp;</p>
+<div>
+<br>
+<br>
+<br>
+</div>
+<p align="left">&nbsp;</p></div>
+						</div><!-- end div right -->
+						
+				<div class="clear"></div>				
+		
+			</div> <!-- Close sp-content div -->
+			<div id="BottomContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+			</div> <!-- Close icontent div -->
+
+		    <div id="FooterContentArea">
+			    <!--YMPSTITLE=TgBBAA==/YMPSTITLE--><div class="grid_24">
+<h4>
+<table align="center" style="border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px; vertical-align: top;">
+            <h3>&nbsp;</h3>
+            <h3>Navigation</h3>
+            <p><a href="http://www.calnoc.org"><span style="color: rgb(105, 105, 105);">Home</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=7"><span style="color: rgb(105, 105, 105);">Mission</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=8"><span style="color: rgb(105, 105, 105);">Registry</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=17"><span style="color: rgb(105, 105, 105);">Education</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: rgb(105, 105, 105);">Testimonials</span></a></p>
+            <p><a href="/?page=A6"><span style="color: rgb(105, 105, 105);">Benefits of Joining</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=23"><span style="color: rgb(105, 105, 105);">In the News</span></a></p>
+            <p><a href="http://calnoc.site-ym.com/events/event_list.asp"><span style="color: rgb(105, 105, 105);">Calendar of Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=12"><span style="color: rgb(105, 105, 105);">Helpful Links</span></a></p>
+            </td>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: rgb(105, 105, 105);">About Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=6"><span style="color: rgb(105, 105, 105);">History</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=15"><span style="color: rgb(105, 105, 105);">FAQ</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=9"><span style="color: rgb(105, 105, 105);">Medication Administration</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: rgb(105, 105, 105);">Customers</span></a></p>
+            <p><a href="/?page=A6"><span style="color: rgb(105, 105, 105);">Join Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=21"><span style="color: rgb(105, 105, 105);">Apply</span></a></p>
+            <p><a href="/events/event_list.asp"><span style="color: rgb(105, 105, 105);">Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=10"><span style="color: rgb(105, 105, 105);">CALNOC Articles &amp; Research</span></a></p>
+            <p><a href="/?page=A12"><span style="color: rgb(105, 105, 105);">Contact Us</span></a></p>
+            </td>
+            <td style="border: 1px rgb(0, 0, 0); width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: rgb(105, 105, 105);">Overview - CALNOC Advantage</span></a><span style="color: rgb(105, 105, 105);"> </span> </p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=3"><span style="color: rgb(105, 105, 105);">Leadership</span></a></p>
+            <p><a href="/?page=A2"><span style="color: rgb(105, 105, 105);">Offerings</span></a></p>
+            <p><a href="/?page=1"><span style="color: rgb(105, 105, 105);">Services</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=19"><span style="color: rgb(105, 105, 105);">Partners</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=18"><span style="color: rgb(105, 105, 105);">Who Should Join?</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=20"><span style="color: rgb(105, 105, 105);">Press Releases</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=4"><span style="color: rgb(105, 105, 105);">CALNOC Annual Conference</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=16"><span style="color: rgb(105, 105, 105);">Resources</span></a></p>
+            <p>&nbsp;</p>
+            </td>
+            <td style="text-align: left; letter-spacing: 0px; padding-right: 20px; padding-left: 20px; word-spacing: 0px; vertical-align: top; border-left-color: rgb(220, 220, 220); border-left-width: 1px; border-left-style: dashed;">
+            <h3>&nbsp;</h3>
+            <h3>Location</h3>
+            <p><span style="color: rgb(105, 105, 105);">2410 Camino Ramon</span></p>
+            <span style="color: rgb(105, 105, 105);"> </span>
+            <p><span style="color: rgb(105, 105, 105);">Suite 360</span></p>
+            <span style="color: rgb(105, 105, 105);"> </span>
+            <p><span style="color: rgb(105, 105, 105);">San Ramon, CA 94583</span></p>
+            <p> <a href="https://service.ringcentral.com/ringme/ringme.asp?uc=E3C79F5FCDBF55233D79CF3B853796C42454776529004,0,&amp;s=no&amp;v=2&amp;s_=1210" target="_blank"><img border="0" src="https://service.ringcentral.com/picture/ringme/ringme_small.gif"></a> </p>
+            <p><span style="color: rgb(105, 105, 105);">Voice: 888-586-1994</span></p>
+            <span style="color: rgb(105, 105, 105);"> </span>
+            <p><span style="color: rgb(105, 105, 105);">Fax: 888-586-1994</span></p>
+            <span style="color: rgb(105, 105, 105);"> </span>
+            <p><span style="color: rgb(105, 105, 105);">Email:</span> <a href="mailto:info@calnoc.org">info@calnoc.org</a></p>
+            <p><a href="http://maps.google.com/maps?q=2410+Camino+Ramon+San+Ramon+CA+94583&amp;hl=en&amp;sll=37.772651,-121.963671&amp;sspn=0.008565,0.018969&amp;hnear=2410+Camino+Ramon,+San+Ramon,+California+94583&amp;t=m&amp;z=16" target="_blank">Google Map</a></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</h4>
+</div>
+<div class="grid_6">
+<p align="center" class="grid_24"><span style="color: rgb(105, 105, 105);">Copyright 2015 © CALNOC.org</span> | <a href="displaycommon.cfm?an=1&amp;subarticlenbr=22"><span style="color: rgb(105, 105, 105);">Terms of Use</span></a></p>
+<p>&nbsp;</p>
+</div>
+		    </div>
+
+		    <div id="Foot"><!-- FOOTER --> </div>
+
+		    <div id="icopyright">Association Management Software Powered by <a href='http://www.yourmembership.com/'>YourMembership.com<span style='font-size:11px'>&reg;</span></a> &nbsp;::&nbsp; <a href='/ams/legal-privacy.htm'>Legal</a><!-- Copyright (c) 1998-2015 YourMembership.com Inc. All Rights Reserved. Copyright: Certain elements of this website are: Copyright (c) 1998-2015, YourMembership.com, Incorporated. YourMembership.com, Incorporated provides a limited license to use its Copyrights to the entity from whose web page you are viewing. Certain elements of this website may also be copyrighted by that entity; please see its Terms of Use or contact the organization for more information. General information about copyright laws can be found at: http://www.copyright.gov/. For more specific information, please consult an attorney. --></div>
+</body>
+
+
+</html>
+<!--END_OF_FILE-->

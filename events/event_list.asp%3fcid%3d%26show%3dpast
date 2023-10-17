@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		
+
+        <!-- Important: include as high up as possible, but after sensitive tags such as X-UA-Compatible -->
+        <title>Community Calendar - Collaborative Alliance for Nursing Outcomes</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/combined.css?_v=1.83.108.133&context=sp"/>
+        <link rel="stylesheet" type="text/css" href="https://ws.yourmembership.com/Ams/40034/custom.css?cacheID=133" />
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.58"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
+
+
+
+<body id="PageBody" onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}">
+	<div id="icontainer">
+		<div id="icontent">
+            <div id="LeaderContentArea">
+                <!--YMPSTITLE=TgBBAA==/YMPSTITLE-->
+            </div>
+			<div id="topbar">
+				<div id="inavigation"><div id="FrontendMainMenu" class="radmenu RadMenu_YMPublic ">
+	<!-- 4.3.2 --><script type="text/javascript" src="/global_inc/RadControls/Menu/Scripts/4_3_2/RadMenu.js"></script><span id="FrontendMainMenuStyleSheetHolder" style="display:none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css');</script><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Skins/YMPublic/styles.css');</script><ul class="horizontal rootGroup">
+		<li class="item first"><a href="https://www.secure-calnoc.org/globalPages/mainpage.aspx" id="FrontendMainMenu_m0" class="link"><span class="text">Hospital Login</span></a></li><li class="item"><a href="/?page=A1" id="FrontendMainMenu_m1" class="link"><span class="text">About</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A1" id="FrontendMainMenu_m1_m0" class="link"><span class="text">Overview</span></a></li><li class="item"><a href="/?page=7" id="FrontendMainMenu_m1_m1" class="link"><span class="text">Mission</span></a></li><li class="item"><a href="/?page=6" id="FrontendMainMenu_m1_m2" class="link"><span class="text">History</span></a></li><li class="item"><a href="/?page=3" id="FrontendMainMenu_m1_m3" class="link"><span class="text">Leadership</span></a></li><li class="item"><a href="/resource/resmgr/Files/MarketingBrochureCALNOC_Fina.pdf" target="_blank" id="FrontendMainMenu_m1_m4" class="link"><span class="text">CALNOC Brochure</span></a></li><li class="item"><a href="/?page=25" id="FrontendMainMenu_m1_m5" class="link"><span class="text">Board of Directors</span></a></li><li class="item"><a href="/?page=27" id="FrontendMainMenu_m1_m6" class="link"><span class="text">Careers</span></a></li><li class="item last"><a href="/?page=15" id="FrontendMainMenu_m1_m7" class="link"><span class="text">FAQ</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A2" id="FrontendMainMenu_m2" class="link"><span class="text">Offerings</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A2" id="FrontendMainMenu_m2_m0" class="link"><span class="text">The Calnoc Advantage</span></a></li><li class="item"><a href="/?page=8" id="FrontendMainMenu_m2_m1" class="link"><span class="text">CALNOC Registry</span></a></li><li class="item"><a href="/?page=9" id="FrontendMainMenu_m2_m2" class="link"><span class="text">Medication Administration Accuracy</span></a></li><li class="item"><a href="/?page=1" id="FrontendMainMenu_m2_m3" class="link"><span class="text">Consulting Services</span></a></li><li class="item last"><a href="/?page=17" id="FrontendMainMenu_m2_m4" class="link"><span class="text">Education Services</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=13" id="FrontendMainMenu_m3" class="link"><span class="text">Customers</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=13" id="FrontendMainMenu_m3_m0" class="link"><span class="text">Customers</span></a></li><li class="item"><a href="/?page=28" id="FrontendMainMenu_m3_m1" class="link"><span class="text">2013 Top Performers</span></a></li><li class="item last"><a href="/?page=19" id="FrontendMainMenu_m3_m2" class="link"><span class="text">Partnership for Patients</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A6" id="FrontendMainMenu_m4" class="link"><span class="text">Join</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A6" id="FrontendMainMenu_m4_m0" class="link"><span class="text">Join Us</span></a></li><li class="item"><a href="/?page=18" id="FrontendMainMenu_m4_m1" class="link"><span class="text">Who Should Join?</span></a></li><li class="item"><a href="/?page=5" id="FrontendMainMenu_m4_m2" class="link"><span class="text">Benefits of Participation</span></a></li><li class="item last"><a href="/?page=21" id="FrontendMainMenu_m4_m3" class="link"><span class="text">Apply</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A7" id="FrontendMainMenu_m5" class="link"><span class="text">News</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=20" id="FrontendMainMenu_m5_m0" class="link"><span class="text">Press Releases</span></a></li><li class="item"><a href="/?page=23" id="FrontendMainMenu_m5_m1" class="link"><span class="text">In the News</span></a></li><li class="item"><a href="/?page=24" id="FrontendMainMenu_m5_m2" class="link"><span class="text">Webinars</span></a></li><li class="item last"><a href="/events/event_list.asp" id="FrontendMainMenu_m5_m3" class="link"><span class="text">Community Calendar</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/page/4" id="FrontendMainMenu_m6" class="link"><span class="text">Conference</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="#" id="FrontendMainMenu_m6_m0" class="link"><span class="text">Dates & Location</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m1" class="link"><span class="text">Call For Abstracts</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m2" class="link"><span class="text">Agenda</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m3" class="link"><span class="text">Exhibitors</span></a></li><li class="item last"><a href="#" id="FrontendMainMenu_m6_m4" class="link"><span class="text">Register</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A9" id="FrontendMainMenu_m7" class="link"><span class="text">Research</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=10" id="FrontendMainMenu_m7_m0" class="link"><span class="text">Research Articles</span></a></li><li class="item"><a href="/?page=16" id="FrontendMainMenu_m7_m1" class="link"><span class="text">Resources</span></a></li><li class="item"><a href="/?page=A30" id="FrontendMainMenu_m7_m2" class="link"><span class="text">Cost of HAPU</span></a></li><li class="item"><a href="/resource/resmgr/Docs/CALNOC_Data_Use_and_Services.pdf" target="_blank" id="FrontendMainMenu_m7_m3" class="link"><span class="text">Requesting CALNOC Data</span></a></li><li class="item last"><a href="/?page=12" id="FrontendMainMenu_m7_m4" class="link"><span class="text">Helpful Links</span></a></li>
+			</ul>
+		</div></li><li class="item last"><a href="/?page=A12" id="FrontendMainMenu_m8" class="link"><span class="text">Contact</span></a></li>
+	</ul><input type="hidden" id="FrontendMainMenu_Hidden" name="FrontendMainMenu" /><script type="text/javascript">window["FrontendMainMenu"] = RadMenu.Create("FrontendMainMenu");window["FrontendMainMenu"].Initialize({"EnableAutoScroll":true,"Skin":"YMPublic","Enabled":true},{"FrontendMainMenu_m6_m0":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m1":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m2":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m3":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m4":{"NavigateAfterClick":false}});</script>
+</div><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css"/><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Skins/YMPublic/styles.css"/></div>
+				
+					<div id="isearch"><form id="QuickSearchForm" name="QuickSearchForm" action="/search/all.asp">
+		<div id="QuickSearchFormInner1" class="ui-widget">
+			<input id="QuickSearchForm_bst" name="bst" maxlength='50' value='Enter search criteria...'@"onfocus='QuickSearchForm_OnFocus();'/>
+		</div>
+		<div id='QuickSearchFormInner2'><a href='#' id='QuickSearchSubmit' onclick='return QuickSearchForm_DoSubmit();'>Search&nbsp;&raquo;</a></div>
+</form><script type="text/javascript">
+function QuickSearchForm_DoSubmit()
+{
+		var QuickSearchForm = document.QuickSearchForm;
+     if(QuickSearchForm)
+     {
+			ClearDefaultValue(QuickSearchForm.bst);
+         QuickSearchForm.submit();
+     }
+		return false;
+}
+$(document).ready(function ()
+{
+		$("#QuickSearchForm_bst").click(function()
+		{
+			if ($("#QuickSearchForm_bst").val() == "Enter search criteria...")
+				$("#QuickSearchForm_bst").val('');
+			});
+			$("#QuickSearchForm_bst").blur(function ()
+			{
+				if ($("#QuickSearchForm_bst").val() == '')
+					$("#QuickSearchForm_bst").val('Enter search criteria...');
+				});
+				$("#QuickSearchForm_bst").autocomplete({
+					minLength: 3,
+					delay: 1000,
+					source: function (request, response)
+					{
+						$.ajax({
+						url: url = '/general/CategorySearchReciever.aspx?SearchTerm=' + $("#QuickSearchForm_bst").val() + "&cb=" + getCurrentTime(),
+						dataType: "json",
+						data: {
+						featureClass: "P",
+						style: "full",
+						maxRows: 20,
+						name_startsWith: request.term
+					},
+					success: function (data)
+					{
+						response($.map(data.CatalogSearchSuggestions, function (item)
+						{
+							return item;
+						}));
+					}
+				});
+			},
+			focus: function (event, ui)
+			{
+				return false;
+			},
+			select: function (event, ui)
+			{				document.location.href = ui.item.url;
+				return false;
+			},
+			open: function ()
+			{
+				$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+			},
+			close: function ()
+			{
+				$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+			}
+         }).data("autocomplete")._renderItem = function (ul, item)
+         {
+				var linkText = "";
+             var index = parseInt(item.index);
+				if (item.category != "")
+				{
+					linkText = item.category + ": ";
+				}
+				linkText += item.desc;
+             if (index > 0)
+             {
+					return $("<li>").data("item.autocomplete", item).append("<a href=" + item.url + ">" + linkText + "</a>").appendTo(ul);
+             }
+				else
+             {
+                 return $("<li class=\"FirstAutoCompleteItem\">").data("item.autocomplete", item).append(linkText).appendTo(ul)
+             }
+         }
+	});
+</script></div>
+				
+			</div>
+
+			<div id="iheader"><!-- header -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto:400,500,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<div id="header">
+	<a href="/" id="logo"></a>
+</div>
+<style type="text/css">
+      #Head
+      {
+          background-image: url('/graphics/bg_top.gif');
+      }
+  </style></div>
+			
+			<div id="itoolbar_bg">
+				<div id="itoolbar"><a id="PrintPage" href="#" onclick="return false;" title="Print view will be available once the page has finished loading."><img src="/global_graphics/icons/print_bw.gif" border="0" height="16" width="16" style="margin:5px 5px 0 0;valign:bottom;" />Print Page</a><script type='text/javascript'>function PrintPageClickHandler(){this.handleEvent = createPrintPagePopup }PrintPage_OnClick = new PrintPageClickHandler(); addEventHandler_OnLoad(function(){ var element = document.getElementById("PrintPage"); if(element) { element.onclick = PrintPage_OnClick.handleEvent; element.title = "Print Page";} });</script> &nbsp; | &nbsp; <a href='/general/?type=CONTACT'>Contact Us</a></div>
+			</div>
+	
+		<div id="sp-content">
+			<div id="left">
+				<!--@@DG_PRINT_PAGE_BEGIN@@
+					IMPORTANT! DO NOT MOVE OR MODIFY -->
+				
+<script type="text/javascript">
+<!--
+	addEventHandler_OnLoadAndUnload(function () { document.FilterForm.reset() });
+	function goToUpcomingPast(sDirection) {
+		var oForm = document.FilterForm
+		oForm.show.value = sDirection;
+		oForm.start.value = '';
+		oForm.end.value = '';
+		oForm.submit();
+	}
+	//-->
+</script>
+
+
+<style type="text/css">
+#EventList
+{
+	margin-top:20px;
+	width:100%;
+}
+#EventList img
+{
+	margin:4px 4px 2px 0px;
+}
+#EventList td
+{
+	border-top:dotted 1px #cccccc;
+	padding:10px 0px 10px 5px;
+}
+#EventList td.view
+{
+	font-weight: bold;
+	color: #ffffff;;
+	background-color:#cccccc;
+	padding:5px 5px 5px 5px;
+}
+#EventList td.head
+{
+	font-weight: bold;
+	color: #ffffff;;
+	background-color:#666666;
+	padding:5px 5px 5px 5px;
+	border:none;
+}
+#EventList td.dayhead
+{
+	font-weight: bold;
+	background-color:#eeeeee;
+	border-top:dotted 1px #cccccc;
+	padding:5px 5px 5px 5px;
+}
+</style>
+<script type="text/javascript">
+	function FBDialog(AppId, Link, LinkName, EventDate) {
+		//window.fbAsyncInit = function() {
+			FB.init({ appId: AppId, cookie: 'true', status: 'true', xfbml: 'false', oauth: 'true' });
+			FB.ui({ method: 'feed', link: Link, name: LinkName, description: EventDate, display: 'iframe' }, function(response) { });
+		//};
+		(function() {
+		var e = document.createElement('script');
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+
+	} ()); 
+
+	}
+
+</script> 
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">Community Calendar</td>
+</tr>
+<tr>
+	<td id="SpNavBar">
+	
+	<form id="FilterForm" name="FilterForm" method="get">
+	<input type="hidden" name="show" value="past">
+	<input type="hidden" name="group" value="">
+	<input type="hidden" name="start" value="">
+	<input type="hidden" name="end" value="4/28/2018">
+	<input type="hidden" name="view" value="">
+	
+	</form>
+
+	<a href="#" onclick="goToUpcomingPast('');">
+		<img src="/global_graphics/icons/cal_16_upcoming.gif" alt="Upcoming" border="0" align="left">Upcoming</a>
+	<a href="#" onclick="goToUpcomingPast('past');">
+		<img src="/global_graphics/icons/cal_16_past.gif" alt="Past" border="0" align="left">Past</a>
+	
+	
+	<a href="#" onclick="openPopup('calendar.asp?m=&y=&group=&cid=', 'CalendarPopup', 'resizable,status,scrollbars,toolbar=false', 930, 750); return false;">
+		<img src="/global_graphics/icons/cal.gif" alt="Month View" border="0" align="left" >Month View</a>
+
+	</td>
+</tr>
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpContent_Container">
+	<!--YMPSTITLE=QwBvAG0AbQB1AG4AaQB0AHkAIABDAGEAbABlAG4AZABhAHIA/YMPSTITLE--><h3>CALNOC Community Calendar</h3>
+<p>&nbsp;</p>
+<p>Data Submission deadlines: &nbsp;</p>
+<ul>
+    <li><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Quarter: October - December</span></span></li>
+    <li><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">February 1</span>, for </span>NDNQI participating hospitals</li>
+    <li>February 8, All others </li>
+</ul>
+<ul>
+    <li><span style="color: rgb(0, 0, 0);">Quarter : January - March</span></li>
+    <li><span style="color: rgb(0, 0, 0);">May 1, for&nbsp;</span>NDNQI participating hospitals</li>
+    <li>May 8, All others</li>
+</ul>
+<ul>
+    <li><span style="color: rgb(0, 0, 0);">Quarter: April - June</span></li>
+    <li><span style="color: rgb(0, 0, 0);">August 1, for&nbsp;</span>NDNQI participating hospitals</li>
+    <li>August 8, All others</li>
+</ul>
+<ul>
+    <li><span style="color: rgb(0, 0, 0);">Quarter: July - September</span></li>
+    <li><span style="color: rgb(0, 0, 0);">November 1, for&nbsp;</span>NDNQI participating hospitals</li>
+    <li>November 8, All others</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+	<table id="EventList" border="0" cellspacing="0" cellpadding="0" class="ViewTable1">
+
+	<tr>
+		<th colspan="2">
+		Past Events</th>
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Sunday, October 23, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList708867"><a href="/events/EventDetails.aspx?id=708867&group=">
+			<b style="font-size:14px">CALNOC 2016 Annual Conference</b></a></span><br>
+10/23/2016 &raquo; 10/25/2016<br>
+		<div class="small" style="font-style:italic">
+
+			<b>Location:</b>&nbsp;Monterey CA&nbsp;&nbsp;&nbsp;
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Wednesday, May 18, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList804070"><a href="/events/EventDetails.aspx?id=804070&group=">
+			<b style="font-size:14px">NWone Annual Conference</b></a></span><br>
+<script>var YMTTipelst804070 = new YAHOO.widget.Tooltip("YMTTipelst804070", { context: "EventList804070", container: "tt-container", width: "245px", text: "NWone Annual Meeting - May 18-20, 2016 - Skamania Lodge, Stevenson, WA<br />http://nwone.org/events/back-to-the-future-2016-annual-program.aspx", autodismissdelay: 120000 });</script>5/18/2016 &raquo; 5/20/2016<br>
+		<div class="small" style="font-style:italic">
+
+			<b>Location:</b>&nbsp;Stevenson, WA&nbsp;&nbsp;&nbsp;
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Saturday, April 30, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList804069"><a href="/events/EventDetails.aspx?id=804069&group=">
+			<b style="font-size:14px">CALNOC Conference Abstact Deadline</b></a></span><br>
+<script>var YMTTipelst804069 = new YAHOO.widget.Tooltip("YMTTipelst804069", { context: "EventList804069", container: "tt-container", width: "245px", text: "All the details to submit your abstract can be found on the CALNOC Conference Info page  http://www.calnoc.org/?page=4", autodismissdelay: 120000 });</script>4/30/2016<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Tuesday, April 19, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList805067"><a href="/events/EventDetails.aspx?id=805067&group=">
+			<b style="font-size:14px">Emerging Trends in California’s RN Labor Market</b></a></span><br>
+<script>var YMTTipelst805067 = new YAHOO.widget.Tooltip("YMTTipelst805067", { context: "EventList805067", container: "tt-container", width: "245px", text: "SAVE THE DATE FOR THIS UPCOMING WEBINAR:<br />Emerging Trends in California’s RN Labor Market<br />Date: Tuesday, April 19, 2016<br />Time: 8:30AM-10:00AM<br />Register now!<br />https://attendee.gotowebinar.com/register/6103790741262231042", autodismissdelay: 120000 });</script>4/19/2016<br>
+		<div class="small" style="font-style:italic">
+
+			<b>Time:</b>&nbsp;8:00 AM
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Friday, February 26, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList772636"><a href="/events/EventDetails.aspx?id=772636&group=">
+			<b style="font-size:14px">CALNOC Ambulatory Measures Kick Off</b></a></span><br>
+<script>var YMTTipelst772636 = new YAHOO.widget.Tooltip("YMTTipelst772636", { context: "EventList772636", container: "tt-container", width: "245px", text: "This webinar will provide all the need to know info for you to begin participating in the new Ambulatory care measures.", autodismissdelay: 120000 });</script>2/26/2016<br>
+		<div class="small" style="font-style:italic">
+
+			<b>Time:</b>&nbsp;11:30 am
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Wednesday, February 17, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList773199"><a href="/events/EventDetails.aspx?id=773199&group=">
+			<b style="font-size:14px">Interpreting CALNOC Reports Training</b></a></span><br>
+<script>var YMTTipelst773199 = new YAHOO.widget.Tooltip("YMTTipelst773199", { context: "EventList773199", container: "tt-container", width: "245px", text: "We would like to invite any CALNOC report user who would benefit from a better understanding of how to interpret CALNOC reports for performance improvement efforts. This session will only minimally cover creating CALNOC reports.", autodismissdelay: 120000 });</script>2/17/2016<br>
+		<div class="small" style="font-style:italic">
+
+			<b>Location:</b>&nbsp;Seattle, Swedish Simulation Center 3West, Room 312W-&nbsp;&nbsp;&nbsp;
+
+			<b>Time:</b>&nbsp;2 - 4 pm
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+		<td>
+		    <div style="float:right">
+		    <img src='/resource/events/thumb_20160202_150908_11008.jpg' border=0 alt='Interpreting CALNOC Reports Training' /></div>
+		</td>
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Sunday, January 31, 2016</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList708861"><a href="/events/EventDetails.aspx?id=708861&group=">
+			<b style="font-size:14px">ACNL 2016 Annual Conference</b></a></span><br>
+<script>var YMTTipelst708861 = new YAHOO.widget.Tooltip("YMTTipelst708861", { context: "EventList708861", container: "tt-container", width: "245px", text: "Nurse leaders are a powerful force – possessing talent, expertise and the determination to succeed. ACNL’s 2016 Annual Conference will empower you to maximize your leadership potential and drive meaningful change. Renowned presenters provide valuable insights, resources and take-aways to apply in your practice setting.", autodismissdelay: 120000 });</script>1/31/2016 &raquo; 2/3/2016<br>
+		<div class="small" style="font-style:italic">
+
+			<b>Location:</b>&nbsp;Rancho Mirage, CA&nbsp;&nbsp;&nbsp;
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Thursday, November 19, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList708868"><a href="/events/EventDetails.aspx?id=708868&group=">
+			<b style="font-size:14px">2015 World Wide Pressure Ulcer Prevention Day</b></a></span><br>
+11/19/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Sunday, October 25, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList673530"><a href="/events/EventDetails.aspx?id=673530&group=">
+			<b style="font-size:14px">2015 CALNOC Conference Hilton Long Beach</b></a></span><br>
+<script>var YMTTipelst673530 = new YAHOO.widget.Tooltip("YMTTipelst673530", { context: "EventList673530", container: "tt-container", width: "245px", text: "Navigating the Chaos of Healthcare Transformation<br />", autodismissdelay: 120000 });</script>10/25/2015 &raquo; 10/27/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Thursday, October 15, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList640023"><a href="/events/EventDetails.aspx?id=640023&group=">
+			<b style="font-size:14px">Global Handwashing Day</b></a></span><br>
+<script>var YMTTipelst640023 = new YAHOO.widget.Tooltip("YMTTipelst640023", { context: "EventList640023", container: "tt-container", width: "245px", text: "Global Handwashing Day (October 15)  is an annual global advocacy day dedicated to increasing awareness and understanding about the importance of handwashing with soap as an easy, effective, and affordable way to prevent diseases.", autodismissdelay: 120000 });</script>10/15/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Wednesday, October 7, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList526702"><a href="/events/EventDetails.aspx?id=526702&group=">
+			<b style="font-size:14px">Washington State Hospital Association 83rd Annual Meeting</b></a></span><br>
+10/7/2015 &raquo; 10/8/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Sunday, May 17, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList527854"><a href="/events/EventDetails.aspx?id=527854&group=">
+			<b style="font-size:14px">AACN National Teaching Institute & Critical Care Exposition</b></a></span><br>
+5/17/2015 &raquo; 5/21/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Thursday, April 23, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList526706"><a href="/events/EventDetails.aspx?id=526706&group=">
+			<b style="font-size:14px">NAHQ National Quality Summit</b></a></span><br>
+4/23/2015 &raquo; 4/24/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Wednesday, April 15, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList526709"><a href="/events/EventDetails.aspx?id=526709&group=">
+			<b style="font-size:14px">AONE 2015: Empowering Leaders Igniting Change</b></a></span><br>
+4/15/2015 &raquo; 4/18/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+<tr>
+	<td>
+	<h3 style="margin:0px;"><i>Friday, March 13, 2015</i></h3>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+
+	<tr>
+		<td valign="top">
+		<div style="margin-left:10px;">
+
+		<span id="EventList526686"><a href="/events/EventDetails.aspx?id=526686&group=">
+			<b style="font-size:14px">NWone Spring Program and Annual Awards Celebration</b></a></span><br>
+3/13/2015 &raquo; 3/15/2015<br>
+		<div class="small" style="font-style:italic">
+
+		</div>
+		<div class="small">
+
+		</div>
+
+		</div></td>
+
+   <td>&nbsp;</td> 
+
+
+	</tr>
+
+	</table>
+
+	<div align="center" class="pager" style="padding:5px 0px 5px 0px">
+		<b>Displaying page 1 of 3</b><br>
+		   <B>1</b>
+&nbsp|&nbsp <a href="/events/event_list.asp?cid=&show=past&DGPCrSrt=&DGPCrPg=2">2</a>
+&nbsp|&nbsp <a href="/events/event_list.asp?cid=&show=past&DGPCrSrt=&DGPCrPg=3">3</a>
+
+	</div>
+
+	</td>
+</tr>
+</table><!--END SpContent-->
+
+<div class="yui-skin-sam">
+	<div id="tt-container"></div>
+</div>
+
+
+
+<script type="text/javascript">
+	function YuiRegistrationDialog(BodyText) {
+		var falsetext = 'Cancel';
+		var PanelWidth = '300px';
+		var blnCentered = true;
+
+		var dialog = new YAHOO.widget.SimpleDialog("confirm", {
+			text: BodyText,
+			iframe: false,
+			visible: false,
+			close: false,
+			draggable: false,
+			fixedcenter: blnCentered,
+			constraintoviewport: true,
+			modal: true,
+			postmethod: 'none',
+			underlay: 'shadow',
+			width: PanelWidth,
+		});
+
+		dialog.setHeader("Attention");
+		dialog.cfg.queueProperty("buttons", [
+           {
+           	text: falsetext, handler: function () {
+           		this.hide();
+           	}
+           }
+		]);
+
+		var container = document.getElementById("PageBase_RaiseAlert");
+		if (!container) return;
+		dialog.render(container);
+		dialog.show();
+	}
+
+	function RegistrationValidationBox(intEventID, strRegistered, strAllowEdit, strMultipleRegistration, strRegistrationGuid) {
+		var blnRegistered = (strRegistered == 'True');
+		var blnAllowEdit = (strAllowEdit == 'True');
+		var blnMultipleRegistration = (strMultipleRegistration == 'True');
+
+		var txtModifyLinkHtml =
+            [
+                "<div style='padding: 10px 0 0px 25px;'><a style='color: #075574;' href='/events/Register.aspx?id=",
+                intEventID,
+                "&itemid=",
+                strRegistrationGuid,
+                "'>",
+                "<img style='vertical-align:bottom;' width='16' height='16' border='0' title='Modify an Existing Registration' alt='Modify an Existing Registrations' src='/global_graphics/icons/edit.gif'>",
+                "&nbsp;Modify an Existing Registration",
+                "</a></div>"
+            ].join("");
+
+		var txtAddLinkHtml =
+            [
+                "<div style='padding: 10px 0 0px 25px;'><a style='color: #075574;' href='/events/attendees.asp?id=",
+                intEventID,
+                "'>",
+                "<img style='vertical-align:bottom;' width='16' height='16' border='0' title='Add a New Registration' alt='Add a New Registration' src='/global_graphics/icons/buddy_add.gif'>",
+                "&nbsp;Add a New Registration",
+                "</a></div>"
+            ].join("");
+
+		var msgText = "<div style='padding-bottom: 10px;'>You are already registered for this event.</div>";
+
+		if (blnRegistered) {
+			if (blnAllowEdit && !blnMultipleRegistration) {
+				YuiRegistrationDialog([msgText, txtModifyLinkHtml, "<br>"].join(""));
+			}
+			else if (blnAllowEdit && blnMultipleRegistration) {
+				YuiRegistrationDialog([msgText, txtModifyLinkHtml, txtAddLinkHtml, "<br>"].join(""));
+			}
+			else if (!blnAllowEdit && blnMultipleRegistration) {
+				YuiRegistrationDialog([msgText, txtAddLinkHtml, "<br>"].join(""));
+			}
+			else if (!blnAllowEdit && !blnMultipleRegistration) {
+				window.location = '/events/already_registered.asp?id=' + intEventID;
+			}
+			return false;
+		} else {
+			window.location = '/events/attendees.asp?id=' + intEventID;
+			return true;
+		}
+	}
+</script>
+<script type="text/javascript" src="/global_inc/js/add_to_calendar_hover.js"></script>
+
+<div class="yui-skin-sam">
+<div id="AddToCalendarHover" style="visibility:hidden"
+	onmouseover="AddToCalendarHover_OnMouseOver();" align="left">
+	<div class="hd">Export to Your Calendar</div>
+	<div id="AddToCalendarHoverBody" class="bd"></div>
+	<a class="bd small" style="display:block; padding-bottom:3px; cursor:hand;" onclick="javascript:$('#timehint').toggle();">Time not importing correctly?</a>
+	<div class="bd small" id="timehint" style="display:none;padding-top:0px;">
+		You may need to adjust the event times in your calendar application for variations in daylight saving time (DST) or summer time.
+	</div>
+</div></div>
+
+
+<div id="PageBase_RaiseAlert" class="yui-skin-sam"></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+					<!--@@DG_PRINT_PAGE_END@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+				</div> <!-- Close left div --></td>
+				<div id="right">
+				<div id="RightRailTopContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+					
+           			<div id="events" class="zone" style="display:none;">
+                		<div class="irailhead"><a href="/events/event_list.asp">more</a>Calendar</div>
+						<div class="irailcontent"><p>The upcoming calendar is currently empty.</p><p><a href='/events/event_list.asp?cid=&show=past'>Click here to view past events and photos &raquo;</a></p></div>
+					</div>
+					
+					<div id="news" class="zone" style="display:none;">
+						<div class="irailhead"><a href="/news/">more</a>Latest News</div>
+						<div class="irailcontent">There are currently no news items posted.</div>
+					</div>				
+					
+					
+								<div id="railbottom"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--><h1>CALNOC Partners&nbsp;</h1>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="/resource/resmgr/images/ucsf_logo_new.jpg"></p>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-acnl.jpg"></p>
+<p align="left">&nbsp;</p>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-csmc.jpg"></p>
+<p align="left">&nbsp;</p>
+<div>
+<br>
+<br>
+<br>
+</div>
+<p align="left">&nbsp;</p></div>
+						</div><!-- end div right -->
+						
+				<div class="clear"></div>				
+		
+			</div> <!-- Close sp-content div -->
+			<div id="BottomContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+			</div> <!-- Close icontent div -->
+
+		    <div id="FooterContentArea">
+			    <!--YMPSTITLE=TgBBAA==/YMPSTITLE--><div class="grid_24">
+<table align="center" style="border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px; vertical-align: top;">
+            <h3>&nbsp;</h3>
+            <h3>Navigation</h3>
+            <p><a href="http://www.calnoc.org"><span style="color: #696969;">Home</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=7"><span style="color: #696969;">Mission</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=8"><span style="color: #696969;">Registry</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=17"><span style="color: #696969;">Education</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Testimonials</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Benefits of Joining</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=23"><span style="color: #696969;">In the News</span></a></p>
+            <p><a href="http://calnoc.site-ym.com/events/event_list.asp"><span style="color: #696969;">Calendar of Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=12"><span style="color: #696969;">Helpful Links</span></a></p>
+            </td>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">About Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=6"><span style="color: #696969;">History</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=15"><span style="color: #696969;">FAQ</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=9"><span style="color: #696969;">Medication Administration</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Customers</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Join Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=21"><span style="color: #696969;">Apply</span></a></p>
+            <p><a href="/events/event_list.asp"><span style="color: #696969;">Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=10"><span style="color: #696969;">CALNOC Articles &amp; Research</span></a></p>
+            <p><a href="/?page=A12"><span style="color: #696969;">Contact Us</span></a></p>
+            </td>
+            <td style="border: 1px #000000; width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">Overview - CALNOC Advantage</span></a><span style="color: #696969;"> </span> </p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=3"><span style="color: #696969;">Leadership</span></a></p>
+            <p><a href="/?page=A2"><span style="color: #696969;">Offerings</span></a></p>
+            <p><a href="/?page=1"><span style="color: #696969;">Services</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=19"><span style="color: #696969;">Partners</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=18"><span style="color: #696969;">Who Should Join?</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=20"><span style="color: #696969;">Press Releases</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=4"><span style="color: #696969;">CALNOC Annual Conference</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=16"><span style="color: #696969;">Resources</span></a></p>
+            <p>&nbsp;</p>
+            </td>
+            <td style="text-align: left; letter-spacing: 0px; padding-right: 20px; padding-left: 20px; word-spacing: 0px; vertical-align: top; border-left-color: #dcdcdc; border-left-width: 1px; border-left-style: dashed;">
+            <h3>&nbsp;</h3>
+            <h3>Location</h3>
+            <p><span style="color: #696969;">2410 Camino Ramon</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Suite 360</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">San Ramon, CA 94583</span></p>
+            <p><span style="color: #696969;">Voice: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Fax: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Email:</span> <a href="mailto:info@calnoc.org">info@calnoc.org</a></p>
+            <p><a href="http://maps.google.com/maps?q=2410+Camino+Ramon+San+Ramon+CA+94583&amp;hl=en&amp;sll=37.772651,-121.963671&amp;sspn=0.008565,0.018969&amp;hnear=2410+Camino+Ramon,+San+Ramon,+California+94583&amp;t=m&amp;z=16" target="_blank">Google Map</a></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="grid_6">
+<p class="grid_24" style="text-align: center;"><span style="color: #696969;">Copyright 2017 © CALNOC.org</span> | <a href="displaycommon.cfm?an=1&amp;subarticlenbr=22"><span style="color: #696969;">Terms of Use</span></a></p>
+<p>&nbsp;</p>
+</div>
+		    </div>
+
+		    <div id="Foot"><!-- FOOTER --> </div>
+
+		    <div id="icopyright">Association Management Software Powered by <a href='http://www.yourmembership.com/'>YourMembership</a> &nbsp;::&nbsp; <a href='/ams/legal-privacy.htm'>Legal</a><!-- Copyright (c) 1998-2018 YourMembership.com Inc. All Rights Reserved. Copyright: Certain elements of this website are: Copyright (c) 1998-2018, YourMembership.com, Incorporated. YourMembership.com, Incorporated provides a limited license to use its Copyrights to the entity from whose web page you are viewing. Certain elements of this website may also be copyrighted by that entity; please see its Terms of Use or contact the organization for more information. General information about copyright laws can be found at: http://www.copyright.gov/. For more specific information, please consult an attorney. --></div>
+</body>
+
+
+</html>
+<!--END_OF_FILE-->

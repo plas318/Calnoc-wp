@@ -1,0 +1,1072 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fbe52127be","applicationID":"27820297","transactionName":"b1FaNUtUV0dWV0xYClYbbRNQGl1RUVVNXREWVUsR","queueTime":0,"applicationTime":274,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYOUVZbCRACU1lQBwMOUQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+		<!--@@TELERIK_RAD_CODE_BLOCK_START@@-->
+		
+
+        <!-- Important: include as high up as possible, but after sensitive tags such as X-UA-Compatible -->
+        <title>In the News - Collaborative Alliance for Nursing Outcomes</title>
+
+		<link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/combined.css?_v=1.83.108.133&context=sp"/>
+        <link rel="stylesheet" type="text/css" href="https://ws.yourmembership.com/Ams/40034/custom.css?cacheID=133" />
+		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/assets/skins/sam/container.css">
+		<link rel="stylesheet" type="text/css" href="/global_graphics/skins/MemberCustomPageMenu/yuimenu.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/global_inc/site_templates/YM-IM-04/ie.css">
+		<style type="text/css">
+			#CustomPageBody,
+			div.ContributedContent {
+				padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 17 : 0); }
+		</style><![endif]-->
+		
+		<!--@@DG_PRINT_BASE_URL@@
+			IMPORTANT! DO NOT MOVE OR MODIFY -->
+
+		
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/container/container-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/menu/menu-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/json/json-min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/combined.js?context=sp&_v=1.58"></script>
+		<script type='text/javascript'>
+			var _gaq = _gaq || [];_gaq.push(['YM._setAccount', 'UA-2449742-47'], ['YM._setDomainName', 'none'], ['YM._setAllowLinker', true], ['YM._trackPageview']);
+			(function() {
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+			</script>
+	
+		<script type="text/javascript">
+			addEventHandler_OnLoad(function(){CheckMultipartForms(true)});
+		
+			var m_pulse = new Pulse('');
+			m_pulse.Start();
+		</script>
+	
+		
+		<!--@@TELERIK_RAD_CODE_BLOCK_END@@-->
+	</head>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">-->
+
+
+
+<body id="PageBody" onunload="try{if(m_blnDoBodyUnload) Body_OnUnload();}catch(e){}">
+	<div id="icontainer">
+		<div id="icontent">
+            <div id="LeaderContentArea">
+                <!--YMPSTITLE=TgBBAA==/YMPSTITLE-->
+            </div>
+			<div id="topbar">
+				<div id="inavigation"><div id="FrontendMainMenu" class="radmenu RadMenu_YMPublic ">
+	<!-- 4.3.2 --><script type="text/javascript" src="/global_inc/RadControls/Menu/Scripts/4_3_2/RadMenu.js"></script><span id="FrontendMainMenuStyleSheetHolder" style="display:none;"></span><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css');</script><script type="text/javascript">RadControlsNamespace.AppendStyleSheet(false, 'FrontendMainMenu', '/global_inc/RadControls/Menu/Skins/YMPublic/styles.css');</script><ul class="horizontal rootGroup">
+		<li class="item first"><a href="https://www.secure-calnoc.org/globalPages/mainpage.aspx" id="FrontendMainMenu_m0" class="link"><span class="text">Hospital Login</span></a></li><li class="item"><a href="/?page=A1" id="FrontendMainMenu_m1" class="link"><span class="text">About</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A1" id="FrontendMainMenu_m1_m0" class="link"><span class="text">Overview</span></a></li><li class="item"><a href="/?page=7" id="FrontendMainMenu_m1_m1" class="link"><span class="text">Mission</span></a></li><li class="item"><a href="/?page=6" id="FrontendMainMenu_m1_m2" class="link"><span class="text">History</span></a></li><li class="item"><a href="/?page=3" id="FrontendMainMenu_m1_m3" class="link"><span class="text">Leadership</span></a></li><li class="item"><a href="/resource/resmgr/Files/MarketingBrochureCALNOC_Fina.pdf" target="_blank" id="FrontendMainMenu_m1_m4" class="link"><span class="text">CALNOC Brochure</span></a></li><li class="item"><a href="/?page=25" id="FrontendMainMenu_m1_m5" class="link"><span class="text">Board of Directors</span></a></li><li class="item"><a href="/?page=27" id="FrontendMainMenu_m1_m6" class="link"><span class="text">Careers</span></a></li><li class="item last"><a href="/?page=15" id="FrontendMainMenu_m1_m7" class="link"><span class="text">FAQ</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A2" id="FrontendMainMenu_m2" class="link"><span class="text">Offerings</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A2" id="FrontendMainMenu_m2_m0" class="link"><span class="text">The Calnoc Advantage</span></a></li><li class="item"><a href="/?page=8" id="FrontendMainMenu_m2_m1" class="link"><span class="text">CALNOC Registry</span></a></li><li class="item"><a href="/?page=9" id="FrontendMainMenu_m2_m2" class="link"><span class="text">Medication Administration Accuracy</span></a></li><li class="item"><a href="/?page=1" id="FrontendMainMenu_m2_m3" class="link"><span class="text">Consulting Services</span></a></li><li class="item last"><a href="/?page=17" id="FrontendMainMenu_m2_m4" class="link"><span class="text">Education Services</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=13" id="FrontendMainMenu_m3" class="link"><span class="text">Customers</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=13" id="FrontendMainMenu_m3_m0" class="link"><span class="text">Customers</span></a></li><li class="item"><a href="/?page=28" id="FrontendMainMenu_m3_m1" class="link"><span class="text">2013 Top Performers</span></a></li><li class="item last"><a href="/?page=19" id="FrontendMainMenu_m3_m2" class="link"><span class="text">Partnership for Patients</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A6" id="FrontendMainMenu_m4" class="link"><span class="text">Join</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=A6" id="FrontendMainMenu_m4_m0" class="link"><span class="text">Join Us</span></a></li><li class="item"><a href="/?page=18" id="FrontendMainMenu_m4_m1" class="link"><span class="text">Who Should Join?</span></a></li><li class="item"><a href="/?page=5" id="FrontendMainMenu_m4_m2" class="link"><span class="text">Benefits of Participation</span></a></li><li class="item last"><a href="/?page=21" id="FrontendMainMenu_m4_m3" class="link"><span class="text">Apply</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A7" id="FrontendMainMenu_m5" class="link"><span class="text">News</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=20" id="FrontendMainMenu_m5_m0" class="link"><span class="text">Press Releases</span></a></li><li class="item"><a href="/?page=23" id="FrontendMainMenu_m5_m1" class="link"><span class="text">In the News</span></a></li><li class="item"><a href="/?page=24" id="FrontendMainMenu_m5_m2" class="link"><span class="text">Webinars</span></a></li><li class="item last"><a href="/events/event_list.asp" id="FrontendMainMenu_m5_m3" class="link"><span class="text">Community Calendar</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/page/4" id="FrontendMainMenu_m6" class="link"><span class="text">Conference</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="#" id="FrontendMainMenu_m6_m0" class="link"><span class="text">Dates & Location</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m1" class="link"><span class="text">Call For Abstracts</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m2" class="link"><span class="text">Agenda</span></a></li><li class="item"><a href="#" id="FrontendMainMenu_m6_m3" class="link"><span class="text">Exhibitors</span></a></li><li class="item last"><a href="#" id="FrontendMainMenu_m6_m4" class="link"><span class="text">Register</span></a></li>
+			</ul>
+		</div></li><li class="item"><a href="/?page=A9" id="FrontendMainMenu_m7" class="link"><span class="text">Research</span></a><div class="slide">
+			<ul class="vertical group level1">
+				<li class="item first"><a href="/?page=10" id="FrontendMainMenu_m7_m0" class="link"><span class="text">Research Articles</span></a></li><li class="item"><a href="/?page=16" id="FrontendMainMenu_m7_m1" class="link"><span class="text">Resources</span></a></li><li class="item"><a href="/?page=A30" id="FrontendMainMenu_m7_m2" class="link"><span class="text">Cost of HAPU</span></a></li><li class="item"><a href="/resource/resmgr/Docs/CALNOC_Data_Use_and_Services.pdf" target="_blank" id="FrontendMainMenu_m7_m3" class="link"><span class="text">Requesting CALNOC Data</span></a></li><li class="item last"><a href="/?page=12" id="FrontendMainMenu_m7_m4" class="link"><span class="text">Helpful Links</span></a></li>
+			</ul>
+		</div></li><li class="item last"><a href="/?page=A12" id="FrontendMainMenu_m8" class="link"><span class="text">Contact</span></a></li>
+	</ul><input type="hidden" id="FrontendMainMenu_Hidden" name="FrontendMainMenu" /><script type="text/javascript">window["FrontendMainMenu"] = RadMenu.Create("FrontendMainMenu");window["FrontendMainMenu"].Initialize({"EnableAutoScroll":true,"Skin":"YMPublic","Enabled":true},{"FrontendMainMenu_m6_m0":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m1":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m2":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m3":{"NavigateAfterClick":false},"FrontendMainMenu_m6_m4":{"NavigateAfterClick":false}});</script>
+</div><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Scripts/4_3_2/menu.css"/><link rel="stylesheet" type="text/css" href="/global_inc/RadControls/Menu/Skins/YMPublic/styles.css"/></div>
+				
+					<div id="isearch"><form id="QuickSearchForm" name="QuickSearchForm" action="/search/all.asp">
+		<div id="QuickSearchFormInner1" class="ui-widget">
+			<input id="QuickSearchForm_bst" name="bst" maxlength='50' value='Enter search criteria...'@"onfocus='QuickSearchForm_OnFocus();'/>
+		</div>
+		<div id='QuickSearchFormInner2'><a href='#' id='QuickSearchSubmit' onclick='return QuickSearchForm_DoSubmit();'>Search&nbsp;&raquo;</a></div>
+</form><script type="text/javascript">
+function QuickSearchForm_DoSubmit()
+{
+		var QuickSearchForm = document.QuickSearchForm;
+     if(QuickSearchForm)
+     {
+			ClearDefaultValue(QuickSearchForm.bst);
+         QuickSearchForm.submit();
+     }
+		return false;
+}
+$(document).ready(function ()
+{
+		$("#QuickSearchForm_bst").click(function()
+		{
+			if ($("#QuickSearchForm_bst").val() == "Enter search criteria...")
+				$("#QuickSearchForm_bst").val('');
+			});
+			$("#QuickSearchForm_bst").blur(function ()
+			{
+				if ($("#QuickSearchForm_bst").val() == '')
+					$("#QuickSearchForm_bst").val('Enter search criteria...');
+				});
+				$("#QuickSearchForm_bst").autocomplete({
+					minLength: 3,
+					delay: 1000,
+					source: function (request, response)
+					{
+						$.ajax({
+						url: url = '/general/CategorySearchReciever.aspx?SearchTerm=' + $("#QuickSearchForm_bst").val() + "&cb=" + getCurrentTime(),
+						dataType: "json",
+						data: {
+						featureClass: "P",
+						style: "full",
+						maxRows: 20,
+						name_startsWith: request.term
+					},
+					success: function (data)
+					{
+						response($.map(data.CatalogSearchSuggestions, function (item)
+						{
+							return item;
+						}));
+					}
+				});
+			},
+			focus: function (event, ui)
+			{
+				return false;
+			},
+			select: function (event, ui)
+			{				document.location.href = ui.item.url;
+				return false;
+			},
+			open: function ()
+			{
+				$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+			},
+			close: function ()
+			{
+				$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+			}
+         }).data("autocomplete")._renderItem = function (ul, item)
+         {
+				var linkText = "";
+             var index = parseInt(item.index);
+				if (item.category != "")
+				{
+					linkText = item.category + ": ";
+				}
+				linkText += item.desc;
+             if (index > 0)
+             {
+					return $("<li>").data("item.autocomplete", item).append("<a href=" + item.url + ">" + linkText + "</a>").appendTo(ul);
+             }
+				else
+             {
+                 return $("<li class=\"FirstAutoCompleteItem\">").data("item.autocomplete", item).append(linkText).appendTo(ul)
+             }
+         }
+	});
+</script></div>
+				
+			</div>
+
+			<div id="iheader"><!-- header -->
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto:400,500,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<div id="header">
+	<a href="/" id="logo"></a>
+</div>
+<style type="text/css">
+      #Head
+      {
+          background-image: url('/graphics/bg_top.gif');
+      }
+  </style></div>
+			
+			<div id="itoolbar_bg">
+				<div id="itoolbar"><a id="PrintPage" href="#" onclick="return false;" title="Print view will be available once the page has finished loading."><img src="/global_graphics/icons/print_bw.gif" border="0" height="16" width="16" style="margin:5px 5px 0 0;valign:bottom;" />Print Page</a><script type='text/javascript'>function PrintPageClickHandler(){this.handleEvent = createPrintPagePopup }PrintPage_OnClick = new PrintPageClickHandler(); addEventHandler_OnLoad(function(){ var element = document.getElementById("PrintPage"); if(element) { element.onclick = PrintPage_OnClick.handleEvent; element.title = "Print Page";} });</script> &nbsp; | &nbsp; <a href='/general/?type=CONTACT'>Contact Us</a></div>
+			</div>
+	
+		<div id="sp-content">
+			<div id="left">
+				<!--@@DG_PRINT_PAGE_BEGIN@@
+					IMPORTANT! DO NOT MOVE OR MODIFY -->
+				
+  <script type="text/javascript">var blnUseEngagement = false; </script> 
+  
+<script type="text/javascript" src="/global_inc/js/favorite.js"></script>
+
+
+<style type="text/css">
+	#tat_table {
+		z-index:99;
+	}
+	#FavoriteEditorTitle {
+		margin: 0;
+	}
+</style>
+<div class="yui-skin-sam">
+<div id="FavoriteOptsPanel" style="visibility:hidden;">
+	<div id="FavoriteOptsPanelBody" class="bd">
+		<div id="FormErrors" style="display:none">
+			<div class="infobox">
+				<ul id="FormErrorList" class="redalert"></ul>
+			</div><br>
+		</div>
+			<form id="FavoriteEditor" name="FavoriteEditor" onsubmit="return FavoriteEditor_Submit(this)" style="display:none; margin: 0 10px 0 10px;">
+			<input type="hidden" id="FavoriteID" name="FavoriteID" value="">
+			<input type="hidden" id="strFavoriteTypeID_FK" name="strFavoriteTypeID_FK" value="">
+			<input type="hidden" id="strFavoriteParameters" name="strFavoriteParameters" value="">
+			<input type="hidden" name="strCommand" value="">
+			<input type="hidden" id="blnFavoriteReload" value="">
+			<table border="0" cellspacing="12" cellpadding="0">
+				<tr>
+					<td align="center">
+            
+               <img src="/global_graphics/icons/star_32x32.gif" border="0" width="32" height="32">
+            
+              </td>
+					<td><h2 id="FavoriteEditorTitle">
+            
+               Edit This Favorite
+            
+              </h2></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" id="strTitle" name="strTitle" value="" size="40" maxlength="100" />
+					<INPUT TYPE="hidden" NAME="ERR_strTitle" VALUE="strTitle|Name|20|1||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td>
+						<input type="text" id="strCategory" name="strCategory" value="" size="40" autocomplete="off" maxlength="100" />
+						<INPUT TYPE="hidden" NAME="ERR_strCategory" VALUE="strCategory|Category|20|0||100">
+					</td>
+				</tr>
+				<tr>
+					<td>Share:</td>
+					<td>
+						<input id="blnIsPrivate0" type="radio" value="0" name="blnIsPrivate"/><label for="blnIsPrivate0">Yes</label>
+						<input id="blnIsPrivate1" type="radio" value="1" name="blnIsPrivate"/><label for="blnIsPrivate1">No, Keep Private</label>
+						<INPUT TYPE="hidden" NAME="ERR_blnIsPrivate" VALUE="blnIsPrivate|Share -- Yes/No, Keep Private|20|1||0">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" style="padding-top:10px;">
+						<input type="submit" id="FavoriteEditor_btnSubmit" value="Submit" class="formbutton"
+							onclick="return FavoriteEditor_btnSubmit_OnClick(this);">
+						<input type="button" value="Cancel" class="formbutton" 
+							onclick="YAHOO.container.FavoriteOpts.hide();">
+						<input type="submit" id="FavoriteEditor_btnDelete" value="Delete" class="formbutton" style="display:none;"
+							onclick="return FavoriteEditor_btnDelete_OnClick(this);">
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="__ASPVIEWSTATE" value="c9acc5e146f293c1c4d7e95550671ec591fedeb4cd55b883da7b25c9e8a658e81f54e2df695b24c02471a986db032e9f9f1402b6ae7d7f11827bddf1e2418574c05f0cef03aee5411755a7bd3c54a9301f9e7c81bcbfb5feeb64b3a79cfda044237dbad9935701dcc5d5d48c19ebaf5054f3364d4606c798b04e13e50ca2cfc271aece">
+			</form>
+	</div>
+</div></div>
+
+
+
+<script type="text/javascript" src="/global_inc/js/hit_highlighter.js"></script>
+<script type="text/javascript">
+	function Window_OnLoad() {
+		highlightDtSearchTerms('CustomPageBody');
+		highlightDtSearchTerms('ResourceCollection');
+	}
+
+	addEventHandler_OnLoad(Window_OnLoad);
+</script>
+
+<style type="text/css">
+
+.ScoreControl
+{
+	display:block;
+	float:left;
+}
+</style>
+
+<table id="SpSubHead" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpTitleBar">
+In the News
+	</td>
+</tr>
+
+
+</table>
+
+<table id="SpContent" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="SpContent_Container">
+
+		<script type="text/javascript" src="/global_inc/js/ContentScores.js"></script>
+
+	<div style="padding:5px 0px 15px 0px; clear:both;">
+	
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " addthis:url="http://www.calnoc.org/default.asp?page=23">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;pub=yourmembership" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=yourmembership"></script>
+
+<script type="text/javascript">
+	var addthis_exclude = 'print, email';
+</script>
+<!-- AddThis Button END -->
+
+	</div>
+	
+	<div id="CustomPageBody"><table width="100%" id="maincontentsubtable" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr id="maincontentsubrow">
+            <td id="leftnavcell" valign="top" style="letter-spacing: 0px; padding-right: 20px; word-spacing: 0px; vertical-align: top;">
+            <h5>News & Events</h5>
+            <ul>
+                <li><a href="/?page=20"><span style="font-size: larger;">Press Releases<br>
+                </span></a></li>
+                <li><a href="/?page=23"><span style="font-size: larger;">In the News</span></a></li>
+                <li><a href="/?page=24"><span style="font-size: larger;">Webinars</span></a></li>
+                <li><a href="/?page=24"><span style="font-size: larger;">CALNOC Conference<br>
+                </span></a></li>
+                <li><a href="/events/event_list.asp"><span style="font-size: larger;">Event Calendar</span></a></li>
+            </ul>
+            <p> </p>
+            </td>
+            <td id="maincontentsubcell" valign="top">
+            <h1>In the News</h1>
+            
+<hr>
+            <h3><a href="http://ww2.kqed.org/futureofyou/2016/05/26/medical-macgyvers-nurses-craft-diy-devices-to-fill-gaps/?utm_campaign=CHL%3A+Daily+Edition&utm_source=hs_email&utm_medium=email&utm_content=32319244&_hsenc=p2ANqtz-9XH9dB88GbzEIoIE887nIRXCA7zBtTmtxmA4AeuL_46NacnDbfTZbDOB5QeM-b2W93oCkGeq0Ogs1FytfpXYpKSIERs6oDNZOibBkG5pSNZFIAPbc&_hsmi=32319244" target="_blank">Medical MacGyvers: Nurses Craft DIY Devices to Fit Patients’ Needs</a></h3>
+
+            <p>July 29, 2016</p>
+            <p>In the early part of the 20th century, nurses paired a rocking chair with roller skates to make a wheelchair, or used hot corncobs as bed warmers. Nurses, doctors and others in the health care industry are embracing the "maker movement," which encourages inventive solutions when traditional ones don't cut it. </p>
+<hr>
+            <h3><a href="https://oig.hhs.gov/oei/reports/oei-06-14-00110.asp?utm_campaign=tw&utm_source=hs_email&utm_medium=email&utm_content=32322000&_hsenc=p2ANqtz-9U7h0kuoQswE6AVMJwbB6dmDoj3puoSxzCn8srKCah-xzMID4mobRauXRUy28nZG8XYSKqtCaaZKoocMNQc2fg8EWk_kHH2QOt5ZM-jyLeSf8mfUM&_hsmi=32314225" target="_blank">OIG Reports High Rate of Adverse Events in Rehabilitation Hospitals</a></h3>
+            <p>July 19, 2016</p>
+            <p>With a focus on rehabilitation hospitals, the July 2016 OIG report finds that nearly 29 percent of Medicare beneficiaries experienced at least one AE or temporary harm during their rehab stay. Further, the report found that, of a nationally representative sample of patients discharged from rehab hospitals in March 2012, nearly a quarter of those harmed had to be transferred to an acute care hospital for treatment. </p>
+
+<hr>
+            <h3><a href="http://www.beckershospitalreview.com/hospital-physician-relationships/this-hospital-is-giving-free-housing-to-frequent-er-patients.html" target="_blank">This hospital is giving free housing to frequent ER patients</a></h3>
+            <p>June 30, 2016</p>
+            <p>It costs Chicago-based University of Illinois Hospital $3,000 per day to care for patients who frequently visit the emergency room. But through a new pilot program, the hospital has whittled that cost down to approximately $33 per day</p>
+
+<hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/100-patient-safety-benchmarks-2016.html" target="_blank">100 patient safety benchmarks | 2016</a></h3>
+            <p>June 27, 2016</p>
+            <p>Becker's Infection Control & Clinical Quality has compiled a list of 100 patient safety benchmarks from CMS, TJC and various sources for hospital comparison.</p>
+
+<hr>
+            <h3><a href="https://www.nursingknowledge.org/anatomy-of-medical-errors.html?roi=echo4-35243313300-88308836-4ba28035a577ad932730bde7b3981086&utm_source=2016-jun-20&utm_medium=email&utm_content=nki&utm_campaign=anatomy-of-medical-errors-book-annc" target="_blank">Anatomy of Medical Errors: The Patient in Room 2</a></h3>
+            <p>June 24, 2016</p>
+            <p>Medical errors now rank as the third leading cause of death in the United States, according to a recent study by Johns Hopkins Medicine. Anatomy of Medical Errors: The Patient in Room 2 is one nurse's personal story of survival and fact-finding as a victim of preventable medical errors. As this mesmerizing story recounts the author's struggles, it teaches nurses and other healthcare providers how to avoid potentially dangerous situations, recognize warning signs, and work collaboratively to provide transparent patient care.</p>
+
+<hr>
+            <h3><a href="http://www.ihi.org/resources/Pages/IHIWhitePapers/Sustaining-Improvement.aspx?utm_campaign=os-newsletter&utm_source=hs_email&utm_medium=email&utm_content=30624935&_hsenc=p2ANqtz-8xK0BVOQvJStmDQNjWWFBevvXHtg0e0b-4gBqrOwQwcalc8K_8Ot-2M9iSTG1GmYmqh0Q18pxet7vss290x9Ipmg5RPcmlcTIsPHtZuKbo5NbZ47E&_hsmi=30624935" target="_blank">New IHI White Paper: Sustaining Those Hard-Won Improvements</a></h3>
+            <p>June 15, 2016</p>
+            <p>How can health care organizations sustain improvements in safety, effectiveness, and efficiency of patient care? According to the new IHI White Paper, Sustaining Improvement, the key is to focus on the daily work of frontline managers, supported by a high-performance management system that prescribes standard tasks and responsibilities for managers at all levels of the organization. The new white paper includes four tips for getting started with standard work for managers and cases from leading health care organizations.</p>
+
+<hr>
+            <h3><a href="http://www.milbank.org/the-milbank-quarterly/current-issue/article/4096/-evaluating-the-quality-of-medical-care-donabedian-s-classic-article-50-years-later?utm_campaign=tw&utm_source=hs_email&utm_medium=email&utm_content=30532371&_hsenc=p2ANqtz--6RlbLSvJTnJjehD6JOhidBSd0QSBxqJRo1eoLjW6M-57IpEkrfX8QlxNEXVckoyNTipDLYw7XYOTHxJNHzRjWWx-iImIr0b5ZivE6dr8G84zq2_Q&_hsmi=30532371" target="_blank">“Evaluating the Quality of Medical Care”: Donabedian's Classic Article 50 Years Later</a></h3>
+            <p>June 13, 2016</p>
+            <p> A new op-ed co-authored by IHI President Emeritus Don Berwick celebrates the 50th anniversary of the late Avedis Donabedian’s seminal article in The Milbank Quarterly</p>
+
+<hr>
+            <h3><a href="http://www.aone.org/resources/Salary-and-Compensation-Study-for-Nurse-Leaders-2016-Executive-Summary" target="_blank">AONE study finds high job satisfaction among nursing executives</a></h3>
+            <p>June 10, 2016</p>
+            <p>A study of salary and compensation among leaders in nursing found high job satisfaction in the field and wide range in salaries, with most reaching the highest pay after about 10 years in the career.</p>
+
+<hr>
+            <h3><a href="http://journals.lww.com/nursingmanagement/Citation/2016/06000/Ambulatory_care_nursing_sensitive_indicators.7.aspx" target="_blank">Nursing Sensitive Indicators in the Ambulatory Care Setting</a></h3>
+            <p>June 7, 2016</p>
+            <p>Recently published research from CALNOC in the journal <i>Nursing Management</i>.</p>
+ <p>ABSTRACT: Changes in the health care environment are expanding the role of nursing in ambulatory care settings.  This article presents the current status of a collaboration to develop and implement nursing sensitive indicators to measure the value of nursing in ambulatory care.</p>
+
+<hr>
+            <h3><a href="http://www.npuap.org/national-pressure-ulcer-advisory-panel-npuap-announces-a-change-in-terminology-from-pressure-ulcer-to-pressure-injury-and-updates-the-stages-of-pressure-injury/" target="_blank">National Pressure Ulcer Advisory Panel (NPUAP) announces a change in terminology from pressure ulcer to pressure injury and updates the stages of pressure injury</a></h3>
+            <p>June 6, 2016</p>
+            <p>NPUAP Press Release from April 13, 2016, describing the change in terminology and staging.</p>
+
+<hr>
+            <h3><a href="http://www.phi.org/news-events/997/building-health-organically-in-a-small-florida-community?utm_source=PHI+Newsletter&utm_campaign=981c4764ed-June_2016_external_news_ONE&utm_medium=email&utm_term=0_14767b3be6-981c4764ed-48874017" target="_blank">Building Health Organically in a Small Florida Community</a></h3>
+            <p>May 20, 2016</p>
+            <p>Five years ago, when residents of Bithlo, Fla. got sick, they had to drive or take an ambulance to a hospital 15 miles away in Orlando. There was no doctor’s office or urgent care facility in their town of 8,200.
+So it is no surprise that a new Federally Qualified Health Center in Bithlo received more than 4,000 visits in its first year. In a recent year, residents had taken about the same number of trips to emergency rooms.
+Learn how a local collaboration between public and private partners in Bithlo, FL is focusing on nine areas to advance overall wellness.</p>
+
+<hr>
+            <h3><a href="http://jama.jamanetwork.com/article.aspx?articleid=2503222" target="_blank">Measurement of the Patient Experience Clarifying Facts, Myths, and Approaches</a></h3>
+            <p>May 13, 2016</p>
+            <p>A JAMA viewpoint that clarifies the use of the HCAHPS survey of patient care from hospital staff.</p>
+            
+<hr>
+            <h3><a href="http://go.cms.gov/ClarifyingFactsMythsAboutHCAHPS" target="_blank">CMS Presentation on the HCAHPS Survey and Opioid Misuse</a></h3>
+            <p>May 13, 2016</p>
+            <p>On Tuesday, January 26, 2016, the Centers for Medicare & Medicaid Services (CMS) offered a presentation on “The HCAHPS Survey, Pain Management, and Opioid Misuse: The CMS Perspective.” The presentation provides a review of the Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) Survey methodology and addresses stakeholder concerns about pain management and misuse of prescription opioids.</p>
+
+<hr>
+            <h3><a href="https://www.aaacn.org/sites/default/files/documents/AAACN-NSI-Report-Release.pdf" target="_blank">AAACN Releases "State of the Industry Report" Outlining Ambulatory Care Nurse-Sensitive Indicators</a></h3>
+            <p>May 11, 2016</p>
+            <p>CALNOC collaborated with AAACN on the Nurse-Sensitive Indicators report that will help nurse leaders measure improvement in safety and quality of care in the outpatient setting. The press release includes a link to download the report. </p>
+
+<hr>
+            <h3><a href="http://www.nursingworld.org/FunctionalMenuCategories/National-Nurses-Week-2016" target="_blank">National Nurses Week, May 6-12, 2016</a></h3>
+            <p>May 4, 2016</p>
+            <p>Happy Nurses Week to all the nurses out there! Thanks for all you do!</p>
+<hr>
+            <h3><a href="http://www.bmj.com/content/353/bmj.i2139" target="_blank">Medical error—the third leading cause of death in the US</a></h3>
+            <p>May 4, 2016</p>
+            <p>Medical error is not included on death certificates or in rankings of cause of death. Martin Makary and Michael Daniel, of Johns Hopkins University School of Medicine, assess its contribution to mortality and call for better reporting.</p>
+
+<hr>
+            <h3><a href="http://rnworkforce.ucsf.edu/publications/webinar-powerpoint-slides-emerging-trends-CA-rn-labor-market" target="_blank">Emerging Trends in California’s RN Labor Market</a></h3>
+            <p>Apr 21, 2016</p>
+            <p>Since 2008, there have been reports that newly-graduated California RNs cannot find work, and thus many are leaving the state for greener pastures. What is happening now? Will health care providers be able to hire all the RNs needed now and in the long term? PowerPoint Slides from the Webinar now available. Webinar recording (Will be released next week).</p>
+
+<hr>
+            <h3><a href="http://jama.jamanetwork.com/article.aspx?articleid=2499845" target="_blank">Era 3 for Medicine and Health Care</a></h3>
+            <p>Apr 5, 2016</p>
+            <p>President Emeritus and Senior Fellow Don Berwick introduces the concept of “three eras” in health care. Era 1 represents the roots of the medical profession: a beneficent and self-regulating profession. In era 2, which represents much of today’s current health care environment, measurement and “rewards and punishments” tend to dominate. In this article, Berwick presents nine changes he believes, combined, will shape a new era 3 driven by transparency, improvement science, less inspection, and more civility.</p>
+
+<hr>
+            <h3><a href="http://www.hfma.org/Leadership/E-Bulletins/2016/March/Milestones_in_Quality_Improvement_Measurement/?utm_campaign=tw&utm_source=hs_email&utm_medium=email&utm_content=28283679&_hsenc=p2ANqtz--wyFU5NC5NNZYgiWnRdiuQ-QivzW-dpvwleX8QsECXrDX0Vn8-2MhGhQ78tlD_p57ZsLGVS3ofl6oA7JRNv8qCGY6xHiRvPBn0pPqTyn3aa2PVUUk&_hsmi=28283679" target="_blank">Milestones in Quality Improvement Measurement</a></h3>
+            <p>Mar 24, 2016</p>
+            <p>Measurement is key to improvement work, but teams often lack a clear measurement plan to guide them. Boost your improvement team’s measurement effectiveness by following this guidance from the Institute for Healthcare Improvement's Vice President Bob Lloyd in a new HFMA Leadership article. </p>
+
+<hr>
+            <h3><a href="http://journals.lww.com/jncqjournal/Abstract/publishahead/Nursing_Strategies_to_Increase_Medication_Safety.99651.aspxhttp://newsnetwork.mayoclinic.org/discussion/uv-robots-zapping-hospital-germs/" target="_blank">UV Robots Zapping Hospital Germs</a></h3>
+            <p>Mar 8, 2016</p>
+            <p>The Mayo Clinic has been successful in reducing LOS by 3 days using light zapping robots to combat C.diff. Check out the video.</p>
+            
+<hr>
+            <h3><a href="http://journals.lww.com/jncqjournal/Abstract/publishahead/Nursing_Strategies_to_Increase_Medication_Safety.99651.aspx" target="_blank">Nursing Strategies to Increase Medication Safety in Inpatient Settings</a></h3>
+            <p>Mar 3, 2016</p>
+            <p>This article provides nursing recommendations to decrease medication delivery errors through strategies to minimize and address interruptions/distractions. CALNOC is cited as the training method for medication administration observation. .</p>
+            <hr>
+            <h3><a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=10192722&fileId=S0899823X15002858&utm_source=Issue_Alert&utm_medium=Email&utm_campaign=ICE" target="_blank"> Chlorhexidine wipes found ineffective in the prevention of drug-resistant HAIs in the ICU?</a></h3>
+            <p>Feb 23, 2016</p>
+            <p>Researchers in Bangkok recently examined the effectiveness of daily bathing with 2 percent chlorhexidine-impregnated washcloths in preventing multidrug-resistant gram-positive bacterial colonization and bloodstream infection. The results of the study were published in <i>Infection Control & Hospital Epidemiology</i>.</p>
+            <hr>
+            <h3><a href="http://content.healthaffairs.org/content/34/12/2196.abstract?sid=2c56c810-aeb1-4321-ad1a-56a2d743768c" target="_blank"> Engaging Front-Line Nurses To Improve The Outcomes Of Patient Care, 2006–13</a></h3>
+            <p>Feb 18, 2016</p>
+            <p>A Gordon and Betty Moore initiative shows the potential of front-line RNs to lead sustainable quality improvement efforts.</p>
+            <hr>
+            <h3><a href="http://opinionator.blogs.nytimes.com/2016/01/26/reducing-preventable-harm-in-hospitals/?utm_campaign=tw&utm_source=hs_email&utm_medium=email&utm_content=25796711&_hsenc=p2ANqtz-_iLprVEsTjf_gnf0Q_FQY-BZxL4x0MbicobFYpUhb2RWol2E5hmfdogjF_ZWxemMuJIbC-u9u7qQu2TpnJMViLdgc3wIX4wT5yFSc0zjc183NASQI&_hsmi=25796711&_r=0" target="_blank">Reducing Preventable Harm in Hospitals</a></h3>
+            <p>Jan 26, 2016</p>
+            <p>The New York Times Opinionator blog post examines ways in which US hospitals are working to improve patient safety including the Hospital Engagement Network initiative and an explanation of the Swiss cheese model.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/workforce-labor-management/infographic-9-habits-of-highly-effective-nurses-2.html" target="_blank">9 habits of highly effective nurses [Infographic]</a></h3>
+            <p>Jan 13, 2016</p>
+            <p>A graphic depiction of the habits of successful nurses.</p>
+            <hr>
+            <h3><a href="http://www.ihi.org/communities/blogs/_layouts/ihi/community/blog/itemview.aspx?List=7d1126ec-8f63-4a3b-9926-c44ea3036813&ID=177&utm_campaign=tw&utm_source=hs_email&utm_medium=email&utm_content=25150401&_hsenc=p2ANqtz-86GQJRxpSt8Ychs5FsZznF3BERqniufotgMp4IlgRnT1vYA-4t8-yaqaFDwOvflA6mAHjNnhLdG1Ao35FecUeEPwVsw49PIzArJv0AwEHzyDvm2yQ&_hsmi=25150401" target="_blank">Is Zero Falls the Right Target?</a></h3>
+            <p>Jan 11, 2016</p>
+            <p>Eliminating common patient safety problems sounds like a worthwhile goal. Many ambitious organizations talk about “zero tolerance” or “targeting zero.” But when are such efforts misguided? Pat Quigley, Associate Director, the VA Sunshine Healthcare Network (VISN 8) Patient Safety Center of Inquiry, asserts that this has been the case for patient falls.</p>
+            <hr>
+            <h3><a href="https://www.quora.com/What-are-some-valuable-hospital-hacks-everyone-being-admitted-should-know" target="_blank">How to survive your hospitalization</a></h3>
+            <p>Jan 4, 2016</p>
+            <p>Most people feel that the equation to survive your hospitalization predominantly involves the expertise of your surgeon and the disease at hand. In fact, there is a silent factor that contributes to a phenomenon that is increasingly gaining attention in the medical community, administrative leadership, insurance agencies and popular media: Death related to preventable errors.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/evidence-based-approaches-to-hand-hygiene-best-practices-for-collaboration.html" target="_blank">Evidence-Based Approaches to Hand Hygiene: Best Practices for Collaboration</a></h3>
+            <p>Dec 30, 2015</p>
+            <p>Hand hygiene is recognized by infection prevention and control experts as the single most important intervention in decreasing the spread of infection in both healthcare and community settings</p>
+            <hr>
+            <h3><a href="http://www.ihi.org/communities/blogs/_layouts/ihi/community/blog/itemview.aspx?List=7d1126ec-8f63-4a3b-9926-c44ea3036813&ID=183&utm_campaign=IHI+General+Communication&utm_source=hs_email&utm_medium=email&utm_content=24755140&_hsenc=p2ANqtz-9uq6NAI5xZNJ7xKIcif-PluY_2VHPlOaObPv1GJLkfegcmohlbJyVGoWKLT2-w7Ro05HtHhzZVIuW6_qVj9FPQxgqwE30lPfJuHPRoIhBhJwQM8pQ&_hsmi=24755140" target="_blank">IHI’s Ten Picks from 2015</a></h3>
+            <p>Dec 21, 2015</p>
+            <p>Read the Institute for Healthcare Improvement's (IHI's) Ten Picks from 2015. Discover new stories, revisit your favorites, share them with your colleagues, and use them to help kick-start your improvement efforts in the new year. </p>
+            <hr>
+            <h3><a href="http://www.npsf.org/?freefromharm" target="_blank">New NPSF Report Calls for the Creation of a Total Systems Approach and a Culture of Safety to Combat the Serious Issue of Patient Safety</a></h3>
+            <p>Dec 8, 2015</p>
+            <p>The report notes that much of the work done in patient safety to date addresses hospital care, whereas most care today is provided outside of hospitals. Moreover, while deaths from medical errors make headlines, morbidity — in the form of lasting effects of harm, additional care, or lengthier hospitalizations — also demands attention. The report argues for centralized oversight of patient safety, in part to facilitate sharing best practices and knowledge.</p>
+            <hr>
+                      
+            <h3><a href="http://www.beckershospitalreview.com/quality/healthcare-workers-support-empowering-patients-to-prevent-hais-study-finds.html" target="_blank">Healthcare workers support empowering patients to prevent HAIs, study finds</a></h3>
+            <p><span>November 24, 2015</span></p>
+            <p><span>A recent study published by the <i><span style="color: blue;">American Journal of Infection Control</span> </i><span style="color: blue;"> </span><span>finds that researchers who conducted semi-structured interviews found unanimous agreement toward the concept of patient empowerment related to improving infection control practices. Despite revelations, researchers concluded that patient engagement remains an underused method of HAIs prevention</span></span>.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/population-health/st-joseph-hoag-health-shop-with-your-doc-events-attract-nearly-2k-people.html" target="_blank">St. Joseph Hoag Health 'Shop with Your Doc' events attract nearly 2k people</a></h3>
+            <p>November 24, 2015</p>
+            <p>St. Joseph Hoag physicians grocery shop with nearly 2k people. The health system hosted six "Shop with Your Doc" events in Southern California throughout mid-October and November during which St. Joseph Hoag Health physicians, nutritionists and weight-management coordinators visited Ralphs grocery stores to help customers purchase items on their grocery list and answer specific dietary questions.</p>
+            <hr>
+            <h3><a href="http://www.npuap.org/resources/educational-and-clinical-resources/2015-world-wide-pressure-ulcer-prevention-day/" target="_blank">2015 World Wide Pressure Ulcer Prevention Day</a></h3>
+            <p>November 19, 2015</p>
+            <p>The National Pressure Ulcer Advisory Panel (NPUAP) is proud to announce that World Wide Pressure Ulcer Prevention Day is to be celebrated on November 19, 2015. The objective of World Wide Pressure Ulcer Prevention Day is to increase national awareness for pressure ulcer prevention and to educate the public on this topic. NPUAP has developed an extensive media materials package appropriate for all healthcare settings and organizations which can be downloaded.</p>
+            <hr>
+            <h3><a href="https://tdahlborg.wordpress.com/2015/11/14/how-anan-image-from-thursdays-bills-jets-game-as-it-would-appear-to-the-red-green-colorblind-altered-by-dr-jay-neitz-an-expert-in-colorblindness-credit-ben-solomon-for-the-new-york-times/" target="_blank">How an NFL experiment may lead to improved Patient Safety</a></h3>
+            <p>November 17, 2015</p>
+            <p>"Good enough" is not good enough when it comes to the safety of our patients, our families, our friends, and our communities</p>
+            <hr>
+            <h3><a href="http://www.hopkinsmedicine.org/news/publications/insight/features/june-2015/bedside-app-engages-patients-families-and-care-team-in-the-icu" target="_blank">Bedside App Engages Patients, Families and Care Team in the ICU</a></h3>
+            <p>November 16, 2015</p>
+            <p>Glance around the surgical intensive care unit (ICU) and you might see people interacting with a new app. Developed at Johns Hopkins, the app aims to make patients and their families feel more comfortable during an ICU stay.</p>
+            <hr>
+            <h3><a href="http://www.littlethings.com/miss-colorado-nurse-story/" target="_blank">Miss Colorado Talks About Nursing Instead Of Singing For The Crown</a></h3>
+            <p>September 17, 2015</p>
+            <p>Last week, Miss America hosted its second night of preliminaries in Atlantic City. For the talent competition, most contestants showcased their singing, dancing, and musical talents while donning their sparkly, glittery costumes — but Kelley Johnson walked out on stage in her nurse’s scrubs. Kelley is Miss Colorado, and she decided to forgo the traditional talent routine. Instead, she delivered a unique monologue about her experience as a nurse, and with an elderly Alzheimer’s patient. The results are unexpected, original, and touching.</p>
+            <hr>
+            <h3><a href="https://vimeo.com/127183717" target="_blank">Innovative hand hygiene video from Sharp HealthCare: 'It's OK to ask'</a></h3>
+            <p>August 25, 2015</p>
+            <p>San Diego-based Sharp HealthCare interviewed patients and family members for a hand hygiene video titled "It's OK to Ask." In the video, the patients discuss how they feel about asking clinicians to wash their hands. It implores clinicians to "take time to assure your patients it's OK to ask" and also shows examples of how caregivers can do so.</p>
+            <hr>
+            <h3><a href="http://www.hopkinsmedicine.org/news/media/releases/survey_reveals_best_practices_that_lead_to_high_patient_ratings_of_hospital_care" target="_blank">Survey Reveals Best Practices That Lead to High Patient Ratings of Hospital Care</a></h3>
+            <p>August 18, 2015</p>
+            <p>Simple, low-tech practices, such as proactive rounds by nurses and hospital leadership, make a difference, Johns Hopkins study finds</p>
+            <hr>
+            <h3><a href="http://www.ihi.org/resources/Pages/Tools/TCABHowToGuideReducingPatientInjuriesfromFalls.aspx" target="_blank">Transforming Care at the Bedside How-to Guide: Reducing Patient Injuries from Falls</a></h3>
+            <p>August 13, 2015</p>
+            <p>This How-to Guide can help staff learn to identify the patients on medical-surgical units who are at the highest risk for sustaining a serious injury from a fall and implement interventions to prevent or mitigate these injuries.</p>
+            <hr>
+            <h3><a href="http://www.californiahealthline.org/capitol-desk/2015/7/uninsured-numbers-drop-substantially" target="_blank">Uninsured Numbers Drop Substantially</a></h3>
+            <p>July 31, 2015</p>
+            <p>More than two-thirds of all Californians who were uninsured before the Affordable Care Act implementation now have coverage, according to a study released Thursday by the Kaiser Family Foundation. Among the Latino population, the numbers were even more striking. Excluding the undocumented population ineligible for ACA coverage, about 75% of the previously uninsured now have some form of health insurance, the study found.</p>
+            <hr>
+            <h3><a href="http://www.pulsevoices.org/" target="_blank">Pulse - Voices from the Heart of Medicine</a></h3>
+            <p>July 27, 2015</p>
+            <p>Pulse tells the story of health care through the personal experiences of patients, health professionals, students and caregivers.</p>
+            <hr>
+            <h3><a href="http://healthaffairs.org/blog/2015/06/22/you-cant-understand-something-you-hide-transparency-as-a-path-to-improve-patient-safety/?utm_campaign=os-newsletter&utm_source=hs_email&utm_medium=email&utm_content=19998053&_hsenc=p2ANqtz-8_iCTXNuNJsxezCxcFpYQYeOy7PsOJJy0TBuyyLcHUwvbujxhkmSqWT_WaNjjdD292xOErggGOWtbtEBlTaQ-_w0ebHKIYHfwjVHDNuVhFgCVzEbQ&_hsmi=19998053l" target="_blank">100 patient safety benchmarks | 2015</a></h3>
+            <p>July 6, 2015</p>
+            <p>For hospitals, benchmarking data can be incredibly valuable, as it allows individual institutions to identify areas of excellence and assess opportunities for improvement. This ultimately allows for more efficient operations and better care. Becker's Infection Control & Clinical Quality has compiled a list of 100 patient safety benchmarks from various sources for hospital comparison.</p>
+            <hr>
+            <h3><a href="http://healthaffairs.org/blog/2015/06/22/you-cant-understand-something-you-hide-transparency-as-a-path-to-improve-patient-safety/?utm_campaign=os-newsletter&utm_source=hs_email&utm_medium=email&utm_content=19998053&_hsenc=p2ANqtz-8_iCTXNuNJsxezCxcFpYQYeOy7PsOJJy0TBuyyLcHUwvbujxhkmSqWT_WaNjjdD292xOErggGOWtbtEBlTaQ-_w0ebHKIYHfwjVHDNuVhFgCVzEbQ&_hsmi=19998053l" target="_blank">You Can’t Understand Something You Hide: Transparency As A Path To Improve Patient Safety</a></h3>
+            <p>June 22, 2015</p>
+            <p>What is the most important attribute of a culture of safety? In a new post on <i>Health Affairs</i> Blog, four heavyweights from the patient safety movement make the case that transparency is a critical tool to advance safety that is too often overlooked.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/11-patient-safety-tools-published-in-2015.html" target="_blank">11 patient safety tools published in 2015</a></h3>
+            <p>June 18, 2015</p>
+            <p>With root cause analysis guidelines, hand hygiene posters, an emergency drill toolkit and a catheter-associated urinary tract infection prevention checklist, Becker's Infection Control & Clinical Quality has providers covered with an array of patient safety tools.</p>
+            <hr>
+            <h3><a href="http://abc30.com/health/sepsis-what-you-need-to-know/783263/?utm_content=16322486&utm_medium=social&utm_source=linkedin" target="_blank">Sepsis: What You Need To Know</a></h3>
+            <p>June 14, 2015</p>
+            <p>Sepsis claims the lives of more people every year than breast cancer, prostate cancer and aids, combined. Every two minutes, someone in the U.S. dies of the deadly condition. If you don't know much about it, you're not alone. Victims and doctors are now speaking out to raise awareness.</p>
+            <hr>
+            <h3><a href="http://www.uofmhealth.org/news/archive/201506/does-hospitals-nurse-magnet-recognition-matter-patient" target="_blank">Does a hospital's "nurse magnet" recognition matter for patient outcomes?</a></h3>
+            <p>June 8, 2015</p>
+            <p>New findings from University of Michigan researchers in the June Health Affairs confirm enhanced outcomes for patients before and after recognition—to a point.</p>
+            <hr>
+            <h3><a href="http://abc30.com/health/blood-cleansing-biospleen-attacks-sepsis/708818/?utm_content=15854154&utm_medium=social&utm_source=linkedin" target="_blank">Will this new device help put a stop to sepsis?</a></h3>
+            <p>June 3, 2015</p>
+            <p>A new device inspired by the human spleen and acting like a dialysis machine can be the answer to treating sepsis.</p>
+            <hr>
+            <h3><a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9707234&fileId=S0899823X15001154&utm_source=First_View&utm_medium=Email&utm_campaign=ICE" target="_blank">The Likelihood of Hospital Readmission Among Patients With Hospital-Onset Central Line–Associated Bloodstream Infections</a></h3>
+            <p>June 3, 2015</p>
+            <p>Study in <i>Infection Control & Hospital Epidemiology</i> finds a statistically significant association between CLABSI status and readmission, suggesting that CLABSI may have adverse health impact that extends beyond hospital discharge.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/finance/average-cost-per-inpatient-day-across-50-states.html" target="_blank">Average cost per inpatient day across 50 states</a></h3>
+            <p>May 19, 2015</p>
+            <p>Here are average costs per inpatient day in 2013, organized by hospital ownership type, in all 50 states and the District of Columbia, according to the latest statistics from Kaiser State Health Facts.</p>
+            <hr>
+            <h3><a href="http://www.huffingtonpost.com/2015/05/11/florence-seesee-rigney-90-year-old-nurse_n_7255190.html" target="_blank">This 'Inspiring' 90-Year-Old Woman Has Served As A Nurse For Nearly 70 Years</a></h3>
+            <p>May 11, 2015</p>
+            <p>Florence “Seesee” Rigney began working at Tacoma General Hospital in Washington in 1946 and has just celebrated her 90th birthday and her 70th anniversary as a nurse -- at Tacoma General Hospital no less. “She is the oldest practicing nurse in the United States,” Bill Robertson, president and CEO of MultiCare Health System, said. “Just imagine all the changes SeeSee has seen in her life.”</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/workforce-labor-management/50-things-to-know-about-nurses-in-the-us.html" target="_blank">50 things to know about nurses in the US</a></h3>
+            <p>May 8, 2015</p>
+            <p>Nurses make up a vital part of the healthcare industry, providing care to patients and filling leadership roles at hospitals, health systems and other organizations. In honor of National Nurses Week, here are 50 statistics, facts and figures regarding these important caregivers.</p>
+            <hr>
+            <h3><a href="http://www.healthdatamanagement.com/news/May-cover-story-tech-shifts-support-value-based-payments-50443-1.html?utm_campaign=ehrs-may%204%202015&utm_medium=email&utm_source=newsletter&ET=healthdatamanagement%3Ae4310752%3A3702682a%3A&st=email" target="_blank">Tech Shifts Support Value-Based Payments</a></h3>
+            <p>May 5, 2015</p>
+            <p>Typically, physician face time during a patient's office visit is measured in minutes. However, accountable care is changing that scenario at Orlando (Fla.) Health, a large integrated delivery system with eight hospitals. At some of its outpatient practices, it's implemented group medical visits, at which 10 to 12 patients with similar conditions get 90-minute discussions with a physician, nurses and other care specialists.</p>
+            <hr>
+            <h3><a href="https://www.mcgill.ca/newsroom/channels/news/could-maple-syrup-help-cut-use-antibiotics-246929" target="_blank">Could maple syrup help cut use of antibiotics?</a></h3>
+            <p>Apr 16, 2015</p>
+            <p>A concentrated extract of maple syrup makes disease-causing bacteria more susceptible to antibiotics, according to laboratory experiments by researchers at McGill University.</p>
+            <hr>
+            <h3><a href="http://www.ahrq.gov/professionals/quality-patient-safety/patient-safety-resources/resources/cdifftoolkit/index.html" target="_blank">Toolkit for Reduction of Clostridium difficile Infections Through Antimicrobial Stewardship</a></h3>
+            <p>Apr 16, 2015</p>
+            <p>The Evaluation and Research on Antimicrobial Stewardship's Effect on Clostridium difficile (ERASE C. difficile) Project. Clostridium difficile infection (C. difficile) is a serious public health problem that has recently increased in both incidence and severity. Taking steps to reduce C. difficile is a major health and public health imperative. Antimicrobial stewardship targeted to C. difficile reduction shows promise, because increased rates of C. difficile are associated with inappropriate antibiotic use. An antimicrobial stewardship program (ASP) is a systematic approach to developing coordinated interventions to reduce overuse and inappropriate selection of antibiotics, and to achieve optimal outcomes for patients in cost-efficient ways. This toolkit assists hospital staff and leadership in developing an effective ASP with the potential to reduce C. difficile.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/pdfs/AHAengagementreport.pdf" target="_blank">AHA: 5 ways to engage patients and families to improve quality and safety.</a></h3>
+            <p>Apr 6, 2015</p>
+            <p>Patient and family engagement as a strategy has become an integral part of many hospitals' and health systems' improvement efforts for quality, safety and patient outcomes, according to a recent AHA report.</p>
+            <hr>
+            <h3><a href="http://www.rn.ca.gov/pdfs/sunsetnotice.pdf" target="_blank">ACNL CEO Patricia McFarland provided testimony at the state Capitol today during the Joint Oversight Hearing regarding sunset of the Board of Registered Nursing.</a></h3>
+            <p>Mar 23, 2015</p>
+            <p>Upon completion of the hearings, the board will have 30 days to submit a written response to all of the issues and recommendations raised by Committee staff in the Background Paper or during the hearing. Certain recommendations may require legislation which would be included in a “Sunset Bill” for a particular board. It is anticipated that the Sunset Bills will be heard by the respective Committees sometime in April. </p>
+            <hr>
+            <h3><a href="http://www.californiahealthline.org/articles/2015/3/16/health-careassociated-infection--rates-down-at-calif-hospitals" target="_blank">Health Care-Associated Infection Rates Down at California Hospitals</a></h3>
+            <p>Mar 16, 2015</p>
+            <p>A new report finds that rates of Clostridium difficile and some surgical infections are on the rise in California, even though most hospitals in the state report overall low rates of health care-associated infections. Meanwhile, a separate report finds that influenza vaccination rates are up among health care personnel at California hospitals. Los Angeles Daily News et al. </p>
+            <hr>
+            <h3><a href="http://link.springer.com/article/10.1007/s11606-015-3236-3" target="_blank">Hospitals' Facebook ratings may reflect quality of care</a></h3>
+            <p>Mar 7, 2015</p>
+            <p>An increasing number of hospitals and health systems utilize social media to allow users to provide feedback and ratings. The correlation between ratings on social media and more conventional hospital quality metrics remains largely unclear, raising concern that healthcare consumers may make decisions on inaccurate or inappropriate information regarding quality.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/hospital-physician-relationships/patient-experience-and-quality-impacts-on-reimbursement-5-things-to-know.html" target="_blank">Patient experience and quality impacts on reimbursement</a></h3>
+            <p>Feb 18, 2015</p>
+            <p>As hospital and health system reimbursements become more closely tied to clinical outcomes as well as patient satisfaction, patient experience surveys are becoming an increasingly valuable tool for healthcare organizations to guide efforts for improving the patient experience.</p>
+            <hr>
+            <h3><a href="http://bhmpc.com/2015/02/hospital-acquired-infections/" target="_blank">Hospital Acquired Infections are Down–But Is It Enough?</a></h3>
+            <p>Feb 17, 2015</p>
+            <p>Of the many requests President Obama will be making of Congress this year, one will be for more funding to combat the ongoing problem of Hospital Acquired Infections (HAIs).</p>
+            <hr>
+            <h3><a href="http://www.npr.org/2015/02/11/383564180/even-proper-technique-exposes-nurses-spines-to-dangerous-forces" target="_blank">Even 'Proper' Technique Exposes Nurses' Spines To Dangerous Forces</a></h3>
+            <p>Feb 11, 2015</p>
+            <p>Scientists say nurses like Sunny Vespico are prime examples of what nursing schools and hospitals are doing wrong: They keep teaching nursing employees how to lift and move patients in ways that could inadvertently result in career-ending back injuries.</p>
+            <hr>
+            <h3><a href="http://journals.lww.com/lww-medicalcare/Abstract/2014/11000/Examining_the_Value_of_Inpatient_Nurse_Staffing_.8.aspx" target="_blank">AHRQ study links hospital nurse staffing increases to fewer adverse events, lower lengths of stay</a></h3>
+            <p>Feb 10, 2015</p>
+            <p>A recent study using data from the Agency for Healthcare Research and Quality (AHRQ) showed that increases in hospital nurse staffing levels are associated with reductions in adverse events and lengths of stay. In addition, the study found that increased staffing levels do not lead to increased costs, according to a Feb. 3 AHRQ newsletter. Researchers also found that increasing the number of registered nurses, as opposed to other nursing positions, led to reduced costs. The authors linked hospital nurse staffing data to AHRQ's Healthcare Cost and Utilization Project (HCUP) State Inpatient Databases from California, Maryland and Nevada between 2008 and 2011 to estimate the causal relationship between nurse staffing (level and skill mix), quality (adverse events as measured by nurse-sensitive patient safety indicators), lengths of stay and cost. The findings suggest that increased staffing of registered nurses can improve patient outcomes and efficiency. The study, "Examining the Value of Inpatient Nurse Staffing: An Assessment of Quality and Patient Care Costs," appeared in the November issue of Medical Care. </p>
+            <hr>
+            <h3><a href="http://www.nlm.nih.gov/medlineplus/news/fullstory_150746.html" target="_blank">Infection Most Likely Cause of Hospital Readmission After Surgery</a></h3>
+            <p>Feb 9, 2015</p>
+            <p>Infections are the most likely reason people end up back in the hospital after surgery, a new study finds. Of nearly 500,000 operations studied, 6 percent of the patients were readmitted for surgical complications within a month after their surgery, researchers found.</p>
+            <hr>
+            <h3><a href="http://www.americannursetoday.com/use-restraints/" target="_blank">When and how to use restraints</a></h3>
+            <p>Jan 23, 2015</p>
+            <p>Few things cause as much angst for a nurse as placing a patient in a restraint, who may feel his or her personal freedom is being taken away. But in certain situations, restraining a patient is the only option that ensures the safety of the patient and others.</p>
+            <hr>
+            <h3><a href="http://jama.jamanetwork.com/article.aspx?articleid=2091541&resultClick=3" target="_blank">Does daily chlorhexidine bathing really limit infections? </a></h3>
+            <p>Jan 22, 2015</p>
+            <p>Many intensive care units use daily chlorhexidine bathing as a way to decolonize patients to prevent healthcare-associated infections and transmission of drug-resistant germs, but a recent study highlighted in a JAMA editorial proves this practice may be ineffective.</p>
+            <hr>
+            <h3><a href="http://www.discovernursing.com/nursesvital?utm_source=BenchmarkEmail&utm_campaign=AMNT_Elec-DEC14_NE2_2nd&utm_medium=email#.VL6LISvF-Sq" target="_blank">Nurses: Their Vital Role in Transforming Healthcare</a></h3>
+            <p>Jan 20, 2015</p>
+            <p>"Nurses: Their Vital Role in Transforming Healthcare," narrated by Joan Lunden, is a half-hour documentary exploring the impact of nurses on our nation’s health care system, in our community, on patients and their families, and of course, on the nurses themselves. We look at the role of nurses on both the front lines of health care, as well as the backbone of patient treatment. We see nurses as innovators in health care–like pain detection in newborns. We see how their observational skills, advanced knowledge, interventions and compassionate care help patients manage their medical needs.</p>
+            <hr>
+            <h3><a href="http://www.ncbi.nlm.nih.gov/pubmed/25489660" target="_blank">Leveraging Data to Transform Nursing Care: Insights From Nurse Leaders</a></h3>
+            <p>Jan 19, 2015</p>
+            <p>This study was undertaken to gain insight into how nurse leaders are influencing the use of performance data to improve nursing care in hospitals. Two themes emerged: getting relevant, reliable, and timely data into the hands of nurses and the leaders' ability to "connect the dots" in working with different stakeholders. Study findings may inform nurse leaders in their efforts to leverage data to transform nursing care.</p>
+            <hr>
+            <h3><a href="http://www.cdc.gov/hai/progress-report/index.html" target="_blank">Healthcare-associated Infections (HAI) Progress Report</a></h3>
+            <p>Jan 16, 2015</p>
+            <p>The HAI Progress Report describes significant reductions reported at the national level in 2013 for nearly all infections. CLABSI and SSI show the greatest reduction, with some progress shown in reducing hospital-onset MRSA bacteremia and hospital-onset C. difficile infections. The Report shows an increase in CAUTI, signaling a strong need for additional prevention efforts.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/lists/60-things-to-know-about-healthcare-reform.html" target="_blank">60 things to know about healthcare reform</a></h3>
+            <p>Jan 13, 2015</p>
+            <p>Health reform is and has been a hot-button issue for both politicians and healthcare leaders for the last few years, though talk of significant, government-led reform has been discussed for decades. In the wake of the Patient Protection and Affordable Care Act, healthcare reform is a highly contested and very politically polarizing issue. It is therefore very important to know what is going on and where. here you have the 60 things to know about healthcare reform in the United States.</p>
+            <hr>
+            <h3><a href="http://archinte.jamanetwork.com/article.aspx?articleid=1910548" target="_blank">Attitudes of Hospital Leaders Toward Publicly Reported Measures of Health Care Quality</a></h3>
+            <p>Jan 8, 2015</p>
+            <p>Measures reported on CMS' Hospital Compare website exert strong influence over many hospital leaders' local planning and improvement efforts, according to a recent survey published in JAMA Internal Medicine. Given how little is known about the attitudes of hospital leaders toward existing quality measures, researchers sent questionnaires to senior hospital leaders from a random sample of 630 U.S. hospitals with 380 responding.</p>
+            <hr>
+            <h3><a href="http://healthyamericans.org/reports/outbreaks2014/" target="_blank">Outbreaks: Protecting Americans from Infectious Diseases</a></h3>
+            <p>Jan 2, 2015</p>
+            <p>The Outbreaks: Protecting Americans from Infectious Diseases report finds that the Ebola outbreak exposes serious underlying gaps in the nation's ability to manage severe infectious disease threats.
+            Half of states and Washington, D.C. scored five or lower out of 10 key indicators related to preventing, detecting, diagnosing and responding to outbreaks. Maryland, Massachusetts, Tennessee, Vermont and Virginia tied for the top score - achieving eight out of 10 indicators. Arkansas has the lowest score at two out of 10.</p>
+            <hr>
+            <h3><a href="http://www.nejm.org/doi/full/10.1056/NEJMp1405800" target="_blank">Did Hospital Engagement Networks Actually Improve Care?</a></h3>
+            <p>Dec 4, 2014</p>
+            <p>Everyone with a role in health care wants to improve the quality and safety of our delivery system. Recently, the Centers for Medicare and Medicaid Services (CMS) released results of its Partnership for Patients Program (PPP) and celebrated large improvements in patient outcomes.</p>
+            <hr>
+            <h3><a href="http://www.hhs.gov/news/press/2014pres/12/20141202a.html" target="_blank">Efforts to improve patient safety result in 1.3 million fewer patient harms, 50,000 lives saved and $12 billion in health spending avoided</a></h3>
+            <p>Dec 2, 2014</p>
+            <p>A report released by the Department of Health and Human Services today shows an estimated 50,000 fewer patients died in hospitals and approximately $12 billion in health care costs were saved as a result of a reduction in hospital-acquired conditions from 2010 to 2013.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/evidence-based-strategies-for-elimination-of-clabsis.html" target="_blank">Evidence-based strategies for elimination of CLABSIs</a></h3>
+            <p>Nov 19, 2014</p>
+            <p>According the U.S. Centers for Disease Control and Prevention, hand hygiene remains the single most important intervention in the quest for targeting zero healthcare-associated infections; however, experts recognize the growing role the patient's own skin flora plays in the potential development of an HAI, specifically bloodstream infections.</p>
+            <hr>
+            <h3><a href="http://www.sacbee.com/news/local/health-and-medicine/healthy-choices/article3680501.html#/tabPane=tabs-3a09abcd-1" target="_blank">Local hospital gets kudos for work on pressure ulcers</a></h3>
+            <p>Nov 9, 2014</p>
+            <p>Three CALNOC Performance Excellence Winners are featured in this Sacramento Bee article on the significant strides hospitals are making to eliminate pressure ulcers.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/finance/100-things-to-know-about-medicare-reimbursement.html" target="_blank">100 things to know about Medicare reimbursement</a></h3>
+            <p>September 22, 2014</p>
+            <p>It's often said that where Medicare goes, private payers will follow. For hospitals, health systems and other providers, it has been the most influential healthcare program for the industry in recent decades.
+            </p>
+            <hr>
+            <h3><a href="http://www.fiercehealthcare.com/story/value-based-model-could-improve-hospital-performance-30/2014-09-12" target="_blank">Value-based model could improve hospital performance 30%</a></h3>
+            <p>September 12, 2014</p>
+            <p>A value-based approach to hospital operations could improve performance by up to 30 percent, leading major providers like the Cleveland Clinic and Kaiser Permanente to embrace it, according to the Boston Consulting Group (BCG).
+            </p>
+            <hr>
+            <h3><a href="http://www.ajicjournal.org/article/S0196-6553(14)00852-9/abstract?elsca1=etoc&elsca2=email&elsca3=0196-6553_201409_42_9_&elsca4=Nursing%7CInfectious%20Diseases" target="_blank">Hand hygiene education programs: Is once enough?</a></h3>
+            <p>September 4, 2014</p>
+            <p>Evaluation of the short-term and long-term effect of a short series of hand hygiene campaigns on improving adherence in a tertiary care hospital in India. Hand hygiene compliance at our institution was monitored by direct observation before and after a series of 2 hand hygiene awareness campaigns across an 18-month time period to analyze the effect of these campaigns. A total of 5,059 opportunities for hand hygiene were observed. Compliance increased from 28.1% (95% confidence interval [CI], 18.7%-43.2%) to 42.5% (95% CI, 30.7%-54.8%) after the 2 campaigns (P < .0001) but dropped to 36.4% (95% CI, 30.5%-44.5%) after 2 years (P < .001). Three of the 8 intensive care units that showed a significant increase after the campaigns did not maintain the increased compliance at 2 years' follow-up. We conclude that educational programs should be repeatedly conducted to maintain high adherence to hand hygiene standards in health care settings.
+            </p>
+            <hr>
+            <h3><a href="http://www.samhsa.gov/newsroom/advisories/1408111602.aspx" target="_blank">Emergency department visits linked to Zolpidem overmedication nearly doubled</a></h3>
+            <p>September 4, 2014</p>
+            <p>Zolpidem is the active ingredient in the prescription sleep aids Ambien®, Ambien CR®, Edluar® and Zolpimist®. The estimated number of emergency department visits involving zolpidem overmedication (taking more than the prescribed amount) nearly doubled from 21,824 visits in 2005-2006 to 42,274 visits in 2009-2010, according to a new study by the Substance Abuse and Mental Health Services Administration (SAMHSA).
+            </p>
+            <hr>
+            <h3><a href="http://www.ahrq.gov/professionals/quality-patient-safety/patient-safety-resources/resources/advances-in-patient-safety/" target="_blank">Advances in Patient Safety: From Research to Implementation. Volumes 1-4</a></h3>
+            <p>August 20, 2014</p>
+            <p>Advances in Patient Safety: From Research to Implementation describes what federally funded programs have accomplished in understanding medical errors and implementing programs to improve patient safety over the last 5 years. This compendium is sponsored jointly by the Agency for Healthcare Research and Quality (AHRQ) and the Department of Defense (DoD)-Health Affairs.
+            </p>
+            <hr>
+            <h3><a href="http://www.ingentaconnect.com/content/jcaho/jcjqs/2014/00000040/00000008/art00002" target="_blank">Using Lean “Automation with a Human Touch” to Improve Medication Safety: A Step Closer to the “Perfect Dose”</a></h3>
+            <p>July 31, 2014</p>
+            <p>Virginia Mason Medical Center (Seattle) employed the Lean concept of Jidoka (automation with a human touch) to plan for and deploy bar code medication administration (BCMA) to hospitalized patients.
+            </p>
+            <hr>
+            <h3><a href="http://www.ihi.org/education/WebTraining/OnDemand/NurseQI/Pages/default.aspx" target="_blank">IHI On Demand: Improving Skills to Empower Front-Line Nurses</a></h3>
+            <p>July 30, 2014</p>
+            <p>Today’s front-line nursing staff face a growing list of responsibilities. From overseeing the treatment and recovery of their patients to documentation and facility oversight, a nurse’s daily requirements seem to grow even in periods of hospital reductions. To assist with spreading the leadership skills required in the ever-changing health care environment, the Institute for Healthcare Improvement (IHI) is pleased to offer Improvement Skills to Empower Front-Line Nurses, a series of three audio conferences. Each call will help front-line nurses develop the skills necessary to lead improvement in their everyday work.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/100-patient-safety-benchmarks-2014.html" target="_blank">100 Patient Safety Benchmarks — 2014</a></h3>
+            <p>July 28, 2014</p>
+            <p>For hospitals, benchmarking data can be incredibly valuable. It allows individual institutions to identify areas of excellence and assess opportunities for improvement, ultimately resulting in more efficient operations and better care. Becker's Hospital Review has compiled a list of 100 patient safety benchmarks from various sources for hospital comparison.
+            </p>
+            <hr>
+            <h3><a href="http://katiecouric.com/videos/the-incredible-work-of-american-nurses/" target="_blank">The Incredible Work of American Nurses</a></h3>
+            <p>July 16, 2014</p>
+            <p>Carolyn Jones learned first hand the healing power of a nurse's touch. She was so impacted she produced a documentary called "The American Nurse" honoring the incredible work of nurses. This is a 7 minute video feature from the <a href="http://katiecouric.com/videos/the-incredible-work-of-american-nurses/" target="_blank">Katie Couric</a> show. Here is a link to more information on the <a href="http://americannurseproject.com/carolyn-jones/" target="_blank">The American Nurse Project</a>
+            </p>
+            <hr>
+            <h3><a href="http://onlinelibrary.wiley.com/doi/10.1111/jhq.12071/abstract" target="_blank">Pediatric Medication Administration Errors and Workflow Following Implementation of a Bar Code Medication Administration System
+            </a></h3>
+            <p>July 14, 2014</p>
+            <p>This pilot study identified a low rate (5%) of
+            medication administration errors and fair compliance with the six safety processes on two pediatric units and one neonatal unit following Bar Code Medication Administration implementation.
+            </p>
+            <hr>
+            <h3><a href="https://www.youtube.com/watch?v=pWBf7G2JH2M#t=2565" target="_blank">Bringing a Business Lens to Healthcare
+            </a></h3>
+            <p>June 27, 2014</p>
+            <p>These are some of the ideas brought up at the Aspen Ideas Festival last week during a panel discussion featuring Toby Cosgrove, MD, CEO of Cleveland Clinic and Jonathan Bush, CEO and co-founder of Athenahealth.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/leadership-management/10-disruptive-forces-in-healthcare.html" target="_blank">10 Disruptive Forces in Healthcare
+            </a></h3>
+            <p>June 17, 2014</p>
+            <p>Disruptive forces in healthcare, which healthcare leaders will need to address in their strategies if they intend to realize continued growth in the significantly changing marketplace.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/zero-adverse-events-how-dignity-health-achieved-a-new-standard.html" target="_blank">Zero Adverse Events: How Dignity Health Achieved a New Standard
+            </a></h3>
+            <p>June 13, 2014</p>
+            <p>From 2012 to 2013, the 38-hospital San Francisco-based Dignity Health HEN reduced catheter-associated urinary tract infections by 52.7 percent, central line-associated bloodstream infections by 31.4 percent, surgical site infections by 36.3 percent, ventilator-associated pneumonia by 52.1 percent and patient falls by 25.5 percent, just to name a few.
+            </p>
+            <hr>
+            <h3><a href="http://www.npr.org/blogs/health/2014/06/09/318567633/hospitals-put-pharmacists-in-the-er-to-cut-medication-errors" target="_blank">Hospitals Put Pharmacists In The ER To Cut Medication Errors
+            </a></h3>
+            <p>June 9, 2014</p>
+            <p>In the emergency department at Children's Medical Center in Dallas, pharmacists who specialize in emergency medicine review each medication to make sure it's the right one in the right dose. It's part of the hospital's efforts to cut down on medication errors and dangerous drug interactions, which contribute to more than 7,000 deaths across the country each year.
+            </p>
+            <hr>
+            <h3><a href="http://www.fiercehealthcare.com/story/5-customer-service-lessons-boost-patient-satisfaction/2014-06-05" target="_blank">Grady Hospital's Nurse-Driven Program Improves Interdepartmental Communication
+            </a></h3>
+            <p>June 5, 2014</p>
+            <p>A nurse-driven, investigative approach to customer service helped nurses at Grady Memorial Hospital's emergency department boost patient satisfaction and improve interdepartmental communication, according to Advance Healthcare Network for Nurses. Emergency room nurses, who treat approximately 10,000 patients every month at the urban safety-net academic hospital in Atlanta, created a five-step customer service initiative to act out broad scenarios while moderators gave them challenges they'd encounter in an everyday setting, according to the article.
+            </p>
+            <hr>
+            <h3><a href="http://www.fiercehealthcare.com/story/burwell/2014-06-05?spMailingID=9086021&spUserID=MzUzMDc4NzMwOTgS1&spJobID=283669034&spReportId=MjgzNjY5MDM0S0" target="_blank">Senate confirms Mathews Burwell as HHS secretary
+            </a></h3>
+            <p>June 5, 2014</p>
+            <p>The Senate confirmed Sylvia Mathews Burwell as the 22nd secretary of the U.S. Department of Health and Human Services, the Washington Post reported Thursday afternoon. An overwhelming 78-17 approval vote puts Burwell, who previously served as the White House's budget director, in the spotlight to deal with the Affordable Care Act and the U.S. healthcare system, according to the report.
+            </p>
+            <hr>
+            <h3><a href="http://www.chcf.org/publications/2013/12/getting-lean" target="_blank">Getting Lean: A Journey Toward Better Health Care
+            </a></h3>
+            <p>May 20, 2014</p>
+            <p>This multimedia presentation shows how leaders from five California public hospital systems traveled the country to learn how to apply the Lean management model to improve patient care.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/the-3-p-s-of-clabsi-reduction.html" target="_blank">The 3 P's of CLABSI Reduction</a></h3>
+            <p>May 9, 2014</p>
+            <p>It's no coincidence that it has been more than two years since Carolinas Hospital System recorded a central-line associated blood stream infection in its surgical intensive care unit. CHS switched several of the products used in the SICU in an effort to reduce CLABSI rates there. For instance, according to Ann North, RN, the director of infection prevention control, the organization changed to a new type of dressing with the antiseptic chlorhexidine gluconate. This "took potential user error" out of the dressing equation, which led to fewer infections, she explained.
+            </p>
+            <hr>
+            <h3><a href="http://innovation.cms.gov/Files/reports/patient-safety-results.pdf" target="_blank">HHS: Quality improvements saved 15,000 lives, $4 billion </a></h3>
+            <p>May 7, 2014</p>
+            <p>New HHS preliminary data show an overall 9 percent decrease in hospital acquired conditions nationally during 2011 and 2012. National reductions in adverse drug events, falls, infections and other forms of hospital-induced harm are estimated to have prevented nearly 15,000 hospital deaths, avoided 560,000 patient injuries and saved approximately $4 billion in health spending during that period.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/lists/50-experts-leading-the-field-of-patient-safety-2014.html" target="_blank">50 Experts Leading the Field of Patient Safety — 2014</a></h3>
+            <p>May 7, 2014</p>
+            <p>The following is a list of 50 experts leading the field of patient safety. The list includes individuals at healthcare organizations, national organizations, universities and other institutions who are devoted to improving patient safety and quality of care.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/the-4-characteristics-of-a-strong-safety-culture.html" target="_blank">The 4 Characteristics of a Strong Safety Culture</a></h3>
+            <p>Apr 28, 2014</p>
+            <p>The phrase "safety culture" is widely used but rarely understood. Even if you do fully understand the concept, turning that knowledge into actions that positively influence your organization can be a challenge.
+            </p>
+            <hr>
+            <h3><a href="http://www.pwrnewmedia.com/2014/joint_commission/patient_falls/" target="_blank">Joint Commission Project Reduced Patient Falls by 35% </a></h3>
+            <p>Apr 28, 2014</p>
+            <p>Joint Commission Center for Transforming Healthcare Aims to Prevent Inpatient Falls with Injury. A Robust Approach Leads to Significant Reduction of Inpatient Falls with Injury.
+            </p>
+            <hr>
+            <h3><a href="http://www.aeaweb.org/articles.php?doi=10.1257/app.6.2.231" target="_blank">Experienced nurses shorten length of stay, improve patient outcomes</a></h3>
+            <p>Apr 14, 2014</p>
+            <p>More experienced nurses deliver better patient care and shorten length of stay, according to a study published in the <i>American Economic Journal: Applied Economics</i>
+            </p>
+            <hr>
+            <h3><a href="http://www.blueridgenow.com/article/20140407/ARTICLES/140409907" target="_blank">Park Ridge improves patient satisfaction</a></h3>
+            <p>Apr 7, 2014</p>
+            <p>Recalling six-year-old results from a national patient satisfaction survey, Park Ridge Health Director of Patient Experience Cammy Horrell said the local hospital had the weakest scores in Western North Carolina.
+            </p>
+            <hr>
+            <h3><a href="http://www.ajicjournal.org/article/S0196-6553(13)01324-2/abstract" target="_blank">Preventing transmission of MRSA: A qualitative study of health care workers’ attitudes and suggestions</a></h3>
+            <p>Apr 1, 2014</p>
+            <p>Health care workers’ (HCWs) perceptions and attitudes affect implementation of precautions to prevent transmission of drug-resistant pathogens such as methicillin-resistant Staphylococcus aureus (MRSA). Identification of challenges and barriers to recommended practices is a critical component of promoting a safe clinical environment of care.
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/workforce-labor-management/when-pay-for-performance-hits-hospital-employee-paychecks.html">When Pay for Performance Hits Hospital Employee Paychecks</a></h3>
+            <p>Mar 26, 2014</p>
+            <p>What happens when pay-for-performance doesn't just apply to physicians and hospital reimbursements, but a hospital's staff as a whole?
+            </p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/the-road-to-eliminating-hais-hand-hygiene-improvement-at-cedars-sinai.html" target="_blank">The Road to Eliminating HAIs: Hand Hygiene Improvement at Cedars-Sinai</a></h3>
+            <p>Mar 10, 2014</p>
+            <p>Hospital-acquired infections affect approximately 440,000 patients each year in the U.S., costing roughly $10 billion a year. Largely preventable, healthcare organizations across the country have long focused on reducing HAIs; yet, HAIs continue to plague our nation's hospitals.</p>
+            <hr>
+            <h3><a href="http://www.npsf.org/events-forums/patient-safety-awareness-week/preventing-diagnostic-error-resources/" target="_blank">March 2 - 8 is Patient Safety Awareness Week.</a></h3>
+            <p>Mar 5, 2014</p>
+            <p>Many good resources are available for preventing diagnostics errors on the National Patient Safety Foundation website linked above.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/patient-safety-tool-lifting-patients-safely.html" target="_blank">Lifting Patients Safely</a></h3>
+            <p>Feb 28, 2014</p>
+            <p>The "Lift Tool" is a one-page brief on the basics of safe patient lifting practices for nurses and other healthcare providers. The brief contains both statistics on patient lifts and best practices for safe lifting.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/cnos-from-6-award-winning-hospitals-share-their-secrets-to-nursing-quality.html" target="_blank">CNOs From 6 Award-Winning Hospitals Share Their Secrets to Nursing Quality</a></h3>
+            <p>Feb 6, 2014</p>
+            <p>The American Nurses Association has released the six winners of its 2013 National Database of Nursing Quality Indicators awards at its 2014 ANA Quality Conference in Phoenix. These hospitals demonstrated the sustained ability to meet and exceed the ANA's standards for patient safety and quality of care benchmarks.</p>
+            <hr>
+            <h3><a href="http://www.beckershospitalreview.com/racs-/-icd-9-/-icd-10/cms-opens-bundled-payment-initiative-enrollment.html" target="_blank">CMS Opens Bundled Payment Initiative Enrollment</a></h3>
+            CMS announced an open period for additional organizations to be considered for participation in its Bundled Payments for Care Improvement initiative Feb. 14. <a href="http://innovation.cms.gov/initiatives/bundled-payments/" target="_blank">Background on the Bundled Payments for Care Improvement (BPCI) Initiative<hr>
+            </a>
+            <h3><a href="http://innovation.cms.gov/initiatives/bundled-payments/" target="_blank"></a><a href="http://www.news-medical.net/news/20140121/Nursing-researchers-come-up-with-answer-for-effectively-adopting-evidence-based-care.aspx" target="_blank">Nursing researchers come up with answer for effectively adopting evidence-based care</a></h3>
+            In a new study, researchers have developed a list of 24 evidence-based practice competencies - a combination of knowledge and skills - for registered and advanced-practice nurses in real-world clinical settings<hr>
+            <h3><a href="/resource/resmgr/docs/nix_the_noise_part_1_final.pdf" target="_blank">Nix the Noise: Managing Alarms, Alerts and Interruptions</a></h3>
+            As new technologies are developed and adopted across healthcare settings, the problem continues to grow, forcing organizations to reach beyond previous attempts to drive chatter out of the hospital.<hr>
+            <h3><a href="http://www.healthdatamanagement.com/issues/22_1/MEANINGFUL-USE-CMS-Extends-Stage-2-Delays-Stage-3-47062-1.html" target="_blank">CMS Extends Stage 2, Delays Stage 3</a></h3>
+            The Centers for Medicare and Medicaid Services has added a third year to Stage 2 of the EHR meaningful use program and has delayed the start of Stage 3 until 2017. Providers with at least two years of participation in Stage 2 can start Stage 3--the criteria of which remains in development--in 2017.<hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/15-statistics-on-patient-safety-distribution-of-hais.html" target="_blank">15 Statistics on Patient Safety, Distribution of HAIs</a></h3>
+            Statistics on hospital-acquired conditions, adverse events and patient safety extracted from chapter three, "Patient Safety Importance," from the 2012 National Healthcare Quality Report, produced by the Agency for Healthcare Research and Quality. <hr>
+            <h3><a href="http://www.beckershospitalreview.com/quality/how-can-hospitals-improve-their-bottom-lines-in-the-or.html" target="_blank">How Can Hospitals Improve Their Bottom Lines in the OR?</a></h3>
+            By tightening up their OR management, hospitals can also improve their clinical outcomes, surgeon satisfaction, patient volume and financial performance. <hr>
+            <h3><a href="http://www.fiercehealthpayer.com/story/timeline-key-healthcare-deadlines-2013-and-beyond/2013-12-16" target="_blank">Healthcare Regulatory Deadlines</a></h3>
+            Timeline: Key healthcare deadlines for 2014 and beyond<hr>
+            <h3><a href="http://www.ncbi.nlm.nih.gov/pubmed/24374408" target="_blank">AHRQ Update: Preventing Pressure Ulcers</a></h3>
+            New research supported by the Agency for Healthcare Research and Quality(AHRQ) found that implementing the On-Time Quality Improvement for Long Term Care (On-Time) Program, a clinical decision support intervention, led to a significant reduction in pressure ulcers. <hr>
+            <h3><a href="http://www.aha.org/content/13/beds-whitepapergen.pdf" target="_blank">Reconfiguring the Bedside Care Team of the Future</a></h3>
+            The changes confronting the health care system are so significant that many of the models that the health care system has relied on, such as the traditional bedside care team, may no longer be the best, or even a plausible, approach to care. <hr>
+            <p><a href="http://www.wsna.org/practice/publications/documents/economic%20value%20of%20nursing%20-%20white%20paper.pdf" target="_blank">Mapping the Economic Value of Nursing</a></p>
+            <hr>
+            <p><a href="http://www.hanys.org/quality/data/report_cards/2013/" target="_blank">Understanding Publicly Reported Hospital Quality Measures</a></p>
+            <hr>
+            <p><a href="http://m.ihealthbeat.org/articles/2013/5/23/hospital-acquired-conditions-to-remain-on-hospital-compare-site.aspx" target="_blank">Hospital-Acquired Conditions to Remain on the Hospital Compare Site.</a></p>
+            <hr>
+            <p><a href="http://www.californiahealthline.org/articles/2013/5/15/cbo-revises-projections-related-to-aca-and-health-care-spending.aspx" target="_blank">CBO Revises Projections Related to ACA and Health Care Spending</a>.</p>
+            <hr>
+            <p><a href="http://www.cdc.gov/media/releases/2013/p0211_health_care_infections.html" target="_blank">Hospitals report reductions in some types of health care-associated infections.</a></p>
+            <hr>
+            <p><a href="/associations/13337/files/JBI%20CSR%20Poster.pdf" target="_blank">Joanna Briggs Institute.Comprehensive Systematic Review Training Announced.</a></p>
+            <hr>
+            <p><a href="/associations/13337/files/SIR-Report_02_07_2013.pdf" target="_blank">Hospitals report mixed results in protecting patients from infections. CDC report shows reduction in some infection types, but others remain unchanged. </a></p>
+            <hr>
+            <p><a href="http://annals.org/article.aspx?articleid=1657884" target="_blank">The Top Patient Safety Strategies That Can Be Encouraged for Adoption Now. <em>Annals of Internal Medicine </em>article.</a></p>
+            <hr>
+            <p><a href="http://www.sonoramedicalcenter.org/quality-of-care/quality-awards-and-accreditations" target="_blank">CALNOC would like to congratulate Sonora Regional Medical Center who was recently named a top performer by the Centers for Medicare & Medicaid Services (CMS) for delivering high quality care in six clinical areas.</a></p>
+            <p> </p>
+            <p> </p>
+            </td>
+        </tr>
+    </tbody>
+</table></div>
+
+	<div id="ResourceCollection">
+		
+	
+	<script type="text/javascript">
+	function LaunchThis(sender, strURL)
+	{
+		window.open (strURL);	
+		return false;
+	}
+	
+	function NewCollection(Collection)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=";
+		return false;
+	}
+	
+	function ModifyThis(Collection, ItemID)
+	{
+		window.location = "/members/resource_collection_item_edit.asp?id=" + Collection + "&groupID=&itemID=" + ItemID;
+		return false;
+	}
+	</script>
+
+	</div></td>
+</tr>
+</table><!--END SpContent-->
+
+
+<div id="PageBase_RaiseAlert" class="yui-skin-sam"></div>
+
+
+<div class="yui-skin-sam">
+<div id="ContextualHelp" style="visibility:hidden">
+	<div id="ContextualHelpHead" class="hd"></div>
+	<div id="ContextualHelpBody" class="bd"></div>
+</div>
+<div id="SpNavBarSub" style="visibility:hidden">
+	<div id="SpNavBarSubBody" class="bd"></div>
+</div></div>
+
+					<!--@@DG_PRINT_PAGE_END@@
+						IMPORTANT! DO NOT MOVE OR MODIFY -->
+				</div> <!-- Close left div --></td>
+				<div id="right">
+				<div id="RightRailTopContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+					
+           			<div id="events" class="zone" style="display:none;">
+                		<div class="irailhead"><a href="/events/event_list.asp">more</a>Calendar</div>
+						<div class="irailcontent"><p>The upcoming calendar is currently empty.</p><p><a href='/events/event_list.asp?cid=&show=past'>Click here to view past events and photos &raquo;</a></p></div>
+					</div>
+					
+					<div id="news" class="zone" style="display:none;">
+						<div class="irailhead"><a href="/news/">more</a>Latest News</div>
+						<div class="irailcontent">There are currently no news items posted.</div>
+					</div>				
+					
+					
+								<div id="railbottom"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--><h1>CALNOC Partners&nbsp;</h1>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="/resource/resmgr/images/ucsf_logo_new.jpg"></p>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-acnl.jpg"></p>
+<p align="left">&nbsp;</p>
+<div></div>
+<div></div>
+<div>
+<br>
+&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p align="left"><img width="200" height="130" title="" align="left" style="border: currentcolor; float: left;" alt="" src="https://calnoc.site-ym.com/resource/resmgr/imported/sponsor-csmc.jpg"></p>
+<p align="left">&nbsp;</p>
+<div>
+<br>
+<br>
+<br>
+</div>
+<p align="left">&nbsp;</p></div>
+						</div><!-- end div right -->
+						
+				<div class="clear"></div>				
+		
+			</div> <!-- Close sp-content div -->
+			<div id="BottomContentArea"><!--YMPSTITLE=TgBBAA==/YMPSTITLE--></div>
+			</div> <!-- Close icontent div -->
+
+		    <div id="FooterContentArea">
+			    <!--YMPSTITLE=TgBBAA==/YMPSTITLE--><div class="grid_24">
+<table align="center" style="border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px; vertical-align: top;">
+            <h3>&nbsp;</h3>
+            <h3>Navigation</h3>
+            <p><a href="http://www.calnoc.org"><span style="color: #696969;">Home</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=7"><span style="color: #696969;">Mission</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=8"><span style="color: #696969;">Registry</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=17"><span style="color: #696969;">Education</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Testimonials</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Benefits of Joining</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=23"><span style="color: #696969;">In the News</span></a></p>
+            <p><a href="http://calnoc.site-ym.com/events/event_list.asp"><span style="color: #696969;">Calendar of Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=12"><span style="color: #696969;">Helpful Links</span></a></p>
+            </td>
+            <td style="width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">About Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=6"><span style="color: #696969;">History</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=15"><span style="color: #696969;">FAQ</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=9"><span style="color: #696969;">Medication Administration</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=13"><span style="color: #696969;">Customers</span></a></p>
+            <p><a href="/?page=A6"><span style="color: #696969;">Join Us</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=21"><span style="color: #696969;">Apply</span></a></p>
+            <p><a href="/events/event_list.asp"><span style="color: #696969;">Events</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=10"><span style="color: #696969;">CALNOC Articles &amp; Research</span></a></p>
+            <p><a href="/?page=A12"><span style="color: #696969;">Contact Us</span></a></p>
+            </td>
+            <td style="border: 1px #000000; width: 200px; text-align: left; letter-spacing: 0px; word-spacing: 0px;">
+            <p><a href="/?page=A1"><span style="color: #696969;">Overview - CALNOC Advantage</span></a><span style="color: #696969;"> </span> </p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=3"><span style="color: #696969;">Leadership</span></a></p>
+            <p><a href="/?page=A2"><span style="color: #696969;">Offerings</span></a></p>
+            <p><a href="/?page=1"><span style="color: #696969;">Services</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=19"><span style="color: #696969;">Partners</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=18"><span style="color: #696969;">Who Should Join?</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=20"><span style="color: #696969;">Press Releases</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=4"><span style="color: #696969;">CALNOC Annual Conference</span></a></p>
+            <p><a href="displaycommon.cfm?an=1&amp;subarticlenbr=16"><span style="color: #696969;">Resources</span></a></p>
+            <p>&nbsp;</p>
+            </td>
+            <td style="text-align: left; letter-spacing: 0px; padding-right: 20px; padding-left: 20px; word-spacing: 0px; vertical-align: top; border-left-color: #dcdcdc; border-left-width: 1px; border-left-style: dashed;">
+            <h3>&nbsp;</h3>
+            <h3>Location</h3>
+            <p><span style="color: #696969;">2410 Camino Ramon</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Suite 360</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">San Ramon, CA 94583</span></p>
+            <p><span style="color: #696969;">Voice: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Fax: 888-586-1994</span></p>
+            <span style="color: #696969;"> </span>
+            <p><span style="color: #696969;">Email:</span> <a href="mailto:info@calnoc.org">info@calnoc.org</a></p>
+            <p><a href="http://maps.google.com/maps?q=2410+Camino+Ramon+San+Ramon+CA+94583&amp;hl=en&amp;sll=37.772651,-121.963671&amp;sspn=0.008565,0.018969&amp;hnear=2410+Camino+Ramon,+San+Ramon,+California+94583&amp;t=m&amp;z=16" target="_blank">Google Map</a></p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="grid_6">
+<p class="grid_24" style="text-align: center;"><span style="color: #696969;">Copyright 2017 © CALNOC.org</span> | <a href="displaycommon.cfm?an=1&amp;subarticlenbr=22"><span style="color: #696969;">Terms of Use</span></a></p>
+<p>&nbsp;</p>
+</div>
+		    </div>
+
+		    <div id="Foot"><!-- FOOTER --> </div>
+
+		    <div id="icopyright">Association Management Software Powered by <a href='http://www.yourmembership.com/'>YourMembership</a> &nbsp;::&nbsp; <a href='/ams/legal-privacy.htm'>Legal</a><!-- Copyright (c) 1998-2018 YourMembership.com Inc. All Rights Reserved. Copyright: Certain elements of this website are: Copyright (c) 1998-2018, YourMembership.com, Incorporated. YourMembership.com, Incorporated provides a limited license to use its Copyrights to the entity from whose web page you are viewing. Certain elements of this website may also be copyrighted by that entity; please see its Terms of Use or contact the organization for more information. General information about copyright laws can be found at: http://www.copyright.gov/. For more specific information, please consult an attorney. --></div>
+</body>
+
+
+</html>
+<!--END_OF_FILE-->
